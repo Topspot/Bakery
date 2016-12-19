@@ -1,0 +1,55 @@
+/* Widget TagCloud */
+.widget_tag_cloud {}
+.widget_tag_cloud .tagcloud a,
+.fw-tag-links a,
+.post-tags a,
+.woocommerce.widget_product_tag_cloud .tagcloud a {
+  display: inline-block;
+  font-size: 11px !important;
+  font-family: @fw-buttons-font-family;
+  font-weight: @fw-buttons-font-weight;
+  font-style: @fw-buttons-font-style;
+  color: #fff !important;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 10px;
+  margin: 8px;
+  background-color: @fw-widget-inner-title-color;
+  border-radius: 0 3px 3px 0;
+  position: relative;
+  .transition(all .3s ease);
+
+  &:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-right: 10px solid @fw-widget-inner-title-color;
+    border-bottom: 16px solid transparent;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    box-shadow: 2px 0 0 -1px @fw-widget-inner-title-color;
+    .transition(all .3s ease);
+  }
+
+  &:after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -2px;
+    top: 13px;
+  }
+  &:hover {
+    background-color: @fw-widget-inner-title-hover-color;
+    color: #fff;
+
+    &:before {
+      border-right-color: @fw-widget-inner-title-hover-color;
+      box-shadow: 2px 0 0 -1px @fw-widget-inner-title-hover-color;
+    }
+  }
+}

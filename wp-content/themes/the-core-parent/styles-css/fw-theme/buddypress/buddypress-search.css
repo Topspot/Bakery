@@ -1,0 +1,39 @@
+/* buddyPress Search */
+.dir-search form,
+.dir-search form label,
+#search-members-form,
+#search-message-form {
+    position: relative;
+}
+#search-message-form label.bp-screen-reader-text {
+    width: 100%;
+    height: 100%;
+    clip: auto;
+    color: transparent;
+}
+#buddypress div.dir-search input[type="text"],
+#buddypress div.dir-search input[type="search"],
+#buddypress li.groups-members-search input[type="text"],
+#buddypress li.groups-members-search input[type="search"],
+#buddypress #search-message-form input[type="text"],
+#buddypress #search-message-form input[type="search"] {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#buddypress div.dir-search input[type="submit"],
+#buddypress li.groups-members-search input[type="submit"],
+#buddypress #search-message-form input[type="submit"] {
+    padding: 0;
+}
+#buddypress div.dir-search input[type="submit"]:hover,
+#buddypress div.dir-search input[type="submit"]:active,
+#buddypress div.dir-search input[type="submit"]:focus,
+#buddypress li.groups-members-search input[type="submit"]:hover,
+#buddypress li.groups-members-search input[type="submit"]:active,
+#buddypress li.groups-members-search input[type="submit"]:focus,
+#buddypress #search-message-form input[type="submit"]:hover,
+#buddypress #search-message-form input[type="submit"]:active,
+#buddypress #search-message-form input[type="submit"]:focus {
+    background-color: transparent;
+    box-shadow: none;
+}

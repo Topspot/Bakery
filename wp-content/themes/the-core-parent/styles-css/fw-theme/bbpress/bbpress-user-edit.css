@@ -1,0 +1,82 @@
+/* bbPress User Edit */
+
+/*-> bbpress User Edit Form */
+#bbpress-forums .bbp-user-subscriptions h2.entry-title:first-child,
+#bbpress-forums .bbp-user-profile h2.entry-title:first-child,
+#bbpress-forums .bbp-user-topics-started h2.entry-title:first-child,
+#bbpress-forums .bbp-user-replies-created h2.entry-title:first-child,
+#bbpress-forums .bbp-user-favorites h2.entry-title:first-child,
+#bbpress-forums form#bbp-your-profile h2.entry-title:first-child {
+    line-height: 1em;
+    margin-top: -2px !important;
+    margin-bottom: 15px;
+}
+#bbpress-forums #bbp-your-profile fieldset {
+    padding: 30px;
+}
+#bbpress-forums #bbp-your-profile fieldset .selectize-control {
+    width: 60%;
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+#bbpress-forums #bbp-your-profile fieldset label[for="display_name"] {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+#bbpress-forums #bbp-your-profile fieldset .selectize-control .selectize-input,
+#bbpress-forums #bbp-your-profile fieldset .selectize-control .selectize-input input,
+#bbpress-forums #bbp-your-profile fieldset div:last-child input,
+#bbpress-forums #bbp-your-profile fieldset div:last-child textarea {
+    margin-bottom: 0;
+}
+#bbpress-forums #bbp-your-profile fieldset .selectize-control .selectize-input .item {
+    margin-bottom: 0;
+    float: none;
+    width: auto;
+}
+#bbpress-forums fieldset.bbp-form #password .bbp-form.password {
+    background-color: transparent;
+    margin-bottom: 0;
+}
+#bbpress-forums form#bbp-your-profile .bbp-form {
+    margin-bottom: 30px;
+}
+#bbpress-forums #bbp-your-profile fieldset div input,
+#bbpress-forums #bbp-your-profile fieldset div textarea {
+    margin-bottom: 20px;
+}
+#bbpress-forums #bbp-your-profile fieldset div {
+    margin-bottom: 0;
+}
+#bbp-user-wrapper #bbp-your-profile fieldset.submit {
+    margin-top: -30px;
+}
+#bbpress-forums #bbp-user-wrapper ul.bbp-lead-topic,
+#bbpress-forums #bbp-user-wrapper ul.bbp-topics,
+#bbpress-forums #bbp-user-wrapper ul.bbp-forums,
+#bbpress-forums #bbp-user-wrapper ul.bbp-replies {
+    clear: left;
+}
+#bbpress-forums #bbp-user-wrapper fieldset.bbp-form {
+    clear: none;
+}
+.bbp-row-actions #favorite-toggle span.is-favorite a,
+.bbp-row-actions #subscription-toggle span.is-subscribed a {
+    color: #ff0000;
+    border: none;
+    background-color: transparent;
+}
+.bbp-row-actions #favorite-toggle span.is-favorite a:hover,
+.bbp-row-actions #subscription-toggle span.is-subscribed a:hover{
+    color: #ff0000;
+    opacity: 0.7;
+    border: none;
+    background-color: transparent;
+}
+.bbp-row-actions #favorite-toggle a,
+.bbp-row-actions #subscription-toggle a {
+    font-size: 26px;
+}

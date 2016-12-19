@@ -1,0 +1,47 @@
+/* Posts Related Article */
+/* -------------------------------------------------- */
+.fw-wrap-related-article {
+  padding: 0 15px;
+  text-align: justify;
+}
+.fw-wrap-related-article .fw-related-article-image {
+  margin-bottom: 0;
+}
+.fw-title-related {
+  font-style: normal;
+  margin-top: 0;
+}
+.fw-wrap-related-article .fw-related-article {
+  padding: 0;
+  margin: 0;
+}
+.fw-wrap-related-article .fw-related-article li {
+  display: inline-block;
+  width: 48%;
+}
+.fw-wrap-related-article .fw-related-article:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  display: inline-block;
+}
+.fw-wrap-related-article.fw-related-article-type-1 .fw-related-article-description {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+}
+.fw-wrap-related-article.fw-related-article-type-1 .fw-related-article-description strong {
+  font-style: normal;
+}
+/*-- Responsive --*/
+/* Screen 320px */
+@media(max-width:479px) {
+  .fw-wrap-related-article .fw-related-article li {
+    display: inline-block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,112 @@
+/* Posts Listing & Type 1 */
+.post {
+  padding-top: @fw-space-between-elements-sm;
+  margin-bottom: @fw-space-between-elements-sm;
+
+  // Overlay for fist section in post single
+  &.fw-content-overlay-sm{
+    margin-bottom: -@fw-content-overlay-sm;
+  }
+  &.fw-content-overlay-md{
+    margin-bottom: -@fw-content-overlay-md;
+  }
+  &.fw-content-overlay-lg{
+    margin-bottom: -@fw-content-overlay-lg;
+  }
+  .wrap-entry-meta{
+    font-family: @fw-h2-font-family;
+    font-weight: @fw-h2-font-weight;
+    font-style: @fw-h2-font-style;
+  }
+  h1.entry-title a{
+    font-family: @fw-h1-font-family;
+    font-style:  @fw-h1-font-style;
+    font-weight: @fw-h1-font-weight;
+    font-size: @fw-h1-font-size;
+    line-height: @fw-h1-line-height;
+    letter-spacing: @fw-h1-letter-spacing;
+    color: @fw-h1-color;
+  }
+  h2.entry-title a{
+    font-family: @fw-h2-font-family;
+    font-style:  @fw-h2-font-style;
+    font-weight: @fw-h2-font-weight;
+    font-size: @fw-h2-font-size;
+    line-height: @fw-h2-line-height;
+    letter-spacing: @fw-h2-letter-spacing;
+    color: @fw-h2-color;
+  }
+  h3.entry-title a{
+    font-family: @fw-h3-font-family;
+    font-style:  @fw-h3-font-style;
+    font-weight: @fw-h3-font-weight;
+    font-size: @fw-h3-font-size;
+    line-height: @fw-h3-line-height;
+    letter-spacing: @fw-h3-letter-spacing;
+    color: @fw-h3-color;
+  }
+  h4.entry-title a{
+    font-family: @fw-h4-font-family;
+    font-style:  @fw-h4-font-style;
+    font-weight: @fw-h4-font-weight;
+    font-size: @fw-h4-font-size;
+    line-height: @fw-h4-line-height;
+    letter-spacing: @fw-h4-letter-spacing;
+    color: @fw-h4-color;
+  }
+  h5.entry-title a{
+    font-family: @fw-h5-font-family;
+    font-style:  @fw-h5-font-style;
+    font-weight: @fw-h5-font-weight;
+    font-size: @fw-h5-font-size;
+    line-height: @fw-h5-line-height;
+    letter-spacing: @fw-h5-letter-spacing;
+    color: @fw-h5-color;
+  }
+  h6.entry-title a{
+    font-family: @fw-h6-font-family;
+    font-style:  @fw-h6-font-style;
+    font-weight: @fw-h6-font-weight;
+    font-size: @fw-h6-font-size;
+    line-height: @fw-h6-line-height;
+    letter-spacing: @fw-h6-letter-spacing;
+    color: @fw-h6-color;
+  }
+}
+.entry-content {
+  .clearfix();
+}
+.post-tags {
+  // styling details in file: widgets/widget-tagcloud.less
+}
+.postlist {
+  .post {
+    header .entry-meta {
+      color: @text-color;
+    }
+    .fw-post-image{
+      margin-bottom: @fw-space-between-elements-sm;
+    }
+    footer.entry-meta {
+      .footer-meta{
+        font-family: @fw-buttons-font-family;
+        font-weight: @fw-buttons-font-weight;
+        font-style: @fw-buttons-font-style;
+      }
+    }
+  }
+
+  // Postlist - List view
+  &.postlist-list {
+    .post {
+      margin-bottom: (@fw-content-density * 10px)/2;
+      padding-bottom: (@fw-content-density * 10px)/2;
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/posts/posts-type-1.css";

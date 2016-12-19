@@ -1,0 +1,111 @@
+/* Top Nav Menu */
+/* -------------------------------------------------- */
+.fw-nav-wrap .fw-site-navigation {
+  font-size: 0;
+}
+.fw-site-navigation > ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.fw-site-navigation > ul li {
+  position: relative;
+  list-style: none;
+}
+.fw-site-navigation > ul .menu-item-has-icon i {
+  margin-right: 10px;
+  position: relative;
+}
+/* 1st level */
+.fw-site-navigation > ul > li {
+  float: left;
+  position: relative;
+}
+.fw-site-navigation > ul > li > a {
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+.fw-site-navigation > ul > li > a:after {
+  content: "";
+  bottom: 0;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  width: 0;
+}
+.fw-site-navigation > ul > li:hover a:after {
+  width: 100%;
+  margin-left: -50%;
+}
+.fw-site-navigation > ul > li.current-menu-item a:after,
+.fw-site-navigation > ul > li.current-menu-ancestor a:after {
+  width: 100%;
+  margin-left: -50%;
+}
+/* 2nd level */
+.fw-site-navigation > ul > li ul {
+  position: absolute;
+  left: 0;
+  z-index: 1308;
+  text-align: left;
+  text-transform: none;
+  display: none;
+}
+.fw-site-navigation > ul > li ul > li {
+  display: block;
+  width: 100%;
+  margin-left: 0;
+  float: left;
+}
+.fw-site-navigation > ul > li ul > li:first-child {
+  padding-top: 13px;
+}
+.fw-site-navigation > ul > li ul > li:last-child {
+  padding-bottom: 13px;
+}
+.fw-site-navigation > ul > li ul > li > a {
+  display: block;
+  line-height: 1.2em;
+  padding: 10px 12% !important;
+  margin: 0 !important;
+}
+.fw-site-navigation > ul > li ul > li.menu-item-has-icon > a:before {
+  margin-right: 0;
+  content: "";
+}
+/* 3nd level */
+.fw-site-navigation > ul > li ul > li > ul {
+  top: 0;
+  padding: 0;
+  background: none;
+}
+.fw-site-navigation > ul > li ul > li:first-child:hover > ul {
+  top: 13px;
+}
+.fw-site-navigation > ul > li ul > li:hover > ul {
+  display: block;
+}
+/* other level */
+.fw-site-navigation > ul > li ul > li > ul ul{
+  top: 0;
+}
+
+/* Primary & Secondary Menu Error Message */
+.fw-primary-menu-message,
+.fw-secondary-menu-message {
+  color: #ff0000;
+  background: #fff;
+  border: 1px solid #ff0000;
+  padding: 5px;
+}
+.fw-primary-menu-message a,
+.fw-secondary-menu-message a {
+  color: #ff0000;
+  text-decoration: underline;
+}
+.fw-primary-menu-message a:hover,
+.fw-secondary-menu-message a:hover {
+  color: #ff0000;
+  text-decoration: none;
+}

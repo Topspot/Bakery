@@ -1,0 +1,132 @@
+/* Header Layout */
+/* -------------------------------------------------- */
+.fw-header {
+  .fw-header-main {
+    background: @fw-top-menu-bg;
+  }
+}
+// header overlap on next section
+.fw-absolute-header {
+  .fw-header {
+    .fw-header-main {
+      background: @fw-top-menu-bg;
+      background: fade(@fw-top-menu-bg, @fw-header-absolute-opacity);
+    }
+  }
+  .fw-sticky-menu-open {
+    .fw-header-main {
+      background-color: @fw-top-menu-bg;
+    }
+  }
+}
+
+// top bar on
+.fw-top-bar-on.fw-absolute-header{
+  .fw-main-row-top,
+  .fw-main-row,
+  .no-header-image{
+    margin-top: (@fw-top-bar-height + @fw-top-bar-padding*2);
+  }
+  .fw-header {
+    top: -(@fw-top-bar-height + @fw-top-bar-padding*2);
+  }
+}
+
+//-------------------------------------//
+//       Other Style for Header        //
+//-------------------------------------//
+@import (inline) '../../../styles-css/fw-theme/headers/header.css';
+
+// Include Header Type
+@import "header-1.less";
+@import (inline) '../../../styles-css/fw-theme/headers/header-1.css';
+
+@import "header-2.less";
+@import (inline) '../../../styles-css/fw-theme/headers/header-2.css';
+
+@import "header-3.less";
+@import (inline) '../../../styles-css/fw-theme/headers/header-3.css';
+
+@import "header-4.less";
+@import (inline) '../../../styles-css/fw-theme/headers/header-4.css';
+
+// Header Logo
+@import "header-logo.less";
+@import (inline) '../../../styles-css/fw-theme/headers/header-logo.css';
+
+// Header Top Bar
+@import "header-top-bar.less";
+@import (inline) "../../../styles-css/fw-theme/headers/header-top-bar.css";
+
+// Header Search
+@import "header-search.less";
+@import (inline) '../../../styles-css/fw-theme/headers/header-search.css';
+
+// Header Nav Menu
+@import "top-nav-menu.less";
+@import (inline) '../../../styles-css/fw-theme/headers/top-nav-menu.css';
+
+// Mega Menu
+@import "mega-menu.less";
+@import (inline) '../../../styles-css/fw-theme/headers/mega-menu.css';
+
+// Mobile Menu
+@import "mobile-menu.less";
+@import (inline) '../../../styles-css/fw-theme/headers/mobile-menu.css';
+
+// Include calc height
+@import "header-height-calc.less";
+
+
+/* Responsive */
+/* Screen 1024px */
+@media(max-width:1199px){
+  .fw-top-bar-on.fw-absolute-header{
+    & when (@fw-top-bar-bg = transparent){
+      .fw-top-bar {
+        background-color: @body-bg;
+      }
+    }
+  }
+}
+/*Screen 768px*/
+@media(max-width: 991px){
+  // Top Bar
+  .search-in-top-bar {
+    .fw-search {
+      &.fw-mini-search {
+        border: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        left: 0;
+
+        .fw-search-icon{
+          margin: 0 auto;
+        }
+        .fw-wrap-search-form {
+          margin-right: -(@fw-header-search-width/2);
+        }
+      }
+    }
+  }
+  .fw-top-bar-on.fw-absolute-header{
+    .fw-main-row-top,
+    .fw-main-row,
+    .no-header-image{
+      margin-top: (@fw-top-bar-height + @fw-top-bar-padding)*2;
+    }
+    .fw-header {
+      top: -(@fw-top-bar-height + @fw-top-bar-padding)*2;
+    }
+  }
+}
+/* Screen 568px */
+@media(max-width:767px){
+  .fw-absolute-header {
+    .fw-header {
+      .fw-header-main {
+        background: @fw-top-menu-bg;
+      }
+    }
+  }
+}

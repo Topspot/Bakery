@@ -1,0 +1,71 @@
+/* Themefuse Carousel */
+/* -------------------------------------------------- */
+
+.fw-themefuse-carousel-wrapper{
+  .number-project,
+  .fw-control-title-before {
+    font-family: @subtitles-family;
+    font-weight: @subtitles-weight;
+    font-style: @subtitles-style;
+    font-size: @subtitles-size;
+    line-height: @subtitles-line-height;
+    color: @subtitles-color;
+    letter-spacing: @subtitles-letter-spacing;
+  }
+  .fw-themefuse-carousel{
+    li{
+      .fw-themefuse-carousel-content-wrap{
+        .fw-themefuse-carousel-content{
+          .box-shadow(1px 8px 8px -4px fade(#b9a98f, 10%));
+
+          .item-divider{
+            background: fade(@theme-color-5, 10%);
+          }
+        }
+      }
+    }
+    // Carousel control
+    .fw-themefuse-carousel-control{
+      .box-shadow(0px 0px 24px 0px fade(#9E7171, 17%));
+
+      // Control Title Wrap
+      .fw-control-title-wrap{
+        background-color: fade(@accent-color, 90%);
+
+        .fw-control-title-before{
+          font-family: @subtitles-family;
+          font-weight: @subtitles-weight;
+          font-style: @subtitles-style;
+          font-size: @subtitles-size;
+          line-height: @subtitles-line-height;
+          color: @subtitles-color;
+          letter-spacing: @subtitles-letter-spacing;
+        }
+      }
+
+      // Control Title Description
+      .fw-control-description{
+        font-size: @font-size-base - 2;
+      }
+
+      // Navigation
+      .fw-control-nav{
+        color: @theme-color-3;
+        font-family: @subtitles-family;
+        font-weight: @subtitles-weight;
+        font-style: @subtitles-style;
+        line-height:  @font-size-base + 1;
+
+        i{
+          font-size: @font-size-base + 9;
+        }
+      }
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/sliders/themefuse-carousel.css";

@@ -1,0 +1,25 @@
+/* Easy Carousel */
+/* -------------------------------------------------- */
+
+.fw-easy-carousel{
+  .fw-easy-carousel-view-details{
+    background: fade(@theme-color-1, 80%);
+    .transition(all 0.5s);
+  }
+  .prev,
+  .next{
+    background: fade(#000, 35%);
+    .transition(all 0.5s);
+  }
+  .prev:hover,
+  .next:hover{
+    color: @accent-color;
+    background: fade(#000, 50%);
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/sliders/easy-carousel.css";

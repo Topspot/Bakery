@@ -1,0 +1,31 @@
+/* Top bar */
+.fw-top-bar {
+  text-align: right;
+}
+.fw-top-bar .fw-container {
+  z-index: 101;
+}
+.fw-top-bar a:hover {
+  text-decoration: underline;
+}
+.fw-top-bar .fw-text-top-bar {
+  text-align: left;
+  display: inline-block;
+}
+.fw-top-bar .fw-top-bar-social {
+  display: inline-block;
+}
+.fw-top-bar .fw-top-bar-social a {
+  margin-left: 10px;
+}
+.fw-top-bar .fw-top-bar-social a:first-child {
+  margin-left: 0;
+}
+
+/*----> Responsive <---- */
+/* Screen 568px */
+@media(max-width:767px){
+  .fw-top-bar .fw-top-bar-social a {
+    margin-left: 15px;
+  }
+}

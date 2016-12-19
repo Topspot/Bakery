@@ -1,0 +1,10 @@
+/* Recent Comments */
+.widget_recent_comments ul li {
+  margin-bottom: 1em;
+  font-weight: normal;
+  font-style: italic;
+  color: #b6b8b9;
+}
+.widget_recent_comments ul li:last-child {
+  margin-bottom: 0;
+}

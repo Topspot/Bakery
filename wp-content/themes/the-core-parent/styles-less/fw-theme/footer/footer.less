@@ -1,0 +1,39 @@
+/* Footer Layout */
+/* -------------------------------------------------- */
+
+// Formula with calculate height for logo
+@fw-footer-logo-retina-elder: @fw-footer-logo-height/2;
+@fw-footer-logo-retina-max-width: @fw-footer-logo-width/2;
+@fw-calculate-height-footer-logo: @fw-footer-logo-height / (@fw-footer-logo-width/@fw-menu-logo-max-width)*1px;
+@fw-calculate-height-footer-logo-retina: @fw-footer-logo-retina-elder / (@fw-footer-logo-retina-max-width/@fw-menu-logo-max-width)*1px;
+
+.fw-footer-middle {
+	background-color: @fw-footer-middle-bg;
+	background-image: url(@fw-menu-bar-bg-image);
+	background-repeat: @fw-menu-bar-bg-repeat;
+	background-position: @fw-menu-bar-bg-position;
+	background-size: @fw-footer-middle-bg-size;
+}
+
+//-------------------------------------//
+//       Other Style for Footer        //
+//-------------------------------------//
+
+// Footer
+@import (inline) "../../../styles-css/fw-theme/footer/footer.css";
+
+// Footer Widget
+@import "footer-widget.less";
+@import (inline) "../../../styles-css/fw-theme/footer/footer-widget.css";
+
+// Footer Copyright
+@import "footer-copyright.less";
+@import (inline) "../../../styles-css/fw-theme/footer/footer-copyright.css";
+
+// Footer Menu
+@import "footer-menu.less";
+@import (inline) "../../../styles-css/fw-theme/footer/footer-menu.css";
+
+// Footer Logo
+@import "footer-logo.less";
+@import (inline) "../../../styles-css/fw-theme/footer/footer-logo.css";

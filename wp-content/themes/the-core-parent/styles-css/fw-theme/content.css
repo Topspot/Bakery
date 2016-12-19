@@ -1,0 +1,121 @@
+/* Content Layout */
+/* -------------------------------------------------- */
+
+/* z-index for .fw-inner */
+.fw-inner,
+.fw-col-inner{
+  position: relative;
+  z-index: 10;
+}
+/* Content Row Overlay */
+.fw-main-row-overlay {
+  position: absolute !important;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.fw-container,
+.fw-container-fluid{
+  z-index: 10;
+}
+/* Parallax Styling */
+.parallax-section{
+  background-attachment: fixed;
+}
+
+/* Section Overlay */
+/* next section will be under current */
+.fw-content-overlay-sm,
+.fw-content-overlay-md,
+.fw-content-overlay-lg,
+.fw-content-overlay-custom {
+  overflow: hidden;
+}
+/* Section Height */
+.fw-section-height-custom,
+.fw-column-height-custom {
+  overflow: hidden;
+}
+
+/* Remove the padding-left/right for page-builder in blog post, pages, events, products, projects */
+.fw-col-sm-12 .fw-page-builder-content .fw-row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Main top section under the Header */
+/* vertical align middle for all that inside Row */
+.fw-middle-align.fw-content-vertical-align-middle .fw-container *,
+.fw-middle-align.fw-content-vertical-align-middle .fw-container-fluid * {
+  visibility: visible;
+}
+.fw-content-vertical-align-middle .fw-container *,
+.fw-content-vertical-align-middle .fw-container-fluid * {
+  visibility: hidden;
+}
+.fw-absolute-header .fw-main-row-top.fw-main-row-custom.fw-content-overlay-sm.fw-content-vertical-align-middle,
+.fw-absolute-header .fw-main-row-top.fw-main-row-custom.fw-content-overlay-md.fw-content-vertical-align-middle,
+.fw-absolute-header .fw-main-row-top.fw-main-row-custom.fw-content-overlay-lg.fw-content-vertical-align-middle,
+.fw-absolute-header .fw-main-row-top.fw-main-row-custom.fw-content-overlay-custom.fw-content-vertical-align-middle,
+.fw-absolute-header .fw-main-row-top.fw-main-row-custom.fw-content-vertical-align-middle,
+.fw-absolute-header .fw-main-row-top.fw-main-row-custom.fw-content-vertical-align-middle,
+.fw-absolute-header .fw-main-row-top.fw-main-row-custom.fw-content-vertical-align-middle,
+.fw-absolute-header .fw-main-row-top.fw-main-row-custom.fw-content-vertical-align-middle {
+  padding-top: 0 !important;
+}
+/* Remove Section & Coll Padding */
+.fw-section-no-padding .fw-container,
+.fw-section-no-padding .fw-container-fluid {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.fw-col-no-padding{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+body.fw-no-absolute-header .fw-main-row-top .fw-container .fw-row,
+body.fw-no-absolute-header .fw-main-row-top .fw-container-fluid .fw-row {
+  margin-top: 0;
+}
+
+.fw-wp-embed-shortcode iframe {
+  border: 1px solid transparent;
+}
+
+/* Responsive */
+@media (min-width: 1200px) {
+  .fw-desktop-hide-element {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .fw-tablet-landscape-hide-element {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .fw-tablet-hide-element {
+    display: none !important;
+  }
+}
+/* Screen 568px */
+@media (max-width: 767px) {
+  .fw-main-row-custom,
+  div[class^="fw-col-"].fw-column-height-custom {
+    height: auto !important;
+  }
+  .fw-content-overlay-sm,
+  .fw-content-overlay-md,
+  .fw-content-overlay-lg,
+  .fw-content-overlay-custom {
+    margin-bottom: 0 !important;
+  }
+  .fw-mobile-hide-element {
+    display: none !important;
+  }
+  .fw-main-row-top.fw-content-vertical-align-middle .fw-row:first-child div[class*="fw-col-sm-"] {
+    padding-top: 0 !important;
+  }
+}

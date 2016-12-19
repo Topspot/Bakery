@@ -1,0 +1,90 @@
+/* Post Details */
+.single .post.post-details {
+  margin-bottom: ceil(@fw-space-between-elements-md*0.5);
+
+  //Image Align
+  img.alignleft,
+  .wp-caption.alignleft{
+    margin: 0 5% 5px -(@fw-space-between-elements-sm);//edit
+  }
+  .fw-post-image{
+    margin-bottom: @fw-space-between-elements-sm;
+  }
+  .entry-header {
+    .wrap-entry-meta {
+      color: @text-color;
+      margin: 0 0 @fw-space-between-elements-sm 0;
+
+      .cat-links{
+        a {
+          color: @theme-color-1;
+
+          &:hover {
+            color: @text-color;
+          }
+        }
+      }
+    }
+    .entry-title {
+      margin: 0 0 @fw-space-between-elements-sm 0;
+    }
+  }
+  .entry-header,
+  .entry-content{
+    padding-left: @fw-space-between-elements-sm;
+    padding-right: @fw-space-between-elements-sm;
+  }
+  .entry-content {
+    padding-bottom: @fw-space-between-elements-md;
+  }
+  footer.entry-meta {
+    margin-bottom: ceil(@fw-space-between-elements-md*0.5);
+  }
+}
+
+
+/* Author Description */
+/*-----------------------------------*/
+.author-description {
+  padding: 0 0 ceil(@fw-space-between-elements-md*0.5);
+  margin-bottom: @fw-space-between-elements-md;
+
+  .author-text {
+    font-size: (@font-size-base - 1);
+  }
+  .author-name {
+    font-size: @fw-h5-font-size;
+    color: @fw-h3-color;
+
+    span {
+      color: @accent-color;
+    }
+  }
+}
+
+/* Responsive */
+
+/* Screen 568px */
+@media(max-width:767px){
+  .post-details .entry-header .wrap-entry-meta,
+  .post-details .entry-header .entry-title {
+    margin-bottom: ceil(@fw-space-between-elements-sm*0.5);
+  }
+  .author-description,
+  .post-details footer.entry-meta,
+  .post-details {
+    margin-bottom: ceil(@fw-space-between-elements-md*0.5);
+  }
+  .author-description{
+    padding-bottom: ceil(@fw-space-between-elements-md*0.5);
+  }
+  .post-details .entry-content{
+    padding-bottom: ceil(@fw-space-between-elements-md*0.5);
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/posts/posts-details.css";

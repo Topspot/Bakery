@@ -1,0 +1,36 @@
+/* Header Type 1 */
+.header-1 {
+  &.fw-top-logo-left {
+    .fw-search {
+      margin-left: @fw-menu-item-margin-left;
+    }
+  }
+  &.fw-top-logo-right {
+    .fw-search {
+      margin-right: @fw-menu-item-margin-left;
+    }
+  }
+  .fw-header-main {
+    .fw-container {
+      padding-top: ceil(@fw-header-padding-top*0.87);
+      padding-bottom: ceil(@fw-header-padding-bot*0.87);
+    }
+  }
+  .primary-navigation {
+    > ul {
+      > li {
+        > a {
+          margin-left: @fw-menu-item-margin-left;
+        }
+        > ul {
+          left: @fw-menu-item-margin-left;
+
+          &.left{
+            left: auto;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}

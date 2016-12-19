@@ -1,0 +1,15 @@
+/* Widget Login */
+.fw-widget-login .forgetmenot {
+  display: inline-block;
+  float: left;
+}
+.fw-widget-login .forget_password {
+  display: inline-block;
+  float: right;
+  font-size: 14px;
+  line-height: 1em;
+}
+.fw-widget-login .submit {
+  clear: both;
+  margin-bottom: 0;
+}

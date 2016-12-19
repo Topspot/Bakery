@@ -1,0 +1,11 @@
+/* bbPress Search */
+#bbpress-forums div.bbp-search-form {
+    margin-bottom: 15px;
+}
+.bbp-search-form form > div {
+    position: relative;
+}
+.bbp-search-form form input[name="bbp_search"] {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+}

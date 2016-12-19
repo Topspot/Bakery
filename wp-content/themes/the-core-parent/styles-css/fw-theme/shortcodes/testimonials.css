@@ -1,0 +1,273 @@
+/* Testimonails */
+/* -------------------------------------------------- */
+.fw-testimonials {
+  position: relative;
+  opacity: 1;
+  width: 100%;
+  min-width: 320px;
+}
+.fw-testimonials.hide-slider {
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+.fw-testimonials.hide-slider .fw-slider-item img {
+  visibility: hidden;
+}
+.fw-testimonials.hide-slider .fw-slider-prev,
+.fw-testimonials.hide-slider .fw-slider-next,
+.fw-testimonials.hide-slider .fw-slider-pagination,
+.fw-testimonials.hide-slider .fw-slider-caption {
+  opacity: 0 !important;
+}
+.fw-testimonials .fw-testimonials-item {
+  position: relative;
+}
+.fw-testimonials .fw-testimonials-text {
+  font-style: italic;
+}
+.fw-testimonials .fw-testimonials-text p {
+  margin-bottom: 1.4em;
+}
+.fw-testimonials .fw-testimonials-text p:last-child {
+  margin-bottom: 0;
+}
+.fw-testimonials .prev,
+.fw-testimonials .next {
+  height: 40px;
+  line-height: 40px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: normal;
+  opacity: 0.3;
+}
+.fw-testimonials .prev:hover,
+.fw-testimonials .next:hover {
+  opacity: 0.4
+}
+.fw-testimonials .prev:active,
+.fw-testimonials .next:active {
+  margin-top: 1px;
+  opacity: 0.4
+}
+.fw-testimonials .prev i:before {
+  content: "\f104";
+}
+.fw-testimonials .next i:before {
+  content: "\f105";
+}
+.fw-testimonials .fw-testimonials-pagination a {
+  display: inline-block;
+  margin: 3px;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0.1;
+}
+.fw-testimonials .fw-testimonials-pagination a.selected,
+.fw-testimonials .fw-testimonials-pagination a:hover {
+  opacity: 0.3;
+}
+.fw-testimonials .fw-testimonials-pagination a span {
+  display: block;
+  text-indent: -300px;
+}
+
+/* Testimonials Type 1 */
+.fw-testimonials-1 {
+  text-align: center;
+}
+.fw-testimonials-1 .fw-testimonials-item {
+  text-align: center;
+}
+.fw-testimonials-1 .fw-testimonials-avatar img {
+  margin: 0 auto;
+  display: inline-block;
+  border-radius: 50%;
+}
+.fw-testimonials-1 .fw-testimonials-text {
+  text-align: center;
+  padding: 10px 10% 0;
+}
+.fw-testimonials-1 .fw-testimonials-author {
+  padding: 0 10px 0;
+}
+.fw-testimonials-1 .fw-testimonials-author .author-name {
+  display: block;
+}
+.fw-testimonials-1 .fw-testimonials-author .author-name strong {
+  font-style: normal;
+}
+.fw-testimonials-1 .fw-testimonials-author em {
+  font-size: 14px;
+}
+.fw-testimonials-1 .fw-testimonials-author .fw-testimonials-url:before {
+  content: " | ";
+  margin-left: 2px;
+}
+.fw-testimonials-1 .prev,
+.fw-testimonials-1 .next {
+  position: absolute;
+  z-index: 2;
+  top: 42%;
+  font-size: 40px;
+}
+.fw-testimonials-1 .prev i,
+.fw-testimonials-1 .next i {
+  position: relative;
+  top: -1px;
+}
+.fw-testimonials-1 .prev:active,
+.fw-testimonials-1 .next:active {
+  margin-top: 1px;
+}
+.fw-testimonials-1 .prev {
+  left: 1px;
+}
+.fw-testimonials-1 .prev i {
+  left: -2px;
+}
+.fw-testimonials-1 .prev i:before {
+  content: "\f104";
+}
+.fw-testimonials-1 .next {
+  right: 1px;
+}
+.fw-testimonials-1 .next i {
+  right: -2px;
+}
+.fw-testimonials-1 .next i:before {
+  content: "\f105";
+}
+.fw-testimonials-1 .fw-testimonials-pagination {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* style 2 */
+.fw-testimonials-2 .fw-testimonials-item {
+  margin-top: 1px;
+}
+.fw-testimonials-2 .fw-testimonials-text {
+  position: relative;
+  border-radius: 0;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.fw-testimonials-2 .fw-testimonials-text:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-style: solid;
+}
+.fw-testimonials-2 .fw-testimonials-text:before {
+  bottom: -15px;
+  margin-left: -1px;
+  border-width: 15px 15px 0 15px;
+}
+.fw-testimonials-2 .fw-testimonials-meta {
+  display: table;
+}
+.fw-testimonials-2 .fw-testimonials-meta > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.fw-testimonials-2 .fw-testimonials-avatar {
+  margin-right: 10px;
+}
+.fw-testimonials-2 .fw-testimonials-avatar img {
+  border-radius: 50%;
+}
+.fw-testimonials-2 .fw-testimonials-author {
+  padding: 0 0 0 20px;
+}
+.fw-testimonials-2 .fw-testimonials-author .author-name {
+  display: block;
+}
+.fw-testimonials-2 .fw-testimonials-author .author-name strong {
+  font-style: normal;
+}
+.fw-testimonials-2 .fw-testimonials-author em {
+  font-style: normal;
+  font-size: 14px;
+}
+.fw-testimonials-2 .fw-testimonials-author .fw-testimonials-url {
+  display: block;
+  font-size: 95%;
+}
+.fw-testimonials-2 .fw-testimonials-arrows {
+  display: inline-block;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  z-index: 2;
+}
+.fw-testimonials-2 .fw-testimonials-arrows a {
+  margin: 0 5px;
+}
+.fw-testimonials-2 .fw-testimonials-pagination {
+  position: absolute;
+  display: inline-block;
+  bottom: 20px;
+  right: 70px;
+  z-index: 2;
+}
+.fw-testimonials.fw-testimonials-2 .fw-testimonials-pagination a.selected,
+.fw-testimonials.fw-testimonials-2 .fw-testimonials-pagination a:hover {
+  opacity: 0.5;
+}
+.fw-testimonials.fw-testimonials-2 .prev,
+.fw-testimonials.fw-testimonials-2 .next{
+  opacity: 0.5;
+}
+
+/*----> Responsive <---- */
+/* Screen 568px */
+@media(max-width:767px){
+  .fw-col-no-padding .fw-testimonials-1 .prev {
+    left: 10px;
+  }
+  .fw-col-no-padding .fw-testimonials-1 .prev i {
+    left: 0;
+  }
+  .fw-col-no-padding .fw-testimonials-1 .next {
+    right: 10px;
+  }
+  .fw-col-no-padding .fw-testimonials-1 .next i {
+   right: 0;
+  }
+}
+/* Screen 320px */
+@media(max-width:479px){
+  .fw-testimonials-2 .fw-testimonials-pagination {
+    bottom: -5px;
+    right: 15px;
+  }
+  .fw-testimonials-2 .fw-testimonials-arrows {
+    display: none;
+  }
+  .fw-col-no-padding .fw-testimonials-2 .fw-testimonials-pagination{
+    right: 0;
+  }
+  .fw-testimonials-1,
+  .fw-testimonials-2 {
+    left: -15px;
+  }
+  .fw-testimonials-1 .prev {
+    left: 10px;
+  }
+  .fw-testimonials-1 .next {
+    right: 10px;
+  }
+  .fw-col-no-padding .fw-testimonials-1,
+  .fw-col-no-padding .fw-testimonials-2 {
+    left: auto;
+  }
+  .fw-testimonials-2 .fw-testimonials-item {
+    padding: 0 15px;
+  }
+  .fw-col-no-padding .fw-testimonials-2 .fw-testimonials-item {
+    padding: 0;
+  }
+}

@@ -1,0 +1,6 @@
+/* Revolution Slider */
+/* -------------------------------------------------- */
+.widget_revslider .rev_slider_wrapper {
+    max-width: 100%;
+    left: auto !important;
+}

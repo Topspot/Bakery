@@ -1,0 +1,17 @@
+/* Widget Facebook */
+.fw-widget-facebook .tweet-list {
+  margin-bottom: 0;
+}
+.fw-widget-facebook li {
+  position: relative;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.fw-widget-facebook .fw-btn-facebook a span:before {
+  content: '\f09a';
+}
+.fw-footer .fw-widget-facebook li .facebook-post-date {
+  color: #fff;
+}

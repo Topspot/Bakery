@@ -1,0 +1,69 @@
+/* buddyPress Style */
+/* -------------------------------------------------- */
+#buddypress div.item-list-tabs#subnav {
+    margin-bottom: 35px;
+}
+#buddypress div.pagination,
+#buddypress div.pagination .pagination-links a,
+#buddypress div.pagination .pagination-links span {
+    font-size: inherit;
+}
+#buddypress div.pagination .pagination-links {
+    margin-right: 0;
+}
+#buddypress div.pagination .pag-count {
+    margin-left: 0;
+}
+#buddypress .item-list-tabs ul li.last {
+    width: 221px;
+}
+#buddypress div.item-list-tabs#subnav {
+    overflow: visible;
+}
+#buddypress #profile-edit-form ul.button-nav:before,
+#buddypress #profile-edit-form ul.button-nav:after,
+#buddypress div.item-list-tabs#subnav:before,
+#buddypress div.item-list-tabs#subnav:after {
+    content: '';
+    display: table;
+}
+#buddypress #profile-edit-form ul.button-nav:after,
+#buddypress div.item-list-tabs#subnav:after {
+    clear: both;
+}
+.buddypress #buddypress .item-list-tabs ul li.current a,
+.buddypress #buddypress .item-list-tabs ul li.selected a {
+    opacity: 1;
+}
+#buddypress div.item-list-tabs ul li a span {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    padding: 0;
+}
+#buddypress form#whats-new-form textarea {
+    overflow: hidden;
+}
+#buddypress #reply-title small a span,
+#buddypress a.bp-primary-action span {
+    background: none;
+    font-size: inherit;
+    top: auto !important;
+    vertical-align: middle;
+}
+#buddypress #reply-title small a:hover span,
+#buddypress a.bp-primary-action:hover span {
+    background: none;
+}
+#buddypress div.activity-comments form .ac-textarea {
+    background: none;
+    border: none;
+    padding: 0;
+}
+#buddypress div.activity-comments form .ac-textarea textarea {
+    padding: 5px 10px !important;
+}
+#buddypress div#item-header div#item-meta {
+    font-size: 100%;
+}

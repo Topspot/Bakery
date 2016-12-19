@@ -1,0 +1,24 @@
+/* Styles for standard selects */
+
+// * when selectize.js not used
+.wp-widget-select,
+.widget_categories,
+.widget_archive {
+  // archive as dropdown
+  select{
+    height: @input-height-base;
+    padding-left: @input-padding-x;
+    color: @secondary-color;
+    background-color: @theme-color-4;
+    font-family: @fw-buttons-font-family;
+    font-weight: @fw-buttons-font-weight;
+    font-style: @fw-buttons-font-style;
+    font-size: @input-font-size;
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/widgets/widget-select.css";

@@ -1,0 +1,36 @@
+/* Breadcrumbs */
+/* -------------------------------------------------- */
+
+.breadcrumbs {
+  margin-bottom: ceil(@fw-widget-margin-bot*0.30);
+  line-height: @fw-widget-title-line-height;
+
+  span {
+    background-color: @body-bg;
+
+    &:last-child {
+      background-color: @body-bg;
+      display: inline-block;
+      padding-right: 10px;
+
+      &:after {
+        border-bottom: 1px solid #dee0e1;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        z-index: -1;
+      }
+    }
+  }
+}
+.fw-side-boxed .breadcrumbs span,
+.fw-side-boxed .breadcrumbs span:last-child {
+  background-color: @container-bg;
+}
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../styles-css/fw-theme/breadcrumbs.css";

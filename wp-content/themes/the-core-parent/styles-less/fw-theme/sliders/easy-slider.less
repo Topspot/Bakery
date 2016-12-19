@@ -1,0 +1,41 @@
+/* Easy Slider */
+/* -------------------------------------------------- */
+.fw-easy-slider {
+  // slider caption
+  .fw-easy-slider-caption {
+    .fw-easy-slider-caption-inner {
+      background-color: fade(@accent-color, 90);
+    }
+  }
+  .fw-easy-slider-prev,
+  .fw-easy-slider-next {
+    .transition(all 0.3s ease);
+
+    &:active {
+      margin-top: -(24px - 1);
+    }
+  }
+  .fw-easy-slider-pagination {
+    a {
+      .square(12px);
+      background-color: fade(#fff, 30);
+
+      &:hover,
+      &.selected {
+        background-color: fade(#fff, 70);
+      }
+    }
+  }
+  .fw-easy-slider-progress {
+    background-color: fade(#000, 50);
+  }
+  .fw-easy-slider-timer {
+    background-color: fade(#fff, 60);
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/sliders/easy-slider.css";

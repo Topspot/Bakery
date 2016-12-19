@@ -1,0 +1,95 @@
+/* Top Nav Menu */
+.fw-site-navigation > ul > .menu-item-has-mega-menu {
+  position: relative;
+}
+.fw-site-navigation > ul .mega-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  z-index: 1308;
+  width: 100%;
+  text-align: left;
+  text-transform: none;
+}
+.fw-site-navigation > ul > li ul > li > div {
+  padding: 0 12%;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: rgba(255,255,255, 0.5);
+}
+.fw-site-navigation > ul .mega-menu p {
+  margin: 0 0 1em 0;
+  padding: 10px 12% !important;
+  text-transform: none;
+}
+.fw-site-navigation > ul .mega-menu ul {
+  top: 0;
+  left: 0;
+  float: none;
+  position: static;
+  display: table;
+  table-layout: fixed;
+  width: auto;
+  padding: 13px 0;
+}
+.fw-site-navigation > ul .mega-menu ul > li {
+  display: table-cell;
+  float: none;
+  background: transparent;
+}
+.fw-site-navigation > ul .mega-menu ul > li:first-child {
+  border-left: none;
+  padding-top: 0;
+}
+.fw-site-navigation > ul .mega-menu ul > li:last-child{
+  padding-bottom: 0;
+}
+.fw-site-navigation > ul .mega-menu ul li > ul {
+  background: none;
+  padding: 0;
+}
+.fw-site-navigation > ul .mega-menu ul > li a {
+  padding: 10px 12% !important;
+}
+.fw-site-navigation > ul .mega-menu ul > li ul > li {
+  display: block;
+  text-transform: none;
+  width: 100%;
+  background: transparent;
+  border: none;
+}
+.fw-site-navigation > ul .mega-menu > ul > li > a {
+  color: #fff;
+}
+.fw-site-navigation > ul .mega-menu > ul > li > a:before {
+  display: none;
+}
+.fw-site-navigation > ul .mega-menu > ul > li:hover a {
+  background: none;
+}
+.fw-site-navigation > ul .mega-menu ul > li > ul,
+.fw-site-navigation > ul li:hover > ul {
+  display: block;
+}
+.fw-site-navigation > ul .mega-menu-row {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+.fw-site-navigation > ul .mega-menu-row:first-child {
+  border-top: none;
+}
+.fw-site-navigation > ul .mega-menu-col {
+  display: table-cell;
+  width: 240px;
+}
+.fw-site-navigation > ul .mega-menu-col:first-child {
+  border-left: none;
+}
+.fw-site-navigation > ul .mega-menu-col > a {
+  display: inline-block;
+  width: auto !important;
+}
+.fw-site-navigation > ul .mega-menu-col > a:before {
+  top: 2px;
+}

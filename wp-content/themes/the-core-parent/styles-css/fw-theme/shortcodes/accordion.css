@@ -1,0 +1,48 @@
+/* Accordion */
+/* -------------------------------------------------- */
+
+.fw-accordion .panel-title{
+    position: relative;
+}
+.fw-accordion .panel-title a{
+    display: block;
+}
+.fw-accordion .panel-title a:before{
+    font-family: FontAwesome;
+    content: "\f068";
+    display: inline-block;
+    margin-left: 3px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-weight: normal;
+    text-align: center;
+}
+.fw-accordion .panel-title a.collapsed:before {
+    content: "\f067";
+}
+.fw-accordion .panel-title i,
+.fw-accordion .panel-title img{
+    margin-right: 5px;
+}
+.fw-accordion .panel-title img{
+    position: relative;
+    top: -0.1em;
+}
+.panel-body{
+    padding: 15px 20px;
+}
+
+.panel-body *:last-child{
+    margin-bottom: 0;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-radius: 0;
+    background: #bfbfbf;
+}
+.panel-group .panel{
+    border-radius: 0;
+    border-color: #bfbfbf;
+}

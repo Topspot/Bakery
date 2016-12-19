@@ -1,0 +1,15 @@
+/* Map Style */
+/* -------------------------------------------------- */
+.site .fw-map-canvas .infowindow-title a {
+  text-decoration: underline;
+}
+.site .fw-map-canvas .infowindow-title a:hover {
+  text-decoration: underline;
+}
+
+/* Screen 568px */
+@media(max-width:767px){
+  .single-fw-event .wrap-map.fw-map .fw-map-canvas.map{
+    height: 250px !important;
+  }
+}

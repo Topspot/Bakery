@@ -1,0 +1,49 @@
+// Slider Type 1
+/* Content position */
+.fw-fade-slider {
+  .carousel-indicators {
+    li {
+      border-color: fade(#fff, 50%);
+
+      &.active {
+        background: fade(#fff, 50%);
+        border-color: fade(#fff, 50%);
+      }
+    }
+  }
+  .carousel-control {
+    width: 30px;
+    height: 30px;
+  }
+  .item {
+    .fw-fade-slide-text-wrap {
+      .animated {
+        margin-bottom: @fw-space-between-elements-sm;
+      }
+      .fw-fade-slider-title-after {
+        font-family:  @subtitles-family;
+        font-weight: @subtitles-weight;
+        font-style: @subtitles-style;
+        font-size: @subtitles-size;
+        line-height: @subtitles-line-height;
+        letter-spacing: @subtitles-letter-spacing;
+        color: @subtitles-color;
+      }
+    }
+  }
+  //bottom
+  .fw-slide-slider-button {
+    border-color: @theme-color-5;
+    color: @theme-color-5;
+
+    &:hover {
+      color: @secondary-color;
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/sliders/fade-slider.css";

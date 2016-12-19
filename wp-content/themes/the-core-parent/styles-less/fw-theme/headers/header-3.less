@@ -1,0 +1,39 @@
+/* Header Type 3 */
+.header-3 {
+  .fw-header-main {
+    padding-top: ceil(@fw-header-padding-top*0.87);
+    padding-bottom: ceil(@fw-header-padding-bot*0.87);
+
+    .fw-wrap-logo{
+      padding-bottom: ceil(@fw-header-padding-bot*0.62);
+    }
+  }
+  .primary-navigation{
+    > ul{
+      > li{
+        &:first-child {
+          a{
+            margin-left: @fw-menu-item-margin-left*2;
+          }
+          > ul{
+            left: @fw-menu-item-margin-left*2;
+          }
+        }
+        &:last-child{
+          a{
+            margin-right: @fw-menu-item-margin-left*2;
+          }
+        }
+        > a {
+          margin: 0 @fw-menu-item-margin-left;
+        }
+        > ul{
+          left: @fw-menu-item-margin-left;
+        }
+      }
+    }
+  }
+  .fw-nav-wrap {
+    background-color: @fw-menu-wrap-bg;
+  }
+}

@@ -1,0 +1,17 @@
+/* Widget bbPress Statistics */
+.widget_display_stats dl[role="main"] {
+    margin-bottom: 0;
+}
+.widget_display_stats dl[role="main"] dt,
+.widget_display_stats dl[role="main"] dd {
+    display: block;
+}
+.widget_display_stats dl[role="main"] dt {
+    float: left;
+    margin-right: 7px;
+}
+.widget_display_stats dl[role="main"] dd strong {
+    font-style: italic;
+    position: relative;
+    top: 3px;
+}

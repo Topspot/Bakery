@@ -1,0 +1,107 @@
+// Import Core Mixins
+// --------------------------------------------------
+@import "fw-theme/mixins.less";
+
+// Theme Mixins
+// --------------------------------------------------
+
+// make gradient by one color
+.gradient-vertical(@gradient-color-start: #000; @gradient-color-end: #444; @start-percent: 0%; @end-percent: 100%) {
+  background: @gradient-color-start;
+  background: -webkit-linear-gradient(top, @gradient-color-start @start-percent, @gradient-color-end @end-percent);
+  background: linear-gradient(to bottom, @gradient-color-start @start-percent, @gradient-color-end @end-percent);
+  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",argb(@gradient-color-start),argb(@gradient-color-end)));
+}
+
+// Rating Icon size
+.rating-size(@rating-size: 44px; @rating-font-size: ceil(@rating-size/1.8)){
+  .square(@rating-size);
+  line-height: @rating-size;
+  font-size: @rating-font-size;
+}
+
+// Background Size
+.background-size(@background-size) {
+  -webkit-background-size: @background-size;
+  -moz-background-size: @background-size;
+  -o-background-size: @background-size;
+  -ms-background-size: @background-size;
+  background-size: @background-size;
+}
+
+// rotate icon
+.icon-rotate(@degrees, @rotation) {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=@rotation);
+  -webkit-transform: rotate(@degrees);
+  -moz-transform: rotate(@degrees);
+  -ms-transform: rotate(@degrees);
+  -o-transform: rotate(@degrees);
+  transform: rotate(@degrees);
+}
+
+// flip icon
+.icon-flip(@horiz, @vert, @rotation) {
+  filter: progid:DXImageTransform.Microsoft.gradient.BasicImage(rotation=@rotation, mirror=1);
+  -webkit-transform: scale(@horiz, @vert);
+  -moz-transform: scale(@horiz, @vert);
+  -ms-transform: scale(@horiz, @vert);
+  -o-transform: scale(@horiz, @vert);
+  transform: scale(@horiz, @vert);
+}
+
+// User select
+// For selecting text on the page
+.user-select(@select) {
+  -webkit-user-select: @select;
+  -moz-user-select: @select;
+  -ms-user-select: @select; // IE10+
+  user-select: @select;
+}
+
+// Drop shadows
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+  box-shadow: @shadow;
+}
+
+// Transitions
+.transition(@transition) {
+  -webkit-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+}
+
+/// Accordion & Toggle Panels
+.panel-variant(@border; @heading-text-color; @heading-bg-color; @heading-border; @heading-hover: darken(@heading-bg-color,20)) {
+  border-color: @border;
+
+  & > .panel-heading {
+    color: @heading-text-color;
+    background-color: @heading-bg-color;
+    border-color: @heading-border;
+
+    + .panel-collapse > .panel-body {
+      border-top-color: @border;
+    }
+    a:hover,
+    a:focus,
+    a:active  {
+      color: @heading-hover;
+    }
+  }
+}
+
+// Horizontal dividers
+.nav-divider(@color: #e5e5e5) {
+  height: 1px;
+  margin: ((@line-height-computed / 2) - 1) 0;
+  overflow: hidden;
+  background-color: @color;
+}
+
+.translateY(@y) {
+  -webkit-transform: translateY(@y);
+  -ms-transform: translateY(@y); // IE9 only
+  -o-transform: translateY(@y);
+  transform: translateY(@y);
+}

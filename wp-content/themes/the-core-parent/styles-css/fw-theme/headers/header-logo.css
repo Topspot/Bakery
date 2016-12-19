@@ -1,0 +1,19 @@
+/* Header Logo */
+.fw-wrap-logo {
+  z-index: 100;
+}
+.fw-wrap-logo .fw-site-logo {
+  display: block;
+  text-align: center;
+}
+.fw-wrap-logo .fw-site-logo strong {
+  display: block;
+}
+.fw-wrap-logo .fw-site-logo span {
+  display: block;
+  margin-top: 6px;
+}
+/* Logo Retina & No-Retina */
+.fw-logo-retina .fw-site-logo {
+  line-height: normal;
+}

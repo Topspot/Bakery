@@ -1,0 +1,28 @@
+/* Widget bbPress Recent Replies */
+.widget_display_replies {
+  li {
+    font-size: @fw-widget-inner-title-font-size;
+    line-height: @fw-widget-inner-title-line-height;
+
+    .bbp-reply-topic-title {
+      font-family: @fw-widget-inner-title-font-family;
+      font-weight: @fw-widget-inner-title-font-weight;
+      font-style: @fw-widget-inner-title-font-style;
+      letter-spacing: @fw-widget-inner-title-letter-spacing;
+      color: @fw-widget-inner-title-color;
+
+      &:hover{
+        color: @fw-widget-inner-title-hover-color;
+      }
+    }
+    div:last-child {
+      // style for widget display replies date find in file widget.less
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../../styles-css/fw-theme/bbpress/bbpress-widget/bbpress-widget-recent-replies.css";

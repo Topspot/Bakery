@@ -1,0 +1,95 @@
+/* Woocommerce Products List */
+/* -------------------------------------------------- */
+.woocommerce-page ul.products li.product {
+  padding-bottom: 25px;
+}
+.woocommerce-page ul.products li.product a:hover img {
+  opacity: 0.8;
+}
+.woocommerce ul.products li.product .price {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+.woocommerce-page ul.products li.product .price del {
+  float: right;
+  opacity: 1;
+}
+.woocommerce-page ul.products li.product .price ins {
+  text-decoration: none;
+}
+/* Woocommerce Link Added to Cart, Cart List, Product List Widget  */
+.woocommerce-page ul.products li.product a.added_to_cart {
+  margin-top: 0;
+  line-height: normal;
+  padding: 0;
+  float: none;
+  position: absolute;
+  left: 0;
+  bottom: 1%;
+}
+/* Product loading & ok added to cart icon */
+.woocommerce-page ul.products li.product a.button.add_to_cart_button.loading:after {
+  position: static;
+  margin-left: .53em;
+}
+/* Ordering */
+.woocommerce-page .woocommerce-ordering,
+.woocommerce-page .woocommerce-result-count {
+  margin: 0 0 1em;
+  color: #bfbfbf;
+}
+.woocommerce-page .woocommerce-ordering .selectize-input {
+  padding: 8px 45px 8px 18px;
+}
+.woocommerce-page .woocommerce-ordering .selectize-input input[type="text"] {
+  width: 0 !important;
+}
+.woocommerce .product {
+  /* Product Rating */
+
+}
+.woocommerce .product span.onsale {
+  padding: 0 .202em !important;
+  z-index: 10 !important;
+}
+.woocommerce .product .star-rating {
+  display: block;
+  margin: 0 0 .5em;
+  float: none;
+}
+.woocommerce .product .star-rating:before {
+  content: "\73\73\73\73\73";
+  color: #d3ced2;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.woocommerce .product .star-rating span {
+  overflow: hidden;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding-top: 1.5em;
+}
+.woocommerce .product .star-rating span:before {
+  content: "\53\53\53\53\53";
+  top: 0;
+  position: absolute;
+  left: 0;
+}
+/* Screen 568px */
+@media(max-width:767px) {
+  .woocommerce ul.products li.product,
+  .woocommerce-page ul.products li.product {
+    width: 48% !important;
+  }
+}
+/* Screen 320px */
+@media(max-width:479px){
+  .woocommerce ul.products li.product,
+  .woocommerce-page ul.products li.product {
+    width: 100% !important;
+  }
+}

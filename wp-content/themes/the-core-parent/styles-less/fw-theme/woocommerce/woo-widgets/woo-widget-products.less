@@ -1,0 +1,29 @@
+/* Woocommerce Widget Product & Widget Recently Viewed-Reviews Product (in sidebar) */
+/* -------------------------------------------------- */
+.widget.widget_recently_viewed_products,
+.widget_products,
+.widget_recent_reviews{
+  ul.product_list_widget{
+	li{
+	  a{
+		font-family: @fw-widget-inner-title-font-family;
+		font-size: @fw-widget-inner-title-font-size;
+		font-weight: @fw-widget-inner-title-font-weight;
+		font-style: @fw-widget-inner-title-font-style;
+		line-height: @fw-widget-inner-title-line-height;
+		letter-spacing: @fw-widget-inner-title-letter-spacing;
+		color: @fw-widget-inner-title-color;
+
+		&:hover{
+		  color: @fw-widget-inner-title-hover-color;
+		}
+	  }
+	}
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../../styles-css/fw-theme/woocommerce/woo-widgets/woo-widget-products.css";

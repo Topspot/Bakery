@@ -1,0 +1,73 @@
+/* Woocommerce Checkout */
+/* -------------------------------------------------- */
+
+.woocommerce-checkout{
+  .select2-container,
+  .select2-drop{
+    font-family: @fw-buttons-font-family;
+    font-weight: @fw-buttons-font-weight;
+    font-style: @fw-buttons-font-style;
+  }
+}
+.woocommerce-checkout-review-order{
+  table.shop_table{
+    tfoot{
+      color: @secondary-color;
+
+      tr{
+        &.order-total{
+          .amount{
+            background-color: @accent-color;
+          }
+        }
+      }
+    }
+  }
+}
+.checkout_coupon{
+  background-color: fade(@text-color, 10%);
+  padding: 30px !important;
+  border-radius: 0 !important;
+
+  p{
+    margin-bottom: 0 !important;
+  }
+}
+.woocommerce-page{
+  form.woocommerce-checkout,
+  .woocommerce form{
+    background-color: fade(#a8a8a8, 20%);
+    padding: 30px;
+
+    fieldset{
+      margin-top: 30px;
+
+      legend{
+        color: @text-color;
+        font-family: @form-label-font-family;
+        font-style: italic;
+        font-weight: @form-label-font-weight;
+        letter-spacing: @form-label-letter-spacing;
+        border-bottom-color: @text-color;
+      }
+    }
+    .selectize-input{
+      border: 1px solid fade(#000, 13%);
+    }
+  }
+  .select2-container{
+    display: none !important;
+  }
+}
+.woocommerce form .form-row label{
+  line-height: @form-label-line-height;
+}
+.woocommerce label{
+  font-weight: @form-label-font-weight;
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/woocommerce/woo-checkout.css";

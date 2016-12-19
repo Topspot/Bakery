@@ -1,0 +1,40 @@
+/* Give */
+/* -------------------------------------------------- */
+
+.give-progress-bar {
+    background-color: rgba(204, 204, 204, 0.4);
+    height: 8px;
+}
+.give-goal-progress .income {
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+}
+form[id*=give-form] #give-final-total-wrap .give-final-total-amount {
+    background-color: #fff;
+}
+form.give-form legend,
+form[id*=give-form] legend,
+[id*=give-form] .give-form-title,
+form.give-form .give-form-title{
+    color: #1f1f1f;
+}
+form.give-form #give_checkout_login_register #give_register_account_fields,
+form[id*=give-form] #give_checkout_login_register #give_register_account_fields {
+    margin-top: 10px;
+}
+form.give-form #give_checkout_login_register #give_register_account_fields .sub-text,
+form[id*=give-form] #give_checkout_login_register #give_register_account_fields .sub-text {
+    font-size: 15px;
+}
+form.give-form #give_checkout_login_register #give_register_account_fields label[for="password"],
+form[id*=give-form] #give_checkout_login_register #give_register_account_fields label[for="password"],
+form.give-form #give_checkout_login_register #give_register_account_fields label[for="password_again"],
+form[id*=give-form] #give_checkout_login_register #give_register_account_fields label[for="password_again"] {
+    display: none;
+}
+form.give-form #give_checkout_login_register #give_register_account_fields > legend,
+form[id*=give-form] #give_checkout_login_register #give_register_account_fields > legend {
+    padding-bottom: 0;
+}

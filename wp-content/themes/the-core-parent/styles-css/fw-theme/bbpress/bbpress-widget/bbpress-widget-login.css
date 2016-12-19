@@ -1,0 +1,30 @@
+/* Widget bbPress LogIn */
+
+/*-> Log In */
+.bbp_widget_login .bbp-login-form .bbp-submit-wrapper {
+    clear: both;
+    margin-bottom: 0;
+    width: 100%;
+    margin-top: 0;
+    float: none;
+    text-align: left;
+}
+
+/*-> Log Out */
+.bbp_widget_login,
+.bbp_widget_login .bbp-logged-in {
+    overflow: hidden;
+}
+.bbp_widget_login .bbp-logged-in h4 {
+    display: inline-block;
+    margin: 0;
+}
+
+.bbp_widget_login .bbp-logged-in h4 a {
+    display: block;
+}
+
+.bbp_widget_login .bbp-logged-in .button.logout-link{
+    float: right;
+    margin-top: 3px;
+}

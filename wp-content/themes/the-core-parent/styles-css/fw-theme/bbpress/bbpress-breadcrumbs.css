@@ -1,0 +1,9 @@
+/* bbPress Breadcrumbs Style */
+div.bbp-breadcrumb,
+div.bbp-topic-tags {
+    font-size: 14px;
+}
+div.bbp-breadcrumb .bbp-breadcrumb-sep {
+    font-size: 18px;
+    line-height: normal;
+}

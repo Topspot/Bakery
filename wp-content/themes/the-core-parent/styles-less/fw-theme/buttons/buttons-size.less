@@ -1,0 +1,11 @@
+/* Buttons Size */
+
+.fw-btn-lg {
+  .button-size(@padding-large-vertical; @padding-large-horizontal; ceil(@fw-buttons-font-size*1.15); ceil(@fw-buttons-line-height*1.15));
+}
+.fw-btn-md {
+  .button-size(@padding-base-vertical; @padding-base-horizontal; @fw-buttons-font-size; @fw-buttons-line-height); // default button size
+}
+.fw-btn-sm {
+  .button-size(@padding-small-vertical; @padding-small-horizontal; ceil(@fw-buttons-font-size*0.85); ceil(@fw-buttons-line-height*0.85));
+}

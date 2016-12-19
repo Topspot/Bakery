@@ -1,0 +1,29 @@
+/* buddyPress Profile */
+#buddypress {
+  table.forum,
+  table.messages-notices,
+  table.notifications,
+  table.notifications-settings,
+  table.profile-fields,
+  table.wp-profile-fields {
+    tr td {
+      &.label {
+        color: @text-color;
+        font-size: floor(@font-size-base*0.85);
+      }
+    }
+  }
+  #profile-edit-form {
+    .datebox .selectize-control .selectize-input,
+    .field_selectbox .selectize-control .selectize-input,
+    .field_multiselectbox .selectize-control .selectize-input {
+      background-color: fade(@fw-widget-input-bg, 7%);
+    }
+  }
+}
+
+//-------------------------------------//
+//     Include bbPres Style css        //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/buddypress/buddypress-profile.css";

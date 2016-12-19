@@ -1,0 +1,66 @@
+/* copyright and social area */
+.fw-footer-bar {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.fw-copyright {
+  position: relative;
+}
+.fw-copyright a {
+  text-decoration: underline;
+}
+.fw-copyright a:hover {
+  text-decoration: none;
+}
+.fw-copyright-left .fw-copyright {
+  float: left;
+}
+.fw-copyright-left .fw-footer-social {
+  float: right;
+}
+.fw-copyright-right .fw-copyright {
+  float: right;
+}
+.fw-copyright-right .fw-footer-social {
+  float: left;
+}
+.fw-copyright-center {
+  text-align: center;
+}
+.fw-copyright-center .fw-copyright,
+.fw-copyright-center .fw-footer-social{
+  top: inherit;
+}
+.fw-footer-social {
+  position: relative;
+}
+.fw-footer-social a {
+  display: inline-block;
+  margin: 0 2px;
+}
+
+/*----> Responsive <---- */
+/* Screen 568px */
+@media(max-width:767px){
+  .fw-copyright-left .fw-copyright,
+  .fw-copyright-left .fw-footer-social,
+  .fw-copyright-right .fw-copyright,
+  .fw-copyright-right .fw-footer-social{
+    float: none;
+    text-align: center;
+  }
+  .fw-footer-social{
+    top: auto !important;
+    margin-bottom: 10px;
+  }
+  .fw-footer-social a{
+    margin: 0 5px;
+  }
+}
+/* Screen 320px */
+@media(max-width:479px){
+  .fw-footer-social{
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,154 @@
+/*Events*/
+.cal-month-day {
+  background: fade(@secondary-color, 5);
+  .transition(background 0.3s);
+
+  span[data-cal-date]{
+    font-size: @font-size-base*0.9;
+    color: @text-color;
+  }
+  &:hover{
+    background: @accent-color;
+  }
+  .text-today{
+    font-size: @font-size-base - 3;
+  }
+}
+.cal-day-today span[data-cal-date]{
+  color: @theme-color-1;
+}
+.cal-month-box .cal-day-today span[data-cal-date]{
+  font-size: @font-size-base*0.9;
+}
+
+.cal-day-outmonth {
+  &:hover{
+    background: lighten(@accent-color,10);
+  }
+}
+.event-day {
+  background-color: @secondary-color;
+}
+.cal-month-day.cal-day-outmonth.event-day {
+  background-color: @secondary-color;
+
+  &:hover {
+    background: @accent-color;
+  }
+}
+.cal-day-today {
+  background-color: @accent-color;
+}
+.cal-week-box .cal-row-fluid.cal-row-head .cal-cell1.cal-day-today:hover{
+  background: @accent-color;
+}
+// content of events
+#cal-slide-content{
+  font-family: @font-family-base;
+  font-weight: @font-weight-base;
+  font-style: @font-style-base;
+
+  a.event-item{
+    color: @secondary-color;
+
+    &:hover {
+      color: @accent-color;
+    }
+  }
+}
+/* Calendar Navigation */
+.calendar-navigation {
+  line-height: @font-size-base;
+
+  .prev,
+  .next{
+    font-size: @fw-h4-font-size;
+    line-height: @fw-h4-font-size;
+    color: @secondary-color;
+
+    &:hover {
+      color: @accent-color;
+    }
+  }
+}
+.details-event-button{
+  margin-top: 20px;
+
+  button {
+    color: #fff !important;
+
+    &:hover{
+      color: #fff !important;
+    }
+  }
+}
+.list-events {
+  color: fade(#fff,70);
+}
+
+/* Responsive Events Calendar */
+@media(max-width: 767px){
+  .calendar-navigation {
+    .next,
+    .prev {
+      line-height: @fw-h6-font-size;
+    }
+  }
+}
+
+#cal-day-box {
+  .cal-day-hour {
+    .events-col {
+      .dh-event-inverse {
+        background: fade(@secondary-color, 5);
+      }
+    }
+  }
+  .day-highlight,
+  .day-highlight:hover{
+    background: fade(@secondary-color, 5);
+  }
+}
+.cal-week-box {
+  .cal-row-head {
+    background: fade(@secondary-color, 5) !important;
+
+    &:hover{
+      background: fade(@secondary-color, 5) !important;
+    }
+  }
+}
+a.cal-event-week {
+  color: @secondary-color;
+
+  &:hover{
+    color: @accent-color;
+  }
+}
+/* Event Single */
+.single-fw-event {
+  .wrap-map{
+    margin-bottom: @fw-space-between-elements-sm/2;
+  }
+  .fw-event-offers{
+    text-align: right;
+    margin-bottom: @line-height-base;
+
+    .fw-event-price{
+      margin-right: 10px;
+    }
+    a.fw-btn{
+      color: #fff !important;
+
+      &:hover{
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/shortcodes/events-calendar.css";

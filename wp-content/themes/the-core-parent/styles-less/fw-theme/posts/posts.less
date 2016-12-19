@@ -1,0 +1,77 @@
+/* Posts */
+/* -------------------------------------------------- */
+
+.sticky {}  // post sticky
+
+//-------------------------------------//
+//       Other Style for Posts         //
+//         Inlude Style css            //
+//-------------------------------------//
+
+@import "posts-type-1.less";
+@import "posts-type-2.less";
+@import "posts-format.less";
+@import "posts-details.less";
+@import "posts-comments.less";
+@import "posts-comments-link.less";
+@import "posts-related-article.less";
+
+@import (inline) "../../../styles-css/fw-theme/posts/posts.css";
+
+.postlist {
+  // Postlist - Grid view
+  &.postlist-grid {
+    footer {
+      .footer-meta {
+        a {
+          color: @secondary-color;
+        }
+      }
+      .cat-links {
+        font-size: floor(@font-size-base * 0.9);
+        color: @secondary-color;
+      }
+    }
+  }
+  // Sticky Icon
+  .sticky-icon{
+    &:before{
+      color: @accent-color;
+      text-shadow: 0 1px 1px fade(#0f1f25, 70%);
+    }
+  }
+  // Style for Read More Posts Buttons
+  .fw-btn-post-read-more-blog{
+    color: #fff !important;
+
+    &:hover{
+      color: #fff !important;
+    }
+  }
+}
+
+// Grid View for different columns
+@media (min-width: 768px) {
+  .fw-col-sm-4 .postlist,
+  .fw-col-sm-3 .postlist {
+    .has-post-thumbnail {
+      &.post-list-type-1,
+      &.post-list-type-2 {
+        .fw-post-image {
+          margin-bottom: @fw-space-between-elements-sm;
+        }
+      }
+    }
+  }
+}
+
+/*Responsive*/
+
+/* Screen 320px */
+@media(max-width:479px){
+  .postlist .post .fw-post-image.fw-block-image-left,
+  .postlist .post .fw-post-image.fw-block-image-right,
+  .postlist .post .fw-post-image {
+    margin-bottom: ceil(@fw-space-between-elements-sm*0.55);
+  }
+}

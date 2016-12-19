@@ -1,0 +1,68 @@
+/* Woocommerce Products List */
+/* -------------------------------------------------- */
+
+.woocommerce {
+  ul.products {
+    li.product {
+      h3 {
+        font-size: ceil(@fw-h3-font-size*0.7);
+      }
+      a:hover {
+        h3{
+          color: @accent-color;
+        }
+      }
+      .price {
+        color: @accent-color;
+
+        del {
+          color: @theme-color-3
+        }
+      }
+      /* Woocommerce Link Added to Cart, Cart List, Product List Widget  */
+      a.added_to_cart {
+        font-size: ceil((@font-size-base * 0.85));
+      }
+    }
+  }
+  .woocommerce-tabs .panel.entry-content h2,
+  .related.products h2,
+  #reviews h2,
+  .comment-respond h3.comment-reply-title{
+    font-family: @fw-h3-font-family;
+    font-size: @fw-h3-font-size !important;
+    font-style: @fw-h3-font-style;
+    line-height: @fw-h3-line-height;
+    font-weight: @fw-h3-font-weight;
+    letter-spacing: @fw-h3-letter-spacing;
+    color: @fw-h3-color !important;
+  }
+  /* Ordering */
+  .woocommerce-ordering,
+  .woocommerce-result-count {
+    line-height: @input-height-base;
+  }
+  .woocommerce-ordering{
+    .selectize-input{
+      &.focus{
+        border-color: @theme-color-3;
+        .box-shadow(0 1px 1px fade(#000, 20));
+      }
+    }
+  }
+}
+.woocommerce .product{
+  span.onsale {
+    background-color: @theme-color-3 !important;
+  }
+  /* Product Rating */
+  .star-rating {
+    color: @theme-color-5;
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/woocommerce/woo-product.css";

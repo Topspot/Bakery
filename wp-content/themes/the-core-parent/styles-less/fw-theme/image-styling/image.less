@@ -1,0 +1,105 @@
+/* Image Block */
+/* -------------------------------------------------- */
+.fw-block-image-parent {
+  position: relative;
+  display: block;
+
+  .fw-block-image-child{
+    display: block;
+  }
+  &.fw-block-image-circle{
+    border-radius: 50%;
+
+    &:before{
+      border-radius: 50%;
+    }
+    .fw-block-image-child {
+      border-radius: 50%;
+      z-index: 1;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+    .fw-block-image-overlay{
+      border-radius: 50%;
+    }
+  }
+  &.fw-block-image-overlay {
+    .fw-noratio {
+      img {
+        display: block;
+      }
+    }
+  }
+  /* Image Position */
+  &.fw-block-image-left{
+    width: 250px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  &.fw-block-image-right{
+    width: 250px;
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 0;
+  }
+  &.fw-block-image-center{
+    margin: 0 auto;
+  }
+
+  /* Image Block Caption */
+  .fw-block-image-caption {
+    background-color: fade(@accent-color, 90);
+    position: absolute;
+    bottom: 10%;
+    left: -@fw-space-between-elements-sm;
+    z-index: 2;
+    font-size: @font-size-base;
+    line-height: 1.2em;
+    padding: 3%;
+    width: 400px;
+    max-width: 100%;
+    color: #fff;
+    font-style: italic;
+  }
+}
+
+/* Image Frame */
+.fw-block-image-frame {
+    border: @fw-block-image-frame-size solid @fw-block-image-frame-color;
+}
+/* Video Frame */
+.fw-video{
+  max-width: 100%;
+}
+.fw-video-frame iframe {
+  border: @fw-block-image-frame-size solid @fw-block-image-frame-color;
+}
+
+// Image Overlay Type
+@import "image-overlay.less";
+
+/* Responsive */
+
+/* Screen 1024px */
+@media(max-width:1199px){
+  .fw-block-image-parent .fw-block-image-caption {
+    left: ceil(-(@fw-space-between-elements-sm*0.88));
+  }
+}
+
+/* Screen 768px */
+@media(max-width:991px){
+  .fw-block-image-parent .fw-block-image-caption {
+    left: ceil(-(@fw-space-between-elements-sm*0.43));
+  }
+}
+
+/* Screen 568px */
+@media(max-width:767px){
+  .fw-block-image-parent .fw-block-image-caption {
+    left: ceil(-(@fw-space-between-elements-sm*0.33));
+  }
+}

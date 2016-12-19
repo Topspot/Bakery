@@ -1,0 +1,105 @@
+/* Posts Listing & Type 1 */
+.post {
+	position: relative;
+}
+.post:first-child {
+	border-top: none;
+	padding-top: 0;
+	margin-top: 0;
+}
+.post .wrap-entry-meta .entry-date a,
+.post .wrap-entry-meta .author a,
+.post .wrap-entry-meta .cat-links a {
+	font-style: italic;
+}
+.post .entry-title {
+	display: block;
+}
+.post .entry-title strong,
+.post .entry-title span {
+	font-style: normal;
+}
+.separator {
+	color: #b6b8b9;
+}
+.postlist .post header .entry-meta {
+	margin: 0 0 5px 0;
+	font-weight: 600;
+}
+.postlist .post header .entry-meta a {
+	font-style: italic;
+}
+.postlist .post .fw-post-image.fw-block-image-left,
+.postlist .post .fw-post-image.fw-block-image-right {
+	margin-bottom: 0;
+}
+.postlist .post .entry-title {
+	margin: 0 0 10px 0;
+}
+.postlist .post .entry-title strong,
+.postlist .post .entry-title span {
+	font-style: normal;
+}
+.postlist .post .entry-content {
+	padding: 0;
+}
+.postlist .post .entry-content iframe,
+.postlist .post .entry-content embed,
+.postlist .post .entry-content img {
+	max-width: 100% !important;
+}
+.postlist .post footer.entry-meta {
+	margin: 20px 0 0;
+}
+.postlist .post footer.entry-meta .comments-link {
+	float: right;
+}
+.postlist.postlist-list .post {
+	border-bottom: 1px solid #dee0e1;
+}
+.postlist.postlist-list .post:last-child {
+	border-bottom: none;
+}
+.postlist.postlist-list .comments-link {
+	float: right;
+}
+.postlist.postlist-grid .post-list-type-1 {
+	margin-bottom: 90px;
+}
+.postlist.postlist-grid .post-list-type-1 .fw-post-image {
+	float: none;
+}
+
+/*--- Responsive ---*/
+/* Screen 768px */
+@media(max-width:991px) {
+	.postlist.postlist-grid .post-list-type-1 {
+		margin-bottom: 45px !important;
+	}
+}
+
+/* Screen 568px */
+@media(max-width:767px) {
+	.postlist.postlist-grid .post-list-type-1 {
+		margin-bottom: 20px !important;
+	}
+	.post {
+		padding-top: 25px !important;
+		margin-bottom: 25px !important;
+	}
+	.fw-shortcode-latest-posts.postlist-grid .post {
+		margin-bottom: 0 !important;
+		padding-top: 0 !important;
+    }
+}
+/* Screen 320px */
+@media(max-width:479px){
+	.postlist .post .fw-post-image.fw-block-image-left,
+	.postlist .post .fw-post-image.fw-block-image-right,
+	.postlist .post .fw-post-image{
+		width: 100%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

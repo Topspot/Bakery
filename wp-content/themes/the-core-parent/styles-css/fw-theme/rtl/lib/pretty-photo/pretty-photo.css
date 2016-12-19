@@ -1,0 +1,11 @@
+/* RTl */
+/* -------------------------------------------------- */
+.rtl .pp_pic_holder.dark_square a.pp_close {
+  right: initial;
+  left: 30px;
+}
+.rtl .pp_pic_holder.dark_square a.pp_expand,
+.rtl .pp_pic_holder.dark_square a.pp_contract {
+  right: initial;
+  left: 110px;
+}

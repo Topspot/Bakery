@@ -1,0 +1,101 @@
+// Framework grid generation
+//
+// Used only by Bootstrap to generate the correct number of grid classes given
+// any value of `@grid-columns`.
+
+.make-grid-columns() {
+  // Common styles for all sizes of grid columns, widths 1-12
+  .fw-col(@index) when (@index = 1) { // initial
+    @item: ~".fw-col-xs-@{index}, .fw-col-sm-@{index}, .fw-col-md-@{index}, .fw-col-lg-@{index}";
+    .fw-col((@index + 1), @item);
+  }
+  .fw-col(@index, @list) when (@index =< @grid-columns) { // general; "=<" isn't a typo
+    @item: ~".fw-col-xs-@{index}, .fw-col-sm-@{index}, .fw-col-md-@{index}, .fw-col-lg-@{index}";
+    .fw-col((@index + 1), ~"@{list}, @{item}");
+  }
+  .fw-col(@index, @list) when (@index > @grid-columns) { // terminal
+    @{list},
+    .fw-col-md-1-5,
+    .fw-col-sm-1-5 {
+      position: relative;
+      // Prevent columns from collapsing when empty
+      min-height: 1px;
+      // Inner gutter via padding
+      padding-left:  (@grid-gutter-width / 2);
+      padding-right: (@grid-gutter-width / 2);
+    }
+  }
+  .fw-col(1); // kickstart it
+}
+
+.float-grid-columns(@class) {
+  .fw-col(@index) when (@index = 1) { // initial
+    @item: ~".fw-col-@{class}-@{index}";
+    .fw-col((@index + 1), @item);
+  }
+  .fw-col(@index, @list) when (@index =< @grid-columns) { // general
+    @item: ~".fw-col-@{class}-@{index}";
+    .fw-col((@index + 1), ~"@{list}, @{item}");
+  }
+  .fw-col(@index, @list) when (@index > @grid-columns) { // terminal
+    @{list},
+    .fw-col-md-1-5,
+    .fw-col-sm-1-5 {
+      float: left;
+    }
+  }
+  .fw-col(1); // kickstart it
+}
+
+.calc-grid-column(@index, @class, @type) when (@type = width) and (@index > 0) {
+  .fw-col-@{class}-@{index} {
+    width: percentage((@index / @grid-columns));
+  }
+}
+.calc-grid-column(@index, @class, @type) when (@type = push) and (@index > 0) {
+  .fw-col-@{class}-push-@{index} {
+    left: percentage((@index / @grid-columns));
+  }
+}
+.calc-grid-column(@index, @class, @type) when (@type = push) and (@index = 0) {
+  .fw-col-@{class}-push-0 {
+    left: auto;
+  }
+}
+.calc-grid-column(@index, @class, @type) when (@type = pull) and (@index > 0) {
+  .fw-col-@{class}-pull-@{index} {
+    right: percentage((@index / @grid-columns));
+  }
+}
+.calc-grid-column(@index, @class, @type) when (@type = pull) and (@index = 0) {
+  .fw-col-@{class}-pull-0 {
+    right: auto;
+  }
+}
+.calc-grid-column(@index, @class, @type) when (@type = offset) {
+  .fw-col-@{class}-offset-@{index} {
+    margin-left: percentage((@index / @grid-columns));
+  }
+}
+
+// Basic looping in LESS
+.loop-grid-columns(@index, @class, @type) when (@index >= 0) {
+  .calc-grid-column(@index, @class, @type);
+  // next iteration
+  .loop-grid-columns((@index - 1), @class, @type);
+}
+
+// Create grid for specific class
+.make-grid(@class) {
+  .float-grid-columns(@class);
+  .loop-grid-columns(@grid-columns, @class, width);
+  .loop-grid-columns(@grid-columns, @class, pull);
+  .loop-grid-columns(@grid-columns, @class, push);
+  .loop-grid-columns(@grid-columns, @class, offset);
+}
+
+@media (min-width: 992px){
+  .fw-col-md-1-5{
+    width: 20%;
+  }
+}

@@ -1,0 +1,39 @@
+/* Woocommerce Widget Layered Nav */
+/* -------------------------------------------------- */
+.woocommerce{
+  /* Layered Nav Filters */
+  &.widget_layered_nav_filters{
+    ul{
+      li{
+        margin-right: (@fw-content-density-lg *1px);
+
+        a{
+          font-family: @fw-widget-inner-title-font-family;
+          font-size: @fw-widget-inner-title-font-size;
+          font-weight: @fw-widget-inner-title-font-weight;
+          font-style: @fw-widget-inner-title-font-style;
+          line-height: @fw-widget-inner-title-line-height;
+          letter-spacing: @fw-widget-inner-title-letter-spacing;
+          color: @fw-widget-inner-title-color;
+
+          &:before{
+            color: @fw-widget-inner-title-color;
+          }
+          &:hover{
+            color: @fw-widget-inner-title-hover-color;
+
+            &:before{
+              color: @fw-widget-inner-title-hover-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../../styles-css/fw-theme/woocommerce/woo-widgets/woo-widget-layered-nav.css";

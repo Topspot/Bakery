@@ -1,0 +1,21 @@
+/* Quote */
+/* -------------------------------------------------- */
+.fw-quote {
+  color: @text-color;
+
+  small.fw-quote-author {
+    font-family: @subtitles-family;
+    font-weight: @subtitles-weight;
+    font-style: @subtitles-style;
+    font-size: floor(@font-size-base * 1.06);
+    line-height: @subtitles-line-height;
+    letter-spacing: @subtitles-letter-spacing;
+    color: @subtitles-color;
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/shortcodes/quote.css";

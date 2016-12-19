@@ -1,0 +1,34 @@
+/* buddyPress Registered Form & Create Group Form */
+
+#buddypress .standard-form#signup_form input[type=text],
+#buddypress .standard-form#signup_form input[type=email],
+#buddypress .standard-form#signup_form input[type=password],
+#buddypress .standard-form#signup_form textarea {
+    width: 100%;
+}
+#buddypress #create-group-form.standard-form .bp-avatar-nav {
+    margin-top: 90px;
+}
+.group-members.members #buddypress #item-body div.item-list-tabs {
+    margin-top: 30px;
+}
+#buddypress ul.acfb-holder li.friend-tab {
+    margin-right: 50%;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-radius: 0;
+    float: none;
+}
+#buddypress li.friend-tab img.avatar {
+    margin-right: 10px;
+}
+#buddypress ul.item-list li div.item-desc {
+    width: 65%;
+    font-size: 85%;
+    margin-top: 0;
+}
+#buddypress ul.item-list li div.item-desc p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

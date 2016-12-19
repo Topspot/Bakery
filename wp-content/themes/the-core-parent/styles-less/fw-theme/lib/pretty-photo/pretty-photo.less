@@ -1,0 +1,43 @@
+/* Lightbox CSS */
+.pp_pic_holder.dark_square{
+
+  .pp_nav{
+    font-family: @font-family-2;
+    line-height: @font-size-base + 4;
+
+    .pp_text_devider{
+      color: fade(#fff, 50%);
+    }
+    .pp_arrow_next,
+    .pp_arrow_previous{
+      font-size: @font-size-base*0.7;
+      color: fade(#fff, 50%);
+
+      &:hover{
+        color: fade(#fff, 80%);
+      }
+    }
+    a.pp_arrow_previous,
+    a.pp_arrow_next{
+      font-family: @font-family-1;
+    }
+    .currentTextHolder{
+      color: fade(#fff, 50%);
+      font-size: @font-size-base - 1;
+    }
+  }
+  a.pp_close{
+    opacity: 1;
+    color: fade(#fff, 50%);
+
+    &:hover{
+      color: fade(#fff, 80%);
+    }
+  }
+}
+
+//-------------------------------------//
+//       Import style css              //
+//-------------------------------------//
+
+@import (inline) "../../../../styles-css/fw-theme/lib/pretty-photo/pretty-photo.css";

@@ -1,0 +1,11 @@
+/* Breadcrumbs */
+/* -------------------------------------------------- */
+
+.breadcrumbs {
+  position: relative;
+  margin-top: 0;
+}
+.breadcrumbs span.separator {
+  margin: 0 -5px;
+  padding: 0 5px;
+}

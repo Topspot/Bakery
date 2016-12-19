@@ -1,0 +1,27 @@
+/* Team Member */
+/* -------------------------------------------------- */
+.fw-team {
+  .fw-team-name {
+    > span {
+      font-family: @subtitles-family;
+      font-weight: @subtitles-weight;
+      font-style: @subtitles-style;
+      font-size: @subtitles-size;
+      line-height: @subtitles-line-height;
+      letter-spacing: @subtitles-letter-spacing;
+    }
+  }
+  .fw-team-socials {
+    a {
+      &:hover {
+        color: @accent-color;
+      }
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/shortcodes/team-member.css";

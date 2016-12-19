@@ -1,0 +1,45 @@
+/* Portfolio Type 2 */
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (less) "../../../styles-css/fw-theme/portfolio/portfolio-type-2.css";
+
+.fw-portfolio-2 {
+  // 2 columns
+  &.fw-portfolio-cols-2 .fw-portfolio-wrapper {
+    .fw-portfolio-title {
+      font-size: ceil(@font-size-base + 1);
+    }
+  }
+  // 3 columns
+  &.fw-portfolio-cols-3 .fw-portfolio-wrapper {
+    .fw-portfolio-title {
+      font-size: ceil(@font-size-base + 1);
+    }
+  }
+  // 4 columns
+  &.fw-portfolio-cols-4 .fw-portfolio-wrapper {
+    .fw-portfolio-title {
+      font-size: ceil(@font-size-base + 1) * 0.8;
+    }
+  }
+
+  // Style Portfolio Type 2
+  .fw-portfolio-description {
+    background-color: @theme-color-4;
+    padding: @fw-space-between-elements-sm 25px;
+
+    .fw-portfolio-content {
+      font-size: floor(@font-size-base * 0.9);
+      margin-bottom: @fw-space-between-elements-sm/2;
+    }
+  }
+  .fw-portfolio-title {
+    a {
+      &:hover {
+        color: @accent-color;
+      }
+    }
+  }
+}

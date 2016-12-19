@@ -1,0 +1,57 @@
+/* Team Member */
+/* -------------------------------------------------- */
+.fw-team {
+  text-align: center;
+}
+/* Team Member Content Align */
+.fw-team.fw-content-align-left {
+  text-align: left;
+}
+.fw-team.fw-content-align-left .fw-team-image {
+  margin-right: auto;
+}
+.fw-team.fw-content-align-center {
+  text-align: center;
+}
+.fw-team.fw-content-align-center .fw-team-image {
+  margin-left: auto;
+  margin-right: auto;
+}
+.fw-team.fw-content-align-right {
+  text-align: right;
+}
+.fw-team.fw-content-align-right .fw-team-image {
+  margin-left: auto;
+}
+.fw-team .fw-team-name {
+  margin-bottom: 15px;
+}
+.fw-team .fw-team-name h3 {
+  margin: 0 0 5px 0;
+}
+.fw-team .fw-team-name h3 strong {
+  font-style: normal;
+}
+.fw-team .fw-team-name > span {
+  display: block;
+}
+.fw-team .fw-team-image {
+  margin-bottom: 1em;
+}
+.fw-team .fw-team-image .fw-image-link {
+  display: inline-block;
+  max-width: 100%;
+}
+.fw-team .fw-team-socials {
+  margin-top: 15px;
+}
+.fw-team .fw-team-socials a {
+  display: inline-block;
+  margin: 0 2px;
+  font-size: 20px;
+  color: #b7b8ba;
+  opacity: 1;
+}
+.fw-team .fw-team-socials a:hover {
+  opacity: 0.7;
+}

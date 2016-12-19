@@ -1,0 +1,35 @@
+/* Accordion */
+/* -------------------------------------------------- */
+
+.fw-accordion {
+  .panel-title {
+    font-family: @fw-h6-font-family;
+    font-style:  @fw-h6-font-style;
+    font-weight: @fw-h6-font-weight;
+    font-size: @fw-h6-font-size;
+    line-height: @fw-h6-line-height;
+    letter-spacing: @fw-h6-letter-spacing;
+    color: @fw-h6-color;
+
+    a {
+      &:before {
+        font-size: @panel-icon-size*0.83;
+        margin-top: -(@panel-icon-size/2);
+        width: @panel-icon-size;
+        height: @panel-icon-size;
+        line-height: @panel-icon-size + 2;
+      }
+    }
+  }
+}
+.panel-body {
+  * {
+    color: @text-color;
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/shortcodes/accordion.css";

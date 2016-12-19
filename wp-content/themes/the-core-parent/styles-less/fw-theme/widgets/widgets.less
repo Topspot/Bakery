@@ -1,0 +1,166 @@
+/* WP Widgets Layout */
+/* -------------------------------------------------- */
+
+.widget {
+  margin-bottom: @fw-widget-margin-bot;
+  font-size: @fw-widget-font-size;
+  line-height: @fw-widget-line-height;
+
+  p a{
+    font-family: @fw-widget-inner-title-font-family;
+    font-size: @fw-widget-inner-title-font-size;
+    font-weight: @fw-widget-inner-title-font-weight;
+    font-style: @fw-widget-inner-title-font-style;
+    line-height: @fw-widget-inner-title-line-height;
+    letter-spacing: @fw-widget-inner-title-letter-spacing;
+    color: @fw-widget-inner-title-color;
+
+    &:hover{
+      color: @fw-widget-inner-title-hover-color;
+    }
+  }
+  &:last-child{
+   margin-bottom: 0;
+  }
+  .widget-title {
+    margin: 0 0 ceil(@fw-widget-margin-bot*0.30) 0;
+    font-family: @subtitles-family;
+    font-weight: normal;
+    font-style: @subtitles-style;
+    font-size: @fw-widget-title-font-size;
+    line-height: @fw-widget-title-line-height;
+    position: relative;
+    color: @fw-widget-title-color;
+    letter-spacing: 0;
+
+    span {
+      background-color: @body-bg;
+      display: inline-block;
+      padding-right: 10px;
+
+      &:after {
+        border-bottom: 1px solid #dee0e1;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        z-index: -1;
+      }
+    }
+  }
+  // Date for all widget
+  .post-date,
+  .facebook-post-date,
+  .rss-date,
+  .tweet-date,
+  &.widget_display_replies li div:last-child,
+  &.widget_display_topics li div:last-child {
+    display: block;
+    line-height: 1em;
+    font-size: 1em;
+    font-weight: normal;
+    color: @fw-widget-inner-title-hover-color;
+    margin-bottom: 10px;
+  }
+  ul {
+    list-style: none;
+    overflow: hidden;
+    padding-left: 0;
+    margin: 0;
+  }
+  div[class*='fw-btn-'] a{
+    text-align: left;
+    font-style: italic;
+
+    span{
+      &:before {
+        font-family: 'FontAwesome';
+        font-style: normal;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+.fw-side-boxed .widget .widget-title span {
+  background-color: @container-bg;
+}
+.fw-sidebar .widget:first-child,
+.fw-footer .fw-col-md-3 .widget:first-child,
+.fw-footer .fw-col-md-4 .widget:first-child {
+  margin-top: 0;
+}
+
+/* General Widget Responsive */
+
+/* Screen 768px */
+@media(max-width:991px){
+  .widget{
+    margin-bottom: ceil(@fw-space-between-elements-md*0.7);
+
+    .widget-title{
+      margin-bottom: ceil(@fw-space-between-elements-sm*0.55);
+    }
+  }
+}
+
+//-------------------------------------//
+//       Other Style for Widget        //
+//-------------------------------------//
+
+// Widget Archive
+@import "widget-archive.less";
+
+// Widget Select
+@import "widget-select.less";
+
+// Widget Calendar
+@import "widget-calendar.less";
+
+// Widget Categories
+@import "widget-categories.less";
+
+// Widget Recent Comments
+@import "widget-recent-comments.less";
+
+// Widget Recent Entries
+@import "widget-recent-entries.less";
+
+// Widget RSS
+@import "widget-rss.less";
+
+// Widget Search
+@import "widget-search.less";
+
+// Widget TagCloud
+@import "widget-tagcloud.less";
+
+// Widget Text
+@import "widget-text.less";
+
+// Widget Flickr & Instagram
+@import "widget-flickr-instagram.less";
+
+// Widget LogIn
+@import "widget-login.less";
+
+// Widget Posts With Image
+@import "widget-posts-list.less";
+
+// Widget Twitter Feed
+@import "widget-twitter-feed.less";
+
+// Widget Facebook
+@import "widget-facebook.less";
+
+// Widget Lessons
+@import "widget-lessons.less";
+
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+// Widget Language Switcher
+@import (inline) "../../../styles-css/fw-theme/widgets/widget-language.css";
+

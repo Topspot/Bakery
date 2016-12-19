@@ -1,0 +1,137 @@
+/* Posts Comments Link */
+/* -------------------------------------------------- */
+
+// Type 1
+.comments-link {
+  font-family: @fw-buttons-font-family;
+  font-style: @fw-buttons-font-style;
+  background-color: @accent-color;
+  .transition(all 0.3s ease);
+
+  &.fw-comment-link-type-1 {
+    &:before {
+      background-color: @secondary-color;
+      .transition(all 0.3s ease);
+    }
+
+    &:after {
+      border-top: 8px solid @accent-color;
+      .transition(all 0.3s ease);
+    }
+    &:hover {
+      background-color: @secondary-color;
+
+      &:after {
+        border-top-color: @secondary-color;
+      }
+    }
+  }
+  &.fw-comment-link-type-2 {
+    &:before {
+      background-color: @secondary-color;
+      .transition(all 0.3s ease);
+    }
+    &:after {
+      border-top: 4px solid @accent-color;
+      .transition(all 0.3s ease);
+    }
+    &:hover {
+      background-color: @secondary-color;
+
+      &:after {
+        border-top-color: @secondary-color;
+      }
+    }
+  }
+  &.fw-comment-link-type-3 {
+    &:before {
+      background-color: @secondary-color;
+      .transition(all 0.3s ease);
+    }
+    &:after {
+      border-top: 6px solid @accent-color;
+      .transition(all 0.3s ease);
+     }
+    &:hover {
+      background-color: @secondary-color;
+
+      &:after {
+        border-top-color: @secondary-color;
+      }
+    }
+  }
+  &.fw-comment-link-type-4 {
+    background: @accent-color;
+    .transform(rotate(51deg) skewY(-13deg));
+    .transition(background 0.3s ease);
+
+    span {
+      .transform(rotate(-45deg));
+    }
+    &:before {
+      .transform(rotate(-44deg));
+    }
+    &:hover {
+      .transition(background 0.3s ease);
+
+      &:after {
+        background-color: @secondary-color;
+        .transition(background 0.3s ease);
+      }
+    }
+  }
+  &.fw-comment-link-type-5 {
+    .transform(rotate(2deg));
+
+    &::before {
+      .transform(rotate(-25deg));
+      .transition(all 0.3s ease);
+      border-right: 38px solid @accent-color;
+    }
+    &::after {
+      .transform(rotate(240deg));
+      .transition(all 0.3s ease);
+      border-right: 28px solid @accent-color;
+    }
+
+    span {
+      &:before {
+        border-bottom: 10px solid @accent-color;
+        .transition(all .3s ease);
+        .transform(rotate(72deg));
+      }
+      &:after {
+        .transition(all 0.3s ease);
+      }
+    }
+    &:hover {
+      .transition(background 0.3s ease);
+
+      &:after {
+        border-right-color: @secondary-color;
+        .transition(all 0.3s ease);
+      }
+      &:before {
+        border-right-color: @secondary-color;
+        .transition(all 0.3s ease);
+      }
+      span {
+        color: @secondary-color;
+
+        &:after {
+          .transition(all 0.3s ease);
+        }
+        &:before {
+          border-bottom-color: @secondary-color;
+          .transition(all 0.3s ease);
+        }
+      }
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/posts/posts-comments-link.css";

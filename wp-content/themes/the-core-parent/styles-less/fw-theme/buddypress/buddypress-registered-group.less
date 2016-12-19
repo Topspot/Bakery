@@ -1,0 +1,100 @@
+/* buddyPress Registered Form & Create Group Form */
+#buddypress {
+  #create-group-form.standard-form {
+    .submit#previous-next {
+      input[type="button"]#group-creation-previous {
+        // fw-btn
+        font-family: @fw-buttons-font-family;
+        font-weight: @fw-buttons-font-weight;
+        font-style: @fw-buttons-font-style;
+        font-size: @fw-buttons-font-size;
+        line-height: @fw-buttons-line-height;
+        letter-spacing: @fw-buttons-letter-spacing;
+        display: inline-block;
+        margin-bottom: 0;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        text-decoration: none;
+        white-space: nowrap;
+        outline: none;
+        position: relative;
+        .user-select(none);
+        .transition(all 0.3s ease);
+        max-width: 100%;
+
+        span,
+        i{
+          position: relative;
+          top: 1px;
+        }
+        &:hover,
+        &:focus {
+          text-decoration: none;
+          outline: none;
+        }
+        // button icon
+        i,
+        img {
+          margin-right: 13px;
+
+          &.pull-right,
+          &.pull-right-icon{
+            margin-right: 0;
+            margin-left: 13px;
+            position: relative;
+          }
+          &.pull-right{
+            top: 0.3em;
+          }
+        }
+        img{
+          position: relative;
+          top: -0.1em;
+        }
+        i{
+          top: -1px;
+          vertical-align: middle;
+        }
+        /* Button side by side */
+        &.fw-btn-side-by-side{
+          margin-right: 10px;
+
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+        // fw-btn-1
+        background-color: @fw-btn-bg-color;
+        border-color: @fw-btn-border-color;
+        border-width: @fw-btn-border-width;
+        color: @fw-btn-text-color;
+        border-radius: @fw-btn-radius;
+
+        &:focus {
+          background-color: @fw-btn-bg-color;
+          border-color: @fw-btn-border-color;
+          color: @fw-btn-text-color;
+        }
+        &:hover {
+          background-color: @fw-btn-bg-color-hover;
+          color: @fw-btn-text-color-hover;
+          border: none;
+        }
+        &:active {
+          box-shadow: none;
+        }
+        // fw-btn-sm
+        .button-size(@padding-small-vertical; @padding-small-horizontal; ceil(@fw-buttons-font-size*0.85); ceil(@fw-buttons-line-height*0.85));
+      }
+    }
+  }
+}
+
+//-------------------------------------//
+//     Include bbPres Style css        //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/buddypress/buddypress-registered-group.css";

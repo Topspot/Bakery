@@ -1,0 +1,56 @@
+/* Dividers & Space */
+/* -------------------------------------------------- */
+
+// Divider space (empty)
+.fw-divider-space {
+  &.space-sm {
+    height: @fw-divider-space-sm;
+  }
+  &.space-md {
+    height: @fw-divider-space-md;
+  }
+  &.space-lg {
+    height: @fw-divider-space-lg;
+  }
+}
+// Divider only Line
+.fw-divider-line {
+  &.space-sm {
+    margin-bottom: @fw-divider-space-sm/2;
+    padding-top: @fw-divider-space-sm/2;
+  }
+  &.space-md {
+    margin-bottom: @fw-divider-space-md/2;
+    padding-top: @fw-divider-space-md/2;
+  }
+  &.space-lg {
+    margin-bottom: @fw-divider-space-lg/2;
+    padding-top: @fw-divider-space-lg/2;
+  }
+}
+
+/* Divider Special (text or icon) */
+.fw-divider-special {
+  // divider space top & bottom
+  &.space-sm {
+    margin-top: @fw-divider-space-sm/2;
+    margin-bottom: @fw-divider-space-sm/2;
+  }
+  &.space-md {
+    margin-top: @fw-divider-space-md/2;
+    margin-bottom: @fw-divider-space-md/2;
+  }
+  &.space-lg {
+    margin-top: @fw-divider-space-lg/2;
+    margin-bottom: @fw-divider-space-lg/2;
+  }
+  .fw-divider-inner {
+    color: @theme-color-1;
+    font-family: @font-family-2;
+  }
+}
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/shortcodes/dividers.css";

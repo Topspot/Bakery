@@ -1,0 +1,98 @@
+/* Testimonails */
+/* -------------------------------------------------- */
+.fw-testimonials {
+  .transition(all 0.5s ease);
+
+  .fw-testimonials-text {
+    font-size: @font-size-base;
+    font-family: @font-family-base;
+    font-weight: @font-weight-base;
+    color: @text-color;
+  }
+  .prev,
+  .next {
+    color: @text-color;
+  }
+  .fw-testimonials-pagination {
+    a {
+      width: 10px;
+      height: 10px;
+      background-color: @text-color;
+    }
+  }
+}
+
+// Testimonials
+.fw-testimonials-1 {
+  .fw-testimonials-avatar {
+    margin: @fw-space-between-elements-sm/2 0;
+
+    img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+  .fw-testimonials-author {
+    color: @theme-color-5;
+
+    .author-name {
+      font-family: @subtitles-family;
+      font-weight: @subtitles-weight;
+      font-style: @subtitles-style;
+      font-size: @subtitles-size;
+      letter-spacing: @subtitles-letter-spacing;
+    }
+    em,
+    .fw-testimonials-url{
+      font-family: @fw-buttons-font-family;
+    }
+  }
+
+  .prev,
+  .next {
+    &:hover {
+      color: @secondary-color;
+    }
+  }
+}
+
+// style 2
+.fw-testimonials-2 {
+  .fw-testimonials-text {
+    background-color: @theme-color-4;
+
+    &:before {
+      left: (45px - 8);
+    }
+    &:before {
+      border-color: @theme-color-4 transparent transparent transparent;
+    }
+  }
+  .fw-testimonials-avatar {
+    img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+  .fw-testimonials-author {
+    color: @theme-color-5;
+
+    .author-name {
+      font-family: @subtitles-family;
+      font-weight: @subtitles-weight;
+      font-style: @subtitles-style;
+      font-size: @subtitles-size;
+      letter-spacing: @subtitles-letter-spacing;
+    }
+    em,
+    .fw-testimonials-url{
+      font-family: @fw-buttons-font-family;
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/shortcodes/testimonials.css";

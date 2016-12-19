@@ -1,0 +1,111 @@
+/* Footer Menu */
+.fw-footer-menu {
+  text-align: center;
+}
+.fw-footer-menu ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 0;
+  line-height: normal;
+}
+.fw-footer-menu ul li {
+  position: relative;
+  display: inline-block;
+}
+.fw-footer-menu ul li a {
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+.fw-footer-menu ul li a i{
+  margin-right: 10px;
+  position: relative;
+}
+.fw-footer-menu ul li a:after {
+  content: "";
+  left: 50%;
+  position: absolute;
+  width: 0;
+}
+.fw-footer-menu ul li a:hover:after {
+  width: 100%;
+  margin-left: -50%;
+}
+.fw-footer-menu ul li.current-menu-item > a:after,
+.fw-footer-menu ul li.current-menu-ancestor > a:after {
+  width: 100%;
+  margin-left: -50%;
+}
+.fw-footer-menu-right .fw-container,
+.fw-footer-menu-left .fw-container {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.fw-footer-menu-right .fw-footer-menu,
+.fw-footer-menu-left .fw-footer-menu {
+  position: relative;
+}
+.fw-footer-menu-right .fw-footer-menu li,
+.fw-footer-menu-left .fw-footer-menu li {
+  border-top: none;
+}
+.fw-footer-menu-right .fw-footer-menu li a,
+.fw-footer-menu-left .fw-footer-menu li a {
+  padding: 0;
+}
+.fw-footer-menu-right .fw-footer-menu li:last-child a,
+.fw-footer-menu-left .fw-footer-menu li:last-child a {
+  margin-right: 0;
+}
+.fw-footer-menu-right .fw-footer-menu {
+  text-align: right;
+  float: right;
+}
+.fw-footer-menu-right .fw-footer-menu li:last-child a {
+  margin-right: 0;
+}
+.fw-footer-menu-right .fw-footer-logo {
+  float: left;
+}
+.fw-footer-menu-left .fw-footer-menu {
+  text-align: left;
+  float: left;
+}
+.fw-footer-menu-left .fw-footer-menu li:first-child a {
+  margin-left: 0;
+}
+.fw-footer-menu-left .fw-footer-logo {
+  float: right;
+  margin-right: 0;
+  margin-left: 20px;
+}
+/*Responsive*/
+/*Screen 768px*/
+@media (max-width: 991px) {
+  .fw-footer-menu-left .fw-footer-logo,
+  .fw-footer-menu-right .fw-footer-logo {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    float: none;
+  }
+  .fw-footer-menu-left .fw-footer-menu,
+  .fw-footer-menu-right .fw-footer-menu{
+    float: none;
+    text-align: center;
+    top: 0 !important;
+    margin-top: 20px;
+  }
+}
+/* Screen 320px */
+@media(max-width:479px){
+  .fw-footer-menu ul li{
+    width: 100%;
+  }
+  .fw-footer-menu ul li a{
+    float: none;
+    margin: 0 !important;
+  }
+}

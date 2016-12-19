@@ -1,0 +1,57 @@
+/* Widget Categories, Nav Menu, Meta, Pages */
+.widget_categories,
+.widget_nav_menu,
+.widget_meta,
+.widget_pages,
+.woocommerce.widget_product_categories {
+  ul > li {
+    color: @fw-widget-inner-title-hover-color;
+    font-style: italic;
+
+    a {
+      font-family: @fw-widget-inner-title-font-family;
+      font-size: @fw-widget-inner-title-font-size;
+      font-weight: @fw-widget-inner-title-font-weight;
+      font-style: @fw-widget-inner-title-font-style;
+      line-height: @fw-widget-inner-title-line-height;
+      letter-spacing: @fw-widget-inner-title-letter-spacing;
+      color: @fw-widget-inner-title-color;
+
+      &:hover {
+        color: @fw-widget-inner-title-hover-color;
+      }
+    }
+
+    ul.children,
+    ul.sub-menu {
+      margin-bottom: 0.3em;
+
+      li {
+        &:before {
+          content: '\f148';
+          font-family: 'FontAwesome';
+          font-style: normal;
+          display: inline-block;
+          .transform(rotate(90deg));
+          color: @theme-color-3;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+  .screen-reader-text {
+    display: none;
+  }
+}
+
+// Widget Menu
+.widget_nav_menu {
+  .sub-menu-has-icons {
+    .fa {
+      margin-right: 10px;
+    }
+  }
+  .menu-separator {
+    display: none;
+  }
+}

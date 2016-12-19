@@ -1,0 +1,14 @@
+/* widget archive */
+.widget_archive ul li {
+  font-style: italic;
+  font-size: 0.95em;
+}
+@media (min-width: 1200px) {
+  .widget_archive ul li {
+    float: left;
+    width: 50%;
+  }
+}
+.widget_archive .screen-reader-text {
+  display: none;
+}

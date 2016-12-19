@@ -1,0 +1,33 @@
+/* Price Table Style 1 */
+/* -------------------------------------------------- */
+.fw-price-1 {
+  // Caption column
+  .fw-price-caption {
+    .fw-price-row,
+    .fw-switch-row,
+    .fw-price-middle {
+      font-family: @fw-buttons-font-family;
+      font-style: @fw-buttons-font-weight;
+      font-size: ceil(@font-size-base*0.65);
+      color: lighten(#000,30);
+    }
+    .fw-price-caption-title {
+      font-size: ceil(@fw-h2-font-size*0.56);
+      line-height: ceil(@fw-h2-font-size*0.78);
+    }
+  }
+  .fw-price-title {
+    font-family: @fw-buttons-font-family;
+    font-weight: @fw-buttons-font-weight;
+    font-style: @fw-buttons-font-style;
+  }
+  .fw-price-desc {
+    font-size: @font-size-base;
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/shortcodes/pricing.css";

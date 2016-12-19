@@ -1,0 +1,8 @@
+/* Widget bbPress Recent Replies */
+.widget_display_replies li {
+    margin-bottom: 1.3em;
+}
+
+.widget_display_replies li div:last-child {
+    margin-bottom: 0 !important;
+}

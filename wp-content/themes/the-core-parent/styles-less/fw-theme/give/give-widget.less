@@ -1,0 +1,59 @@
+/* Give Widget */
+/* -------------------------------------------------- */
+.widget_give_forms_widget {
+  .give-form-wrap {
+    form.give-form,
+    form[id*=give-form] {
+      color: @text-color;
+
+      input.give-input {
+        .placeholder(@color: fade(@fw-widget-inner-title-color, 25));
+        width: 100%;
+        line-height: @input-height-base;
+        border: none;
+        color: @fw-widget-inner-title-color;
+        background-color: fade(@fw-widget-input-bg, 7%);
+        font-family: @fw-buttons-font-family;
+        font-weight: @fw-buttons-font-weight;
+        font-style: @fw-buttons-font-style;
+        font-size: @input-font-size;
+        padding: @input-padding-y @input-padding-x;
+      }
+      .give-currency-symbol,
+      #give-final-total-wrap .give-donation-total-label {
+        background-color: fade(@fw-widget-input-bg, 7%);
+        border-color: fade(@fw-widget-input-bg, 20%);
+      }
+      .give-currency-symbol,
+      #give-final-total-wrap .give-donation-total-label,
+      #give-final-total-wrap .give-final-total-amount {
+        color: fade(@fw-widget-inner-title-color, 50%);
+      }
+      #give-final-total-wrap .give-final-total-amount,
+      .give-donation-amount #give-amount,
+      .give-donation-amount #give-amount-text {
+        border-color: fade(@fw-widget-input-bg, 20%);
+      }
+      .custom-checkbox label,
+      .custom-radio label {
+        color: @text-color;
+      }
+      legend {
+        color: @fw-widget-inner-title-color;
+        border-bottom-color: #dee0e1;
+      }
+      .selectize-input {
+        background-color: fade(@fw-widget-input-bg, 7%);
+        border: none;
+      }
+    }
+    .give-goal-progress .income {
+      color: @fw-widget-inner-title-color;
+    }
+  }
+
+  form.floated-labels .floatlabel.is-active label.floatlabel-label,
+  form.floated-labels .floatlabel.is-focused label.floatlabel-label {
+    color: @form-label-color;
+  }
+}

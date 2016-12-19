@@ -1,0 +1,55 @@
+/* widget calendar */
+.widget_calendar {
+  #wp-calendar {
+    background: fade(@fw-widget-inner-title-color, 10%);
+    border: none;
+
+    caption {
+      background: @secondary-color;
+    }
+    th {
+      color: @secondary-color;
+      border: none;
+      border-left: 1px solid fade(@fw-widget-inner-title-color, 10%);
+
+      &:last-child{
+        border-right: 1px solid fade(@fw-widget-inner-title-color, 10%);
+      }
+    }
+    td {
+      color: @fw-widget-inner-title-color;
+    }
+    tbody {
+      a {
+        color: @fw-widget-inner-title-hover-color;
+
+        &:hover {
+          background-color: @fw-widget-inner-title-hover-color;
+        }
+      }
+    }
+
+    tr td#today{
+      background: @fw-widget-inner-title-hover-color;
+    }
+    tfoot {
+      a {
+        &:before{
+          .transition(all 0.3s ease);
+        }
+      }
+      #prev,
+      #next{
+        a:hover:before{
+          color: @accent-color;
+        }
+      }
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/widgets/widget-calendar.css";

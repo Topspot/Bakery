@@ -1,0 +1,16 @@
+/* bbPress Widget Recent Topics */
+.widget_display_topics li {
+    margin-bottom: 1.3em;
+}
+.widget_display_topics li:last-child {
+    margin-bottom: 0;
+}
+.widget_display_topics .bbp-forum-title {
+    display: block;
+}
+.widget_display_topics .topic-author {
+    line-height: normal;
+}
+.widget_display_topics .topic-author .bbp-author-name {
+    vertical-align: middle;
+}

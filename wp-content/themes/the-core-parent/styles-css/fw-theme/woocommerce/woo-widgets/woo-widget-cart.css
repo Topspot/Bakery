@@ -1,0 +1,15 @@
+/* Woocommerce Widget Cart */
+/* -------------------------------------------------- */
+ul.cart_list li,
+ul.product_list_widget li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+ul.cart_list li a,
+ul.product_list_widget li a {
+  font-weight: 400;
+  font-style: normal;
+}
+.woocommerce.widget_shopping_cart a.remove:hover {
+  background: none;
+}

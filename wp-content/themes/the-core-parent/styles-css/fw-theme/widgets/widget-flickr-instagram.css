@@ -1,0 +1,17 @@
+/* Widget Flickr */
+.flickr_badge_image,
+.fw-instagram-wrap li {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+.flickr_badge_image img,
+.fw-instagram-wrap li img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* same as flickr */
+/* Widget Instagram (add the icon in button)*/
+.fw-widget-instagram .fw-btn-instagram span:before {
+  content: '\f16d';
+}

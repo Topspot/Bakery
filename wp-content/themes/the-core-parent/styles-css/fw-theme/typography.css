@@ -1,0 +1,174 @@
+/* Typography */
+/* -------------------------------------------------- */
+
+p {
+  margin: 0 0 1em 0;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+/* Links */
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+/* Headings */
+/* ------------------------- */
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h1 .small,
+.h2 .small,
+.h3 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small {
+  font-weight: normal;
+  line-height: 1;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h1 small,
+.h1 small,
+h2 small,
+.h2 small,
+h3 small,
+.h3 small,
+h1 .small,
+.h1 .small,
+h2 .small,
+.h2 .small,
+h3 .small,
+.h3 .small {
+  font-size: 65%;
+}
+h4 small,
+.h4 small,
+h5 small,
+.h5 small,
+h6 small,
+.h6 small,
+h4 .small,
+.h4 .small,
+h5 .small,
+.h5 .small,
+h6 .small,
+.h6 .small {
+  font-size: 75%;
+}
+/* text inside Post */
+.fw-text h1 small,
+.entry-content h1 small,
+.fw-text h2 small,
+.entry-content h2 small,
+.fw-text h3 small,
+.entry-content h3 small,
+.fw-text h4 small,
+.entry-content h4 small,
+.fw-text h5 small,
+.entry-content h5 small,
+.fw-text h6 small,
+.entry-content h6 small,
+.fw-text .h1 small,
+.entry-content .h1 small,
+.fw-text .h2 small,
+.entry-content .h2 small,
+.fw-text .h3 small,
+.entry-content .h3 small,
+.fw-text .h4 small,
+.entry-content .h4 small,
+.fw-text .h5 small,
+.entry-content .h5 small,
+.fw-text .h6 small,
+.entry-content .h6 small,
+.fw-text h1 .small,
+.entry-content h1 .small,
+.fw-text h2 .small,
+.entry-content h2 .small,
+.fw-text h3 .small,
+.entry-content h3 .small,
+.fw-text h4 .small,
+.entry-content h4 .small,
+.fw-text h5 .small,
+.entry-content h5 .small,
+.fw-text h6 .small,
+.entry-content h6 .small,
+.fw-text .h1 .small,
+.entry-content .h1 .small,
+.fw-text .h2 .small,
+.entry-content .h2 .small,
+.fw-text .h3 .small,
+.entry-content .h3 .small,
+.fw-text .h4 .small,
+.entry-content .h4 .small,
+.fw-text .h5 .small,
+.entry-content .h5 .small,
+.fw-text .h6 .small,
+.entry-content .h6 .small {
+  color: #bfbfbf;
+}
+blockquote {
+  font-size: 19px;
+  line-height: 35px;
+  font-style: italic;
+  border: none;
+  padding: 0;
+  margin: 1.8em 0 1.8em 0;
+  clear: both;
+}
+blockquote .fw-symbols-quote {
+  display: block;
+  font-size: 100px;
+}
+blockquote:after {
+  display: block;
+  content: "";
+  width: 33%;
+  height: 1px;
+  margin: 1.5em auto 0 auto;
+  background-color: #dee0e1;
+}
+blockquote.fw-quote-position {
+  position: relative;
+}
+blockquote.fw-quote-position .fw-symbols-quote {
+  position: absolute;
+  z-index: 1;
+  width: 50px;
+  top: 35%;
+  left: 50%;
+  text-align: center !important;
+}
+blockquote.fw-quote-position .fw-quote-text {
+  z-index: 4;
+  position: relative;
+}
+blockquote cite {
+  display: block;
+  text-align: center;
+  margin-top: 0.6em;
+}

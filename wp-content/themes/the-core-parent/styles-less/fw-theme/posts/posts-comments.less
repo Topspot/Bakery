@@ -1,0 +1,122 @@
+/* Posts Comments List Layout */
+/* -------------------------------------------------- */
+.link-add-comment {
+  color: @theme-color-2;
+}
+
+.comment-list {
+  margin: 0 0 @fw-space-between-elements-sm 0;
+}
+
+.comment-body {
+  .clearfix();
+  padding: (@fw-content-density*4.5px) 0;
+}
+.comment-avatar {
+  .square(60px);
+}
+
+.children {
+  .comment-avatar:before {
+    .icon-flip(-1,1,0);
+  }
+}
+.comment-meta {
+  font-family: @fw-buttons-font-family;
+  font-weight: @fw-buttons-font-weight;
+  font-style: @fw-buttons-font-style;
+  color: @theme-color-3;
+}
+.comment-author {
+  a {
+    color: @secondary-color;
+
+    &:hover {
+      color: @accent-color;
+    }
+  }
+}
+.comment-date {}
+
+.bypostauthor > article .comment-author a{
+  color: @theme-color-1;
+}
+
+/* Comment Respond Form */
+/* -------------------------------------------------- */
+.comment-respond {
+  margin: @fw-space-between-elements-md 0 0;
+}
+#cancel-comment-reply-link {
+  border-bottom: 1px dashed @accent-color;
+  font-family: @fw-buttons-font-family;
+  font-weight: @fw-buttons-font-weight;
+  font-style: @fw-buttons-font-style;
+}
+.comment-form {
+  background-color: fade(@text-color, 10%);
+  .clearfix();
+
+  input:focus,
+  textarea:focus {
+    border-color: darken(@input-border,10);
+  }
+
+  /* Rating */
+  .wrap-rating{
+    &.in-post{
+      .rating-title{
+        font-family: @form-label-font-family;
+        font-size: @form-label-font-size;
+        font-style: @form-label-font-style;
+        font-weight: @form-label-font-weight;
+        line-height: @form-label-line-height;
+        letter-spacing: @form-label-letter-spacing;
+        color: @form-label-color;
+      }
+      .rating{
+        span {
+          color: lighten(@theme-color-5, 20);
+        }
+        .fa.fa-star.voted{
+          color: @theme-color-5;
+        }
+        &:hover{
+          .fa.fa-star{
+            color: lighten(@theme-color-5, 20) !important;
+          }
+          .fa.fa-star.over,
+          .fa.fa-star.voted{
+            color: @theme-color-5 !important;
+          }
+        }
+      }
+    }
+  }
+}
+.form-submit {
+  .submit,
+  #submit{
+    color: #fff !important;
+    margin-top: 10px;
+
+    &:hover{
+      color: #fff !important;
+    }
+  }
+}
+
+/* Responsive */
+
+/* Screen 568px */
+@media (max-width:767px) {
+  .comment-respond{
+    margin-top: ceil(@fw-space-between-elements-lg*0.53);
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/posts/posts-comments.css";

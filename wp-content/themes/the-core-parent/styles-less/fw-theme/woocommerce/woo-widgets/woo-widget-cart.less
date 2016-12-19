@@ -1,0 +1,125 @@
+/* Woocommerce Widget Cart */
+/* -------------------------------------------------- */
+ul.cart_list li,
+ul.product_list_widget li {
+  a{
+    font-family: @font-family-2;
+  }
+}
+
+.woocommerce{
+  &.widget_shopping_cart{
+    a.button{
+      // fw-btn
+      font-family: @fw-buttons-font-family;
+      font-weight: @fw-buttons-font-weight;
+      font-style: @fw-buttons-font-style;
+      font-size: @fw-buttons-font-size;
+      line-height: @fw-buttons-line-height;
+      letter-spacing: @fw-buttons-letter-spacing;
+      color: #fff !important;
+      display: inline-block;
+      margin-bottom: 0;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      background-image: none;
+      border: 1px solid transparent;
+      text-decoration: none;
+      white-space: nowrap;
+      outline: none;
+      position: relative;
+      .user-select(none);
+      .transition(all 0.3s ease);
+      max-width: 100%;
+
+      span,
+      i{
+        position: relative;
+        top: 1px;
+      }
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        outline: none;
+      }
+      // button icon
+      i,
+      img {
+        margin-right: 13px;
+
+        &.pull-right,
+        &.pull-right-icon{
+          margin-right: 0;
+          margin-left: 13px;
+          position: relative;
+        }
+        &.pull-right{
+          top: 0.3em;
+        }
+      }
+      img{
+        position: relative;
+        top: -0.1em;
+      }
+      i{
+        top: -1px;
+        vertical-align: middle;
+      }
+      /* Button side by side */
+      &.fw-btn-side-by-side{
+        margin-right: 10px;
+
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+      // fw-btn-1
+      background-color: @fw-btn-bg-color;
+      border-color: @fw-btn-border-color;
+      border-width: @fw-btn-border-width;
+      border-radius: @fw-btn-radius;
+
+      &:focus {
+        background-color: @fw-btn-bg-color;
+        border-color: @fw-btn-border-color;
+        color: @fw-btn-text-color;
+      }
+      &:hover {
+        background-color: @fw-btn-bg-color-hover;
+        color: #fff !important;
+      }
+      &:active {
+        box-shadow: none;
+      }
+      // fw-btn-md
+      .button-size(@padding-base-vertical; @padding-base-horizontal; @fw-buttons-font-size; @fw-buttons-line-height); // default button size
+    }
+    a{
+      font-family: @fw-widget-inner-title-font-family;
+      font-size: @fw-widget-inner-title-font-size;
+      font-weight: @fw-widget-inner-title-font-weight;
+      font-style: @fw-widget-inner-title-font-style;
+      line-height: @fw-widget-inner-title-line-height;
+      letter-spacing: @fw-widget-inner-title-letter-spacing;
+      color: @fw-widget-inner-title-color;
+
+      &:hover{
+        color: @fw-widget-inner-title-hover-color;
+      }
+    }
+    a.remove{
+      color: @fw-widget-inner-title-color !important;
+
+      &:hover{
+        color: @fw-widget-inner-title-hover-color !important;
+      }
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../../styles-css/fw-theme/woocommerce/woo-widgets/woo-widget-cart.css";

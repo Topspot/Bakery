@@ -1,0 +1,52 @@
+/* Portfolio Type 3 */
+.fw-portfolio-3 {
+  .fw-portfolio-image {
+    .fw-block-image-overlay {
+      .fw-portfolio-title {
+        font-size: ceil(@font-size-base*1.32);
+        font-family: @font-family-2;
+      }
+    }
+  }
+  .fw-block-image-icons {
+    margin-bottom: @fw-space-between-elements-sm/2;
+
+    a {
+      color: @accent-color;
+      border: 2px solid @accent-color;
+      width: 48px;
+      height: 48px;
+      .transition(all 0.3s linear);
+
+      &:hover{
+        color: @theme-color-4 ;
+        background: @accent-color;
+      }
+    }
+  }
+
+  // 2 columns
+  &.fw-portfolio-cols-2 .fw-portfolio-wrapper {
+    .fw-overlay-title {
+      font-size: ceil(@font-size-base*1.32);
+    }
+  }
+  // 3 columns
+  &.fw-portfolio-cols-3 .fw-portfolio-wrapper {
+    .fw-overlay-title {
+      font-size: ceil(@font-size-base*1.32);
+    }
+  }
+  // 4 columns
+  &.fw-portfolio-cols-4 .fw-portfolio-wrapper {
+    .fw-overlay-title {
+      font-size: ceil(@font-size-base*1.32) * 0.8;
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/portfolio/portfolio-type-3.css";

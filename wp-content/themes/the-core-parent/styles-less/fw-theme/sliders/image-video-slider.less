@@ -1,0 +1,43 @@
+/* Image Video Slider */
+/* -------------------------------------------------- */
+.fw-image-video-slider{
+  .carousel-indicators{
+    li{
+      border-color: fade(#fff, 50%);
+
+      &.active{
+          background: fade(#fff, 50%);
+          border-color: fade(#fff, 50%);
+      }
+    }
+  }
+  .carousel-control {
+    width: 30px;
+    height: 30px;
+  }
+  .item{
+    .fw-text-wrap{
+      .fw-image-video-slider-title-after{
+        font-family: @subtitles-family;
+        font-weight: @subtitles-weight;
+        font-style: @subtitles-style;
+        font-size: @subtitles-size;
+        line-height: @subtitles-line-height;
+        color: @subtitles-color;
+        letter-spacing: @subtitles-letter-spacing;
+      }
+      .fw-image-video-slider-text{
+        font-size: @subtitles-size;
+      }
+      .animated{
+        margin-bottom: @fw-content-density-lg*2px;
+      }
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/sliders/image-video-slider.css";

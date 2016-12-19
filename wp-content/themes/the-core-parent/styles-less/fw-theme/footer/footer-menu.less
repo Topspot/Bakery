@@ -1,0 +1,227 @@
+/* Footer Menu */
+.fw-footer-menu {
+  ul {
+    li {
+      font-family: @fw-bottom-menu-font-family;
+      font-weight: @fw-bottom-menu-font-weight;
+      font-style: @fw-bottom-menu-font-style;
+      font-size: @fw-bottom-menu-font-size;
+
+      &:first-child {
+        a {
+          margin-left: @fw-bottom-menu-item-margin/2;
+        }
+      }
+      &:last-child {
+        a {
+          margin-right: @fw-bottom-menu-item-margin/2;
+        }
+      }
+      // current menu item
+      &.current-menu-item {
+        a {
+          color: @fw-footer-menu-item-color-hover;
+        }
+      }
+      a {
+        color: @fw-footer-middle-text;
+        margin: 0 0 0 @fw-bottom-menu-item-margin;
+        line-height: @fw-bottom-menu-item-height;
+        letter-spacing: @fw-bottom-menu-letter-spacing;
+        .transition(all 0.2s ease 0s);
+
+        // current menu line
+        &:after {
+          background: @fw-footer-menu-item-color-hover;
+          top: floor(((@fw-bottom-menu-item-height - @fw-bottom-menu-font-size)/2) - @fw-bottom-menu-font-size);
+          height: 1px;
+          .transition(all 0.2s ease 0s);
+        }
+        &:hover {
+          color: @fw-footer-menu-item-color-hover;
+        }
+      }
+      &.menu-separator{
+        a{
+          &:after{
+            display: none;
+          }
+          &:hover{
+            color: @fw-footer-middle-text;
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ----------------------------------------------- //
+// Calculate positioning the menu & logo in footer //
+// ----------------------------------------------- //
+
+// If logo is retina
+.fw-footer-logo-retina {
+  // Footer height if is < @fw-menu-logo-max-width (250)
+  & when (@fw-footer-logo-retina-max-width < @fw-menu-logo-max-width) {
+    // @fw-bottom-menu-item-height (menu item height) >= @fw-footer-logo-retina-elder (logo height)
+    .menu-footer-pos-logo-sm(@fw-bottom-menu-item-height) when (@fw-bottom-menu-item-height >= @fw-footer-logo-retina-elder) {
+      .fw-footer-logo {
+        top: (@fw-bottom-menu-item-height - @fw-footer-logo-retina-elder)/2;
+      }
+      .fw-footer-menu-right,
+      .fw-footer-menu-left {
+        .fw-footer-menu {
+          top: 1px;
+        }
+      }
+    }
+    .menu-footer-pos-logo-sm(@fw-bottom-menu-item-height);
+
+    // @fw-bottom-menu-item-height (menu item height) < @fw-footer-logo-retina-elder (logo height)
+    .menu-footer-pos-logo-md(@fw-bottom-menu-item-height) when (@fw-bottom-menu-item-height < @fw-footer-logo-retina-elder) {
+      .fw-footer-menu-right,
+      .fw-footer-menu-left {
+        .fw-footer-menu {
+          top: ((@fw-footer-logo-retina-elder - @fw-bottom-menu-item-height)/2) + 1;
+        }
+      }
+    }
+    .menu-footer-pos-logo-md(@fw-bottom-menu-item-height);
+  }
+  // Footer height if is > @fw-menu-logo-max-width (250)
+  & when (@fw-footer-logo-retina-max-width > @fw-menu-logo-max-width) {
+    // @fw-bottom-menu-item-height (menu item height) >= @fw-calculate-height-footer-logo-retina (logo height)
+    .menu-footer-pos-logo-sm(@fw-bottom-menu-item-height) when (@fw-bottom-menu-item-height >= @fw-calculate-height-footer-logo-retina) {
+      .fw-footer-logo {
+        top: (@fw-bottom-menu-item-height - @fw-calculate-height-footer-logo-retina)/2;
+      }
+      .fw-footer-menu-right,
+      .fw-footer-menu-left {
+        .fw-footer-menu {
+          top: 1px;
+        }
+      }
+    }
+    .menu-footer-pos-logo-sm(@fw-bottom-menu-item-height);
+
+    // @fw-bottom-menu-item-height (menu item height) < @fw-calculate-height-footer-logo-retina (logo height)
+    .menu-footer-pos-logo-md(@fw-bottom-menu-item-height) when (@fw-bottom-menu-item-height < @fw-calculate-height-footer-logo-retina) {
+      .fw-footer-menu-right,
+      .fw-footer-menu-left {
+        .fw-footer-menu {
+          top: ((@fw-calculate-height-footer-logo-retina - @fw-bottom-menu-item-height)/2) + 1;
+        }
+      }
+    }
+    .menu-footer-pos-logo-md(@fw-bottom-menu-item-height);
+  }
+}
+
+// If logo is no retina
+.fw-footer-logo-no-retina {
+  // Footer height if is < @fw-menu-logo-max-width (250)
+  & when (@fw-footer-logo-width < @fw-menu-logo-max-width) {
+    // @fw-bottom-menu-item-height (menu item height) >= @fw-footer-logo-retina-elder (logo height)
+    .menu-footer-pos-logo-sm(@fw-bottom-menu-item-height) when (@fw-bottom-menu-item-height >= @fw-footer-logo-height) {
+      .fw-footer-logo {
+        top: (@fw-bottom-menu-item-height - @fw-footer-logo-height)/2;
+      }
+      .fw-footer-menu-right,
+      .fw-footer-menu-left {
+        .fw-footer-menu {
+          top: 1px;
+        }
+      }
+    }
+    .menu-footer-pos-logo-sm(@fw-bottom-menu-item-height);
+
+    // @fw-bottom-menu-item-height (menu item height) < @fw-footer-logo-retina-elder (logo height)
+    .menu-footer-pos-logo-md(@fw-bottom-menu-item-height) when (@fw-bottom-menu-item-height < @fw-footer-logo-height) {
+      .fw-footer-menu-right,
+      .fw-footer-menu-left {
+        .fw-footer-menu {
+          top: ((@fw-footer-logo-height - @fw-bottom-menu-item-height)/2) + 1;
+        }
+      }
+    }
+    .menu-footer-pos-logo-md(@fw-bottom-menu-item-height);
+  }
+  // Footer height if is > @fw-menu-logo-max-width (250)
+  & when (@fw-footer-logo-width > @fw-menu-logo-max-width) {
+    // @fw-bottom-menu-item-height (menu item height) >= @fw-calculate-height-footer-logo-retina (logo height)
+    .menu-footer-pos-logo-sm(@fw-bottom-menu-item-height) when (@fw-bottom-menu-item-height >= @fw-calculate-height-footer-logo) {
+      .fw-footer-logo {
+        top: (@fw-bottom-menu-item-height - @fw-calculate-height-footer-logo)/2;
+      }
+      .fw-footer-menu-right,
+      .fw-footer-menu-left {
+        .fw-footer-menu {
+          top: 1px;
+        }
+      }
+    }
+    .menu-footer-pos-logo-sm(@fw-bottom-menu-item-height);
+
+    // @fw-bottom-menu-item-height (menu item height) < @fw-calculate-height-footer-logo-retina (logo height)
+    .menu-footer-pos-logo-md(@fw-bottom-menu-item-height) when (@fw-bottom-menu-item-height < @fw-calculate-height-footer-logo) {
+      .fw-footer-menu-right,
+      .fw-footer-menu-left {
+        .fw-footer-menu {
+          top: ((@fw-calculate-height-footer-logo - @fw-bottom-menu-item-height)/2) + 1;
+        }
+      }
+    }
+    .menu-footer-pos-logo-md(@fw-bottom-menu-item-height);
+  }
+}
+
+// --------------------------------------------------- //
+// End Calculate positioning the menu & logo in footer //
+// --------------------------------------------------- //
+
+// Footer menu positions
+.fw-footer-menu-right,
+.fw-footer-menu-left {
+  padding-top: @fw-footer-middle-padding-top;
+  padding-bottom: @fw-footer-middle-padding-bot;
+
+  .fw-footer-menu {
+    li {
+      a {
+        line-height: @fw-bottom-menu-item-height;
+      }
+    }
+  }
+}
+
+.fw-footer-menu-right {
+  .fw-footer-menu {
+    li:first-child a {
+      margin-left: @fw-bottom-menu-item-margin;
+    }
+  }
+}
+
+.fw-footer-menu-left {
+  .fw-footer-menu {
+    li:last-child a {
+      margin-right: @fw-bottom-menu-item-margin;
+    }
+  }
+}
+
+/*Responsive*/
+
+/*Screen 768px*/
+@media (max-width: 991px) {
+  .fw-footer-menu ul li.menu-separator {
+    display: none;
+  }
+  .fw-footer-menu-right,
+  .fw-footer-menu-left {
+    .fw-footer-menu {
+      .transform(translateY(0));
+    }
+  }
+}

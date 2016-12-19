@@ -1,0 +1,60 @@
+/* copyright and social area background & space */
+.fw-footer-bar {
+  background-color: @fw-footer-bar-bg;
+  padding-top: @fw-footer-bar-padding-top;
+  padding-bottom: @fw-footer-bar-padding-bot;
+  color: @fw-footer-bar-text;
+}
+
+// -------------------------------------------------------- //
+// Calculate positioning the footer copyright & social icon //
+// -------------------------------------------------------- //
+.footer-copyright-icon-bigger(@fw-footer-social-size) when (@fw-footer-social-size >= @fw-copyright-line-height) {
+  .fw-copyright {
+    top: (@fw-footer-social-size/2) - (@fw-copyright-line-height/2);
+  }
+}
+
+.footer-copyright-bigger(@fw-footer-social-size) when (@fw-footer-social-size < @fw-copyright-line-height) {
+  .fw-footer-social {
+    top: (@fw-copyright-line-height/2) - (@fw-footer-social-size/2);
+  }
+}
+
+.footer-copyright-icon-bigger(@fw-footer-social-size);
+.footer-copyright-bigger(@fw-footer-social-size);
+
+// footer copyright
+.fw-copyright {
+  font-size: @fw-copyright-font-size;
+  font-style: @fw-copyright-font-style;
+  font-weight: @fw-copyright-font-weight;
+  font-family: @fw-copyright-font-family;
+  line-height: @fw-copyright-line-height;
+  letter-spacing: @fw-copyright-letter-spacing;
+  color: @fw-copyright-text-color;
+
+  a {
+    color: @fw-copyright-text-color;
+
+    &:hover {
+      color: @fw-copyright-text-color;
+    }
+  }
+}
+
+// footer social
+.fw-footer-social {
+  line-height: @fw-footer-social-size*0.8;
+
+  a {
+    font-size: @fw-footer-social-size;
+    width: @fw-footer-social-size;
+    height: @fw-footer-social-size - 1;
+    color: @fw-footer-social-color;
+
+    &:hover {
+      color: @fw-footer-social-hover-color;
+    }
+  }
+}

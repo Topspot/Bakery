@@ -1,0 +1,37 @@
+/* Header Logo */
+.fw-wrap-logo {
+  font-family: @font-family-base;
+
+  // Text Logo
+  .fw-site-logo {
+    strong {
+      font-family: @fw-logo-title-font-family;
+      font-weight: @fw-logo-title-font-weight;
+      font-style: @fw-logo-title-font-style;
+      font-size: @fw-logo-title-font-size;
+      color: @fw-logo-title-color;
+      letter-spacing: @fw-logo-title-letter-spacing;
+      line-height: @fw-logo-title-line-height;
+    }
+    span {
+      font-family: @fw-logo-subtitle-font-family;
+      font-weight: @fw-logo-subtitle-font-weight;
+      font-style: @fw-logo-subtitle-font-style;
+      font-size: @fw-logo-subtitle-font-size;
+      color: @fw-logo-subtitle-color;
+      letter-spacing: @fw-logo-subtitle-letter-spacing;
+      line-height: @fw-logo-subtitle-line-height;
+    }
+  }
+}
+
+/* Logo Retina & No-Retina */
+.fw-logo-retina {
+  .fw-site-logo {
+    width: @fw-menu-logo-width/2px;
+  }
+}
+.fw-logo-no-retina {
+  .fw-site-logo {
+  }
+}

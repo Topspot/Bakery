@@ -1,0 +1,116 @@
+/* Grid system */
+/* -------------------------------------------------- */
+
+/* this position is important for 1/5 column because make conflicts on responsive */
+@media (min-width: 768px){
+  .fw-col-sm-1-5 {
+    width: 20%;
+  }
+}
+
+// Reset the box-sizing
+.fw-container,
+.fw-container *,
+.fw-container *:before,
+.fw-container *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.fw-container {
+  .fw-container-fixed();
+
+  @media (min-width: 768px) {
+    width: 750px;
+  }
+  @media (min-width: 992px) {
+    width: 970px;
+  }
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
+}
+
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+
+.fw-container-fluid {
+  .fw-container-fixed();
+}
+
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+.fw-row {
+  .make-row();
+  .clearfix();
+}
+
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+.make-grid-columns();
+
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+@media (max-width: 767px) {
+  div[class^="fw-col-sm-"],
+  div[class^="fw-col-md-"],
+  div[class^="fw-col-xs-"] {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .single .fw-page-builder-content{
+    .fw-main-row-top{
+      div[class^="fw-col-sm-"],
+      div[class^="fw-col-ms-"],
+      div[class^="fw-col-xs-"]{
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+  .fw-main-row-top{
+    div[class^="fw-col-sm-"],
+    div[class^="fw-col-ms-"],
+    div[class^="fw-col-xs-"]{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .make-grid(sm);
+}
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: 992px) {
+  .make-grid(md);
+}
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: 1200px) {
+  .make-grid(lg);
+}

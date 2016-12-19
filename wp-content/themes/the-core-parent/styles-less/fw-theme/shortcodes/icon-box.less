@@ -1,0 +1,53 @@
+/* Icons Box */
+/* -------------------------------------------------- */
+/* Icon box style 1 */
+.fw-iconbox-1 {
+  .fw-iconbox-image {
+    color: @accent-color;
+  }
+  &.bg-on .fw-iconbox-image {
+    .square(40px * 1.25);
+    background-color: @accent-color;
+    font-size: 40px *0.7;
+  }
+  &.fw-iconbox-image-type .fw-iconbox-image {
+    .square(40px * 2);
+  }
+}
+
+/* Icon box style 2 */
+.fw-iconbox-2 {
+  .fw-iconbox-image {
+    color: @accent-color;
+  }
+  &.bg-on .fw-iconbox-image {
+    .square(40px *1.25);
+    font-size: 40px*0.7;
+    background-color: @accent-color;
+  }
+  &.fw-iconbox-image-type .fw-iconbox-image{
+    .square(40px);
+  }
+}
+
+/* Icon box style 3 */
+.fw-iconbox-3 {
+  .fw-iconbox-image {
+    color: @accent-color;
+  }
+  &.fw-iconbox-image-type .fw-iconbox-image {
+    .square(40px*1.25);
+  }
+  &.bg-on .fw-iconbox-image {
+    .square(40px *1.25);
+    line-height: (40px *1.25)*1.04;
+    font-size: 40px *0.7;
+    background-color: @accent-color;
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/shortcodes/icon-box.css";

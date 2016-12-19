@@ -1,0 +1,22 @@
+/* Woocommerce Widget Price Filter */
+/* -------------------------------------------------- */
+.woocommerce{
+  &.widget_price_filter{
+    .ui-slider{
+      .ui-slider-handle {
+        background-color: darken(@fw-widget-inner-title-color, 20);
+      }
+      .ui-slider-range {
+        background-color: @fw-widget-inner-title-color;
+      }
+    }
+    .price_slider_wrapper .ui-widget-content{
+      background-color: @fw-widget-inner-title-hover-color;
+    }
+    .price_slider_amount{
+      .button{
+        font-size: @fw-buttons-font-size;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+/* Woocommerce Widget Search */
+/* -------------------------------------------------- */
+
+.woocommerce.widget_product_search .woocommerce-product-search {
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+}
+.woocommerce.widget_product_search .woocommerce-product-search .screen-reader-text {
+  display: none;
+}

@@ -1,0 +1,215 @@
+/* Forms & Form Elements */
+/* -------------------------------------------------- */
+.placeholder();
+
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+input[type="email"],
+input[type="tel"],
+textarea{
+  background: @input-bg;
+  color: @input-color;
+  font-family: @input-font-family;
+  font-size: @input-font-size;
+  font-style: @input-font-style;
+  font-weight: @input-font-weight;
+  letter-spacing: @input-letter-spacing;
+  line-height: @input-line-height;
+  padding: @input-padding-y @input-padding-x;
+  border: 1px solid fade(#000, 13%);
+}
+label{
+  font-family: @form-label-font-family;
+  font-size: @form-label-font-size;
+  font-style: @form-label-font-style;
+  font-weight: @form-label-font-weight;
+  line-height: @form-label-line-height;
+  letter-spacing: @form-label-letter-spacing;
+  color: @form-label-color;
+  text-transform: @form-label-text-transform;
+}
+.wrap-forms {
+  background-color: @input-border;
+  padding: @fw-content-density*3px;
+
+  .selectize-input{
+    &.full{
+      background-color: @input-bg;
+    }
+  }
+  .header.title {
+    margin-bottom: (@fw-content-density * 3px);
+
+    .fw-contact-form-description{
+      font-family: @subtitles-family;
+      font-weight: @subtitles-weight;
+      font-style: @subtitles-style;
+      font-size: @subtitles-size;
+      line-height: @subtitles-line-height;
+      letter-spacing: @subtitles-letter-spacing;
+      color: @subtitles-color;
+    }
+  }
+  .fw-row {
+    padding-top: @fw-content-density*1px;
+    padding-bottom: @fw-content-density*1px;
+  }
+  .row-submit {
+    padding-top: @fw-content-density*2px;
+  }
+  .form-builder-item {
+    p {
+      font-size: @font-size-small - 1;
+    }
+  }
+  .input-styled {
+    .custom-checkbox,
+    .custom-radio {
+      .clearfix();
+    }
+  }
+  form.fw_form_fw_form{
+    label{
+      text-transform: none;
+    }
+  }
+}
+/* Post Password & Search Form */
+.search-form {
+  .search-form {
+    position: relative;
+  }
+  .screen-reader-text {
+    display: none;
+  }
+  label {
+    display: block;
+  }
+  .search-field {
+    .placeholder(@color: fade(@fw-widget-inner-title-color, 25));
+    width: 100%;
+    line-height: @input-height-base;
+    border: none;
+    color: @fw-widget-inner-title-color;
+    background-color: fade(@fw-widget-input-bg, 7%);
+    font-family: @fw-buttons-font-family;
+    font-weight: @fw-buttons-font-weight;
+    font-style: @fw-buttons-font-style;
+    font-size: @input-font-size;
+    padding: @input-padding-y @input-padding-x;
+  }
+  .search-submit {
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    border: none;
+    text-indent: 100px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    overflow: hidden;
+  }
+  label:after {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    font-family: FontAwesome;
+    content: "\f002";
+    font-size: 16px;
+    font-weight: normal;
+    color: @fw-widget-inner-title-color;
+    position: absolute;
+    top: 50%;
+    margin-top: -14px;
+    right: 10px;
+    z-index: 1;
+  }
+}
+.post-password-form {
+  label {
+    margin-right: 10px;
+    margin-bottom: 0;
+    vertical-align: bottom;
+
+    input[type='password'] {
+      .placeholder(@color: fade(@fw-widget-inner-title-color, 25));
+      width: 100%;
+      line-height: @input-height-base;
+      border: none;
+      color: @fw-widget-inner-title-color;
+      background-color: fade(@fw-widget-input-bg, 7%);
+      font-family: @fw-buttons-font-family;
+      font-weight: @fw-buttons-font-weight;
+      font-style: @fw-buttons-font-style;
+      font-size: @input-font-size;
+      padding: @input-padding-y @input-padding-x;
+    }
+  }
+  input[type='submit'] {
+    // fw-btn
+    font-family: @fw-buttons-font-family;
+    font-weight: @fw-buttons-font-weight;
+    font-style: @fw-buttons-font-style;
+    font-size: @fw-buttons-font-size;
+    line-height: @fw-buttons-line-height;
+    letter-spacing: @fw-buttons-letter-spacing;
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: none;
+    position: relative;
+    .user-select(none);
+    .transition(all 0.3s ease);
+    max-width: 100%;
+
+    span,
+    i{
+      position: relative;
+      top: 1px;
+    }
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      outline: none;
+    }
+    // fw-btn-md
+    .button-size(@padding-base-vertical; @padding-base-horizontal; @fw-buttons-font-size; @fw-buttons-line-height); // default button size
+
+    // fw-btn-1
+    background-color: @fw-btn-bg-color;
+    border-color: @fw-btn-border-color;
+    border-width: @fw-btn-border-width;
+    color: @fw-btn-text-color;
+    border-radius: @fw-btn-radius;
+
+    &:focus {
+      background-color: @fw-btn-bg-color;
+      border-color: @fw-btn-border-color;
+      color: @fw-btn-text-color;
+    }
+    &:hover {
+      background-color: @fw-btn-bg-color-hover;
+      color: @fw-btn-text-color-hover;
+    }
+    &:active {
+      box-shadow: none;
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/shortcodes/forms.css";

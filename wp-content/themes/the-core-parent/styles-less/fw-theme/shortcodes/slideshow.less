@@ -1,0 +1,68 @@
+/* Slideshow Slider */
+/* -------------------------------------------------- */
+
+.fw-slider {
+  .fw-slider-prev,
+  .fw-slider-next {
+    &:active {
+      margin-top: -(20px*0.95);
+    }
+  }
+  .fw-slider-pagination {
+    a {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
+/* Custom Sliders */
+/* -------------------------------------------------- */
+/* Slider With Caption */
+.slider-main {
+  .caption-inner {
+    background-color: fade(@accent-color, 90);
+  }
+  .slider-main-title a {
+    font-size: floor((@font-size-base * 2.55));
+  }
+  .slider-pagination {
+    a {
+      width: 10px;
+      height: 10px;
+      background-color: fade(#fff, 30);
+
+      &:hover,
+      &.selected {
+        background-color: fade(#fff, 70);
+      }
+    }
+  }
+  .slider-progress {
+    background-color: fade(#000, 50);
+  }
+  .timer {
+    background-color: fade(#fff, 60);
+  }
+}
+/* Responsive */
+@media (max-width: 1199px) {
+  .slider-main {
+    .slider-main-title a {
+      font-size: floor((@font-size-base * 2));
+    }
+  }
+}
+@media (max-width: 991px) {
+  .slider-main {
+    .slider-main-title a {
+      font-size: floor((@font-size-base * 1.5));
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/shortcodes/slideshow.css";

@@ -1,0 +1,50 @@
+/* Widget Posts with image */
+.fw-side-posts-list {
+  li {
+    .fw-widget-post-image {
+      width: 60px;
+      height: 60px;
+
+      span{
+        font-size: @fw-widget-font-size;
+        color: @accent-color;
+        font-family: @font-family-2;
+      }
+      &.fw-overlay-1 {
+        .fw-block-image-overlay {
+          i[class*='fw-icon-'] {
+            width: 36px;
+            height: 36px;
+            font-size: @font-size-base - 4;
+          }
+        }
+      }
+    }
+    .posts-content{
+      .post-title {
+        font-family: @fw-widget-inner-title-font-family;
+        font-size: @fw-widget-inner-title-font-size;
+        font-weight: @fw-widget-inner-title-font-weight;
+        font-style: @fw-widget-inner-title-font-style;
+        line-height: @fw-widget-inner-title-line-height;
+        letter-spacing: @fw-widget-inner-title-letter-spacing;
+        color: @fw-widget-inner-title-color;
+        display: block;
+        margin-bottom: 10px;
+
+        &:hover{
+          color: @fw-widget-inner-title-hover-color;
+        }
+      }
+      .fw-btn-side-posts-list {
+        //&:extend(.fw-btn all, .fw-btn-1 all, .fw-btn-sm all);
+      }
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/widgets/widget-posts-list.css";

@@ -1,0 +1,234 @@
+/* Posts Comments List Layout */
+/* -------------------------------------------------- */
+.comments-area {
+  position: relative;
+}
+.comments-area.user-is-logged .comment-respond .right-side-comment {
+  width: 100%;
+  float: none;
+}
+.comments-area.user-is-logged .comment-respond .form-submit,
+.comments-area.user-is-logged .comment-respond .right-side-comment {
+  padding: 0;
+}
+.comments-title,
+.comment-reply-title,
+.fw-title-related {
+  font-style: italic;
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+}
+.comments-title strong,
+.comment-reply-title strong,
+.fw-title-related strong {
+  font-style: normal;
+}
+.comment-list {
+  padding: 0;
+  border-bottom: 1px solid #dee0e1;
+  list-style: none;
+}
+.comment-list li:first-child .comment-body {
+  padding-top: 20px;
+}
+.comment-list .comment,
+.comment-list .pingback {
+  list-style: none;
+  border-top: 1px solid #dee0e1;
+}
+.comment-list > .comment:first-child {
+  border-top: none;
+}
+.comment-body {
+  position: relative;
+}
+.comment-body .wrap-rating {
+  margin-left: 10px;
+}
+.pingback .comment-body {
+  padding-top: 0;
+}
+.comment-avatar {
+  float: left;
+}
+.comment-avatar img {
+  border-radius: 50%;
+}
+.comment-aside {
+  padding-left: 90px;
+}
+.children {
+  padding-left: 0;
+}
+.children .depth-2 {
+  margin-left: 90px;
+}
+.children .depth-3 {
+  margin-left: 90px;
+}
+.children .comment-avatar:before {
+  font-family: 'FontAwesome';
+  content: '\f148';
+  font-size: 20px;
+  line-height: 1em;
+  color: #dee0e1;
+  position: absolute;
+  top: 60px;
+  left: -60px;
+}
+.comment-meta {
+  margin-bottom: 10px;
+  line-height: 1em;
+  font-size: 15px;
+  text-align: right;
+}
+.comment-author {
+  display: inline-block;
+  float: left;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+.comment-content p:last-child {
+  margin-bottom: 0;
+}
+.comment-reply-link {
+  margin-left: 5px;
+  text-transform: capitalize;
+}
+/* Comment Respond Form */
+/* -------------------------------------------------- */
+.comment-respond .comment-reply-title {
+  margin-top: 0;
+}
+.comment-respond textarea {
+  min-height: 234px;
+  max-height: 320px;
+}
+.comment-respond .left-side-comment,
+.comment-respond .right-side-comment {
+  width: 50%;
+  display: inline-block;
+}
+.comment-respond .left-side-comment p,
+.comment-respond .right-side-comment p {
+  position: relative;
+}
+.comment-respond .left-side-comment p .optional,
+.comment-respond .right-side-comment p .optional {
+  position: absolute;
+  font-size: 15px;
+  font-style: italic;
+  bottom: -25px;
+  left: 0;
+}
+.comment-respond .left-side-comment {
+  float: left;
+  padding-right: 2.6%;
+}
+.comment-respond .right-side-comment {
+  float: right;
+  padding-left: 2.6%;
+}
+#cancel-comment-reply-link {
+  float: right;
+  position: relative;
+  top: 14px;
+  font-size: 0.6em;
+  letter-spacing: 1px;
+}
+.comment .comment-respond {
+  margin-top: 0;
+}
+.comment-form {
+  padding: 30px;
+  position: relative;
+}
+.comment-notes {
+  font-style: italic;
+}
+.required-label {
+  color: #e14d47;
+}
+.form-submit {
+  padding-top: 2.3em;
+  display: block;
+  width: 50%;
+  padding-right: 2.6%;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.form-submit .submit,
+.form-submit #submit {
+  border: none;
+  color: #fff;
+  width: 100%;
+}
+/* Responsive */
+/* Screen 768px */
+@media (max-width: 991px) {
+  .comments-area {
+    padding: 0 15px;
+  }
+}
+/* Screen 568px */
+@media (max-width: 767px) {
+  .comment-author {
+    display: inline-block;
+    float: left;
+  }
+  .comment-meta {
+    text-align: right;
+  }
+  .comment-respond textarea {
+    min-height: 150px;
+    max-height: 200px;
+  }
+  .children .depth-3 {
+    margin-left: 0;
+  }
+}
+/* Screen 320px */
+@media (max-width: 479px) {
+  .comment-respond .left-side-comment,
+  .comment-respond .right-side-comment{
+    float: none;
+    padding: 0;
+    width: 100%;
+  }
+  .comment-respond .right-side-comment{
+    margin-top: 1.5em;
+  }
+  .comment-avatar {
+    float: none;
+    margin-bottom: 20px;
+  }
+  .comment-aside {
+    padding-left: 0;
+  }
+  .comments-title {
+    margin-bottom: 0;
+  }
+  .comment-meta {
+    text-align: left;
+  }
+  .comment-author {
+    float: none;
+    display: block;
+  }
+  .children .depth-2,
+  .children .depth-3 {
+    margin-left: 0;
+  }
+  .form-submit {
+    width: 100%;
+    padding-top: 1em;
+  }
+  .comment-form {
+    padding: 20px;
+  }
+  .comment-respond .left-side-comment p .optional,
+ .comment-respond .right-side-comment p .optional {
+  font-size: 10px;
+ }
+}

@@ -1,0 +1,79 @@
+/* Forms & Form Elements */
+/* -------------------------------------------------- */
+
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+input[type="email"],
+input[type="tel"],
+textarea{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  width: 100%;
+}
+textarea {
+  height: auto;
+  resize: vertical;
+}
+.wrap-forms,
+.wrap-forms .header.title {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.wrap-forms .fw-contact-form-title {
+  margin: 0;
+}
+.wrap-forms .form-builder-item > div > label sup {
+  color: #d3604d;
+}
+.wrap-forms .form-builder-item p {
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+.wrap-forms .form-builder-item textarea {
+  height: 150px;
+}
+.wrap-forms .form-builder-item input,
+.wrap-forms .form-builder-item .selectize-input {
+  padding-top: 8px;
+  padding-bottom: 7px;
+}
+.wrap-forms .input-styled > label {
+  margin-bottom: 10px;
+}
+.wrap-forms .input-styled.fw-item-one-column .options .custom-radio {
+  display: inline-block;
+}
+.wrap-forms .input-styled.fw-item-two-columns .options {
+  width: 50%;
+  float: left;
+}
+.wrap-forms .input-styled.fw-item-three-columns .options {
+  width: 33.33%;
+  float: left;
+}
+.wrap-forms .input-styled.fw-item-side-by-side .options {
+  float: left;
+  margin-right: 5%;
+}
+.flash-messages-info,
+.flash-messages-success,
+.flash-messages-error{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+/* Post Password & Search Form */
+.search-form{
+  position: relative;
+}
+.field-radio .custom-radio .options {
+  line-height: 11px;
+}
+.woocommerce .login .custom-checkbox {display: inline-block;}

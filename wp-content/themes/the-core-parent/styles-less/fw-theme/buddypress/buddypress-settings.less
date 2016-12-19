@@ -1,0 +1,29 @@
+/* buddyPress Settings Page */
+#buddypress {
+  .standard-form#settings-form {
+    label {
+      font-family: @form-label-font-family;
+      font-size: @form-label-font-size;
+      font-style: @form-label-font-style;
+      font-weight: @form-label-font-weight;
+      line-height: @form-label-line-height;
+      letter-spacing: @form-label-letter-spacing;
+      color: @form-label-color;
+      text-transform: @form-label-text-transform;
+    }
+    table.profile-settings {
+      .selectize-control {
+        .selectize-input {
+          background-color: fade(@fw-widget-input-bg, 7%);
+        }
+      }
+    }
+  }
+}
+
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/buddypress/buddypress-settings.css";

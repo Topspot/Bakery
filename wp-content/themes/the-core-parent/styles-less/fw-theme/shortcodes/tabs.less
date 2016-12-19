@@ -1,0 +1,103 @@
+/* Tabs */
+/* -------------------------------------------------- */
+.fw-tabs {
+  .nav-tabs {
+    font-family: @subtitles-family;
+    font-weight: @subtitles-weight;
+    font-style: @subtitles-style;
+    font-size: @subtitles-size;
+    line-height: @subtitles-line-height;
+    letter-spacing: @subtitles-letter-spacing;
+  }
+}
+
+// Framed Tabs
+.fw-tabs-framed {
+  .nav-tabs {
+    > li {
+      > a {
+          .transition(none);
+
+        &:hover {
+          color: @accent-color;
+        }
+      }
+    }
+    > li.active {
+      > a,
+      > a:hover,
+      > a:focus {
+        color: @accent-color;
+      }
+    }
+  }
+}
+
+// Minimalistic Tabs
+.fw-tabs-minimal {
+  .nav-tabs {
+    > li {
+      > a {
+        .transition(none);
+
+        &:hover {
+          color: @accent-color;
+        }
+      }
+    }
+    > li {
+      &.active{
+        > a,
+        > a:hover,
+        > a:focus {
+          border-bottom: 6px solid @accent-color;
+          color: @accent-color;
+        }
+      }
+    }
+  }
+}
+
+// tabs left
+@media (min-width: 768px) {
+  .fw-tabs-left {
+    .nav-tabs {
+      > li {
+        &.active a {
+          &,
+          &:hover,
+          &:focus {
+            border-color: #ddd transparent #ddd #ddd;
+            *border-right-color: #fff;
+            border: 2px solid #ddd;
+            border-right: transparent;
+          }
+        }
+      }
+    }
+
+    // Tabs Left in Minimal tabs
+    &.fw-tabs-minimal {
+      .nav-tabs {
+        > li.active {
+          > a,
+          > a:hover,
+          > a:focus {
+            border: none;
+            border-right: 6px solid @accent-color;
+            margin-right: -6px;
+          }
+        }
+      }
+      .tab-content {
+        border-left: 6px solid #ddd;
+      }
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/shortcodes/tabs.css";

@@ -1,0 +1,103 @@
+/* Post Details */
+.post-details {
+  margin-top: 8px;
+}
+.post-details img.aligncenter,
+.post-details .wp-caption {
+  margin-bottom: 20px;
+}
+.post-details .entry-header .wrap-entry-meta {
+  font-weight: 400;
+}
+.post-details .entry-header .wrap-entry-meta .entry-date a,
+.post-details .entry-header .wrap-entry-meta .author a,
+.post-details .entry-header .wrap-entry-meta .cat-links a {
+  font-style: normal;
+}
+.post-details .entry-header .wrap-entry-meta .entry-date {
+  white-space: nowrap;
+}
+.post-details .entry-header .wrap-entry-meta .cat-links {
+  float: right;
+}
+.post-details .entry-header .entry-title {
+  display: block;
+}
+.post-details .entry-content {
+  border-bottom: 1px solid #dee0e1;
+}
+.post-details .entry-content p:last-child {
+  margin-bottom: 0;
+}
+.post-details footer.entry-meta .fw-tag-links {
+  padding: 1em 2%;
+  border-bottom: 1px solid #dee0e1;
+}
+/* Author Description */
+/*-----------------------------------*/
+.author-description {
+  border-bottom: 1px solid #dee0e1;
+}
+.author-description:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.author-description .author-image {
+  float: left;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.author-description .author-image,
+.author-description .author-image img {
+  width: 100px;
+  height: 100px;
+}
+.author-description .author-text {
+  margin-left: 130px;
+}
+.author-description .author-name {
+  margin-bottom: 5px;
+  margin-top: 14px;
+  font-weight: bold;
+}
+.author-description .author-name span {
+  font-style: italic;
+  font-weight: normal;
+}
+/* Responsive */
+/* Screen 1024px */
+@media(max-width:1199px){
+
+}
+/* Screen 568px */
+@media (max-width: 767px) {
+  .post-details footer.entry-meta {
+    margin-bottom: 0;
+  }
+  .post-details .entry-content {
+    margin-bottom: 0;
+  }
+}
+/* Screen 320px */
+@media (max-width: 479px) {
+  .post.post-details .entry-content,
+  .post.post-details .entry-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .post-details .entry-header .wrap-entry-meta .cat-links {
+    float: none;
+    margin-left: 10px;
+  }
+  .post.post-details .wp-caption.alignleft,
+  .post.post-details img.alignleft {
+    margin-left: 0;
+  }
+  .author-description .author-image {
+    float: none;
+  }
+  .author-description .author-text {
+    margin-left: 0;
+  }
+}

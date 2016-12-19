@@ -1,0 +1,55 @@
+/* Header Type 1 */
+.header-1.fw-top-logo-left .fw-wrap-logo {
+  float: left;
+}
+.header-1.fw-top-logo-left .fw-search {
+  float: right;
+}
+.header-1.fw-top-logo-left .fw-nav-wrap {
+  float: right;
+}
+.header-1.fw-top-logo-right .fw-wrap-logo {
+  float: right;
+}
+.header-1.fw-top-logo-right .fw-search {
+  float: left;
+}
+.header-1.fw-top-logo-right .fw-search .fw-wrap-search-form {
+  margin-left: 0;
+}
+.header-1.fw-top-logo-right .fw-nav-wrap {
+  float: left;
+}
+.header-1 .fw-header-main .fw-search,
+.header-1 .fw-header-main .fw-mini-search {
+  top: 1px;
+}
+.header-1 .fw-nav-wrap {
+  max-width: 78%;
+}
+.header-1 .primary-navigation > ul > li {
+  border-bottom: none;
+}
+.header-1 .primary-navigation > ul > li:first-child > a {
+  margin-left: 0;
+}
+.header-1 .primary-navigation > ul > li:first-child > ul {
+  left: 0;
+}
+.header-1 .primary-navigation > ul > li > a {
+  margin-right: 0;
+}
+.header-1.fw-logo-retina .fw-mini-search {
+  top: 0;
+}
+.header-1.fw-logo-no-retina .fw-mini-search,
+.header-1.fw-logo-no-retina .mmenu-link {
+  top: 0;
+}
+.header-1.fw-logo-no-retina .fw-sticky-menu .fw-mini-search,
+.header-1.fw-logo-no-retina .fw-sticky-menu .mmenu-link {
+  top: 0;
+}
+.header-1.search-in-top-bar .fw-search {
+  margin-top: 0 !important;
+}

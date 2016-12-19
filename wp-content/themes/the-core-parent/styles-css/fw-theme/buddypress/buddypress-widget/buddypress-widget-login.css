@@ -1,0 +1,22 @@
+/* Widget buddyPress LogIn */
+
+/*-> Log In */
+.widget_bp_core_login_widget .standard-form .forgetmenot {
+    margin-bottom: 1.2em;
+}
+
+/*-> Log Out */
+.widget_bp_core_login_widget {
+    overflow: hidden;
+}
+.widget.buddypress .bp-login-widget-user-links>div {
+    margin-bottom: auto;
+    padding-left: 16px;
+}
+.widget_bp_core_login_widget .bp-login-widget-user-link {
+    display: inline-block;
+}
+.widget_bp_core_login_widget .bp-login-widget-user-logout {
+    float: right;
+    padding-left: 5px !important;
+}

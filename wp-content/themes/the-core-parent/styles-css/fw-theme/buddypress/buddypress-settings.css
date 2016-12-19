@@ -1,0 +1,29 @@
+
+#buddypress #pass-strength-result.short {
+    color: #fff;
+}
+#buddypress table.notification-settings th,
+#buddypress table.notification-settings td,
+#buddypress table.profile-settings#xprofile-settings-base th,
+#buddypress table.profile-settings#xprofile-settings-base td,
+#buddypress table.profile-settings#xprofile-settings-single-fields th,
+#buddypress table.profile-settings#xprofile-settings-single-fields td,
+#buddypress table.profile-settings#xprofile-settings-multi-fields th,
+#buddypress table.profile-settings#xprofile-settings-multi-fields td {
+    border-width: 0 1px 1px 0;
+}
+#buddypress .standard-form table.notification-settings label,
+#buddypress .standard-form table.notification-settings span.label {
+    margin: 10px 0;
+}
+#buddypress .standard-form table.notification-settings .custom-checkbox label,
+#buddypress .standard-form table.notification-settings .custom-radio label {
+    padding-left: 15px;
+}
+#buddypress table.profile-settings#xprofile-settings-base,
+#buddypress table.profile-settings#xprofile-settings-single-fields {
+    margin-bottom: 30px;
+}
+#buddypress table.profile-settings#xprofile-settings-multi-fields {
+    margin-bottom: 20px;
+}

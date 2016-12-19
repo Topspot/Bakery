@@ -1,0 +1,36 @@
+/* Widget Twitter Feed */
+.fw-widget-twitter {
+  .tweet-item {
+    border-bottom: 1px dashed fade(#dee0e1,90);
+  }
+  .tweet-avatar {
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .tweet-text {
+    a{
+      font-family: @fw-widget-inner-title-font-family;
+      font-size: @fw-widget-inner-title-font-size;
+      font-weight: @fw-widget-inner-title-font-weight;
+      font-style: @fw-widget-inner-title-font-style;
+      line-height: @fw-widget-inner-title-line-height;
+      letter-spacing: @fw-widget-inner-title-letter-spacing;
+      color: @fw-widget-inner-title-color;
+
+      &:hover{
+        color: @fw-widget-inner-title-hover-color;
+      }
+    }
+  }
+}
+.fw-footer .fw-widget-twitter .tweet-item {
+  border-bottom: 1px dashed lighten(@fw-footer-widgets-bg, 10);
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/widgets/widget-twitter-feed.css";

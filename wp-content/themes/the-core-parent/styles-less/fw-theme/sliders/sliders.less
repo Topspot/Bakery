@@ -1,0 +1,33 @@
+/* Slider Layout */
+/* -------------------------------------------------- */
+
+/*Fade Effect on Fade Slider*/
+.fade-effect .item {
+  .transition(opacity 0.7s ease-in-out);
+}
+/*Shot Effect on Fade Slider*/
+.shot-effect .item {
+  .transition(top 0.9s cubic-bezier(0.95,0.1,0.25,1));
+}
+/*Loading Spinner*/
+.spinner .wBall .wInnerBall{
+  background: @theme-color-3;
+}
+
+//-------------------------------------//
+//       Import all type slider        //
+//-------------------------------------//
+
+@import "fade-slider.less";
+@import "image-video-slider.less";
+@import "easy-slider.less";
+@import "reload-slider.less";
+@import "easy-carousel.less";
+@import "themefuse-carousel.less";
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/sliders/sliders.css";
+@import (inline) "../../../styles-css/fw-theme/sliders/revolution-slider.css";

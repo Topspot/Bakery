@@ -1,0 +1,36 @@
+/* Map Style */
+/* -------------------------------------------------- */
+.site{
+  .fw-map-canvas  {
+    .infowindow-title {
+      a {
+        color: @link-color;
+        font-family: @font-family-base;
+        font-style: @font-style-base;
+        font-weight: @font-weight-base;
+        font-size: @font-size-base;
+        line-height: @line-height-base;
+        letter-spacing: @letter-spacing-base;
+
+        &:hover {
+          color: @link-hover-color;
+        }
+      }
+    }
+    .infowindow-description {
+      font-family: @font-family-base;
+      font-style: @font-style-base;
+      font-weight: @font-weight-base;
+      font-size: @font-size-small;
+      line-height: @line-height-base;
+      letter-spacing: @letter-spacing-base;
+      color: @text-color;
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/shortcodes/map.css";

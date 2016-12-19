@@ -1,0 +1,40 @@
+/* bbPress Reply/Topic Forms */
+#bbpress-forums fieldset.bbp-form {
+    position: relative;
+    padding: 30px;
+    margin-bottom: 0;
+    border: none;
+}
+#bbpress-forums fieldset.bbp-form legend {
+    position: relative;
+    top: 43px;
+    padding: 0;
+    border-bottom: none;
+}
+#bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content {
+    min-height: 234px;
+    max-height: 320px;
+}
+#bbpress-forums div.bbp-the-content-wrapper .quicktags-toolbar {
+    border-bottom: none;
+}
+#bbpress-forums fieldset.bbp-form .bbp-submit-wrapper {
+    display: block;
+    width: 50%;
+    margin-top: 0;
+    padding: 0;
+    float: none;
+    overflow: hidden;
+}
+#bbpress-forums fieldset.bbp-form .bbp-submit-wrapper button.button.submit {
+    width: 100%;
+}
+
+/* bbpress Replay Form Link PopUp */
+.bbpress #wp-link-wrap #link-modal-title {
+    padding: 0 16px;
+}
+.bbpress #wp-link-wrap #wp-link-close {
+    width: auto;
+    right: 16px;
+}

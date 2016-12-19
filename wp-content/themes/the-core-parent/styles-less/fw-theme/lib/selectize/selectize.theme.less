@@ -1,0 +1,97 @@
+/*
+ * selectize.theme.css  (for Bootstrap 3)
+ */
+.selectize-dropdown,
+.selectize-dropdown.form-control {
+	box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+}
+
+.selectize-dropdown,
+.selectize-input,
+.selectize-input input {
+  font-family: @input-font-family;
+  font-size: @input-font-size;
+  font-style: @input-font-style;
+  font-weight: @input-font-weight;
+  letter-spacing: @input-letter-spacing;
+  line-height: @input-line-height;
+  color: @input-color;
+}
+
+.selectize-dropdown {
+	.optgroup-header {
+		font-size: @font-size-small;
+		line-height: @line-height-base;
+	}
+	.optgroup:before {
+		.nav-divider();
+		margin-left: @padding-base-horizontal * -1;
+		margin-right: @padding-base-horizontal * -1;
+	}
+}
+.selectize-dropdown-header {
+	padding: 3px * 2 @padding-base-horizontal;
+}
+
+.selectize-input {
+  border-radius: @input-border-radius;
+  min-height: @line-height-computed;
+  line-height: @line-height-computed;
+  padding: @input-padding-y @input-padding-x;
+
+	&.dropdown-active {
+	  border-radius: @input-border-radius;
+	}
+	&.focus {
+	  @color: @input-border-focus;
+	  @color-rgba: rgba(red(@color), green(@color), blue(@color), .2);
+	  border-color: @color;
+	  box-shadow: none;
+	}
+}
+
+.has-error .selectize-input {
+  border-color: #fff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+
+  &:focus {
+    border-color: darken(#fff, 10%);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px lighten(#fff, 20%);
+  }
+}
+
+.selectize-control {
+	&.multi {
+		.selectize-input.has-items {
+			padding-left: @input-padding-x - 3px;
+			padding-right: @input-padding-x - 3px;
+		}
+		.selectize-input > div {
+		  border-radius: @input-border-radius;
+		}
+	}
+}
+// Selectize input
+.selectize-input {
+  > *{
+		line-height: @line-height-computed;
+  }
+}
+.widget_archive,
+.widget_categories {
+  .selectize-input.full,
+  .selectize-control.single .selectize-input.input-active {
+		background-color: fade(@fw-widget-input-bg, 7%);
+  }
+}
+
+//-------------------------------------//
+//       Import style css              //
+//-------------------------------------//
+
+@import (inline) "../../../../styles-css/fw-theme/lib/selectize/selectize.css";
+@import (inline) "../../../../styles-css/fw-theme/lib/selectize/selectize.theme.css";
+
+
+
+

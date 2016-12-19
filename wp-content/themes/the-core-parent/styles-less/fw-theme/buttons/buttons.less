@@ -1,0 +1,82 @@
+/* Buttons Layout */
+/* -------------------------------------------------- */
+.fw-btn {
+  font-family: @fw-buttons-font-family;
+  font-weight: @fw-buttons-font-weight;
+  font-style: @fw-buttons-font-style;
+  font-size: @fw-buttons-font-size;
+  line-height: @fw-buttons-line-height;
+  letter-spacing: @fw-buttons-letter-spacing;
+  color: @fw-buttons-color;
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  text-decoration: none;
+  white-space: nowrap;
+  outline: none;
+  position: relative;
+  .user-select(none);
+  .transition(all 0.3s ease);
+  max-width: 100%;
+
+  span,
+  i{
+    position: relative;
+    top: 1px;
+  }
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+  // button icon
+  i,
+  img {
+    margin-right: 13px;
+
+    &.pull-right,
+    &.pull-right-icon{
+      margin-right: 0;
+      margin-left: 13px;
+      position: relative;
+    }
+    &.pull-right{
+      top: 0.3em;
+    }
+  }
+  img{
+    position: relative;
+    top: -0.1em;
+  }
+  i{
+    top: -1px;
+    vertical-align: middle;
+  }
+  /* Button side by side */
+  &.fw-btn-side-by-side{
+    margin-right: 10px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+// Full width button
+.fw-btn.fw-btn-full {
+  width: 100%;
+}
+
+//-------------------------------------//
+//       Other Style for Buttons       //
+//-------------------------------------//
+
+@import "buttons-size.less";
+@import "buttons-style-1.less";
+@import "buttons-style-2.less";
+@import "buttons-style-3.less";
+@import "buttons-style-4.less";

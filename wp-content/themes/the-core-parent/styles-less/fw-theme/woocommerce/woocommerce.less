@@ -1,0 +1,79 @@
+/* Woocommerce Style */
+/* -------------------------------------------------- */
+
+p.demo_store {
+  box-shadow: 0 1px 1em rgba(0,0,0,.2);
+}
+.woocommerce {
+  /* Woocommerce Error, Info, Message style */
+  .woocommerce-info,
+  .woocommerce-message {
+    color: @text-color;
+  }
+  /* => Info */
+  .woocommerce-info {
+    &:before {
+      color: @text-color;
+    }
+  }
+  /* Woocommerce Breadcrumb */
+  .woocommerce-breadcrumb a {
+    color: @theme-color-2;
+
+    &:hover {
+      color: @accent-color;
+    }
+  }
+  /* Woocommerce Titles */
+  .page-title,
+  div.product .product_title {
+    font-family: @fw-h2-font-family;
+    font-size: @fw-h2-font-size;
+    font-weight: @fw-h2-font-weight;
+    font-style: @fw-h2-font-style;
+    line-height: @fw-h2-line-height;
+    letter-spacing: @fw-h2-letter-spacing;
+    color: @fw-h2-color;
+  }
+  /* Woocommerce Pagination */
+  nav.woocommerce-pagination {
+    // styling for woocommerce pagination find in file pagination.less
+  }
+  table.shop_table {
+    thead{
+      tr th{
+        color: @text-color;
+      }
+    }
+    tbody {
+      td {
+        color: @text-color;
+
+        .amount{
+          color: @text-color;
+        }
+      }
+    }
+    thead tr th,
+    tbody tr td {
+      border-bottom: 1px solid fade(#000, 10%);
+    }
+  }
+}
+
+//-------------------------------------//
+//      Woocommerce Other Style        //
+//-------------------------------------//
+
+@import "woo-cart.less";
+@import "woo-checkout.less";
+@import "woo-widgets/woo-widget.less";
+@import "woo-product.less";
+@import "woo-product-details.less";
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/woocommerce/woocommerce.css";
+@import (inline) "../../../styles-css/fw-theme/woocommerce/woo-my-account.css";

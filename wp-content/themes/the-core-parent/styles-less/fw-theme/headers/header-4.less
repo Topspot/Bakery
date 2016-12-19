@@ -1,0 +1,40 @@
+/* Header Type 4 */
+.header-4 {
+  .fw-header-main{
+    padding: @fw-header-padding-top*0.75 0;
+
+    .fw-wrap-logo-info-text {
+      padding-bottom: ceil(@fw-header-padding-bot*0.37);
+    }
+    .fw-info-text-header-main {
+      .fw-text {
+        height: @fw-logo-wrap-height;
+        color: @fw-header-info-text-color;
+      }
+    }
+    .primary-navigation > ul {
+      > li {
+        > a,
+        &:first-child > a{
+          margin-left: @fw-menu-item-margin-left/2;
+          margin-right: @fw-menu-item-margin-left/2;
+        }
+        > ul{
+          left: @fw-menu-item-margin-left/2;
+
+          &.left{
+            right: @fw-menu-item-margin-left/2;
+          }
+        }
+      }
+
+    }
+  }
+}
+@media (max-width: 1199px) {
+  .header-4 .primary-navigation > ul > li > a,
+  .header-4 .primary-navigation > ul > li:first-child > a{
+    margin-left: @fw-menu-item-margin-left/3;
+    margin-right: @fw-menu-item-margin-left/3;
+  }
+}

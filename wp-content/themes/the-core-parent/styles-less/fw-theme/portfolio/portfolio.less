@@ -1,0 +1,40 @@
+/* Portfolio */
+/* -------------------------------------------------- */
+
+/* filter */
+.fw-portfolio-filter {
+  margin-bottom:(@fw-content-density*8px);
+
+  li {
+    a {
+      font-family: @fw-menu-font-family;
+      font-style: @fw-menu-font-style;
+      color: @theme-color-2;
+    }
+    &.active a,
+    a:hover {
+      color: @accent-color;
+    }
+  }
+  .next,
+  .prev {
+    color: @theme-color-2;
+
+    &:hover {
+      color: @accent-color;
+    }
+  }
+}
+
+
+//-------------------------------------//
+//      Other Type for Portfolio       //
+//         Include Style css           //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/portfolio/portfolio.css";
+
+@import "portfolio-details.less";
+@import "portfolio-type-1.less";
+@import "portfolio-type-2.less";
+@import "portfolio-type-3.less";

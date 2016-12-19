@@ -1,0 +1,7 @@
+/* Widget Text */
+.widget_text .textwidget .wp-caption img {
+  height: auto;
+}
+.widget_text .textwidget form select {
+  max-width: 100%;
+}

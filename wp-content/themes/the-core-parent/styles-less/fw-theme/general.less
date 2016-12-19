@@ -1,0 +1,66 @@
+/* General Styles */
+/* -------------------------------------------------- */
+
+/* background image for body */
+body {
+  background-color: @body-bg;
+  background-image: url(@body-bg-image);
+  background-repeat: @body-bg-repeat;
+}
+
+/* wrapper for all sections */
+.fw-side-boxed .site-main {
+  background-color: @container-bg;
+
+  .fw-main-row {
+    > .fw-container {
+      background-color: @container-bg;
+    }
+  }
+}
+.fw-full,
+.fw-side-boxed {
+  .site {
+    margin-top: @fw-site-margin-top;
+    margin-bottom: @fw-site-margin-bottom;
+  }
+}
+.fw-full {
+  .site {
+    max-width: @fw-page-full;
+  }
+}
+.fw-side-boxed {
+  .site {
+    max-width: @fw-page-side-boxed;
+  }
+}
+
+/* No Header Image */
+.no-header-image {
+  max-width: @fw-page-side-boxed;
+  background: @container-bg;
+}
+
+// text selection
+::-moz-selection {
+  background: @accent-color;
+}
+::selection {
+  background: @accent-color;
+}
+
+/* Scroll To Top Button */
+.scroll-to-top {
+  i {
+    color: @fw-scroll-to-top-color;
+  }
+  &:hover {
+    border-color: @fw-scroll-to-top-color;
+  }
+}
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../styles-css/fw-theme/general.css";

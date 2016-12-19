@@ -1,0 +1,55 @@
+/* bbPress Style */
+/* -------------------------------------------------- */
+
+#bbpress-forums{
+  font-size: @font-size-base;
+
+  ul {
+    &.bbp-lead-topic,
+    &.bbp-topics,
+    &.bbp-forums,
+    &.bbp-replies,
+    &.bbp-search-results {
+      font-size: @font-size-base;
+    }
+    .bbp-forum-info .bbp-forum-content {
+      font-size: @font-size-base;
+    }
+    .bbp-forum-info {
+      .bbp-forum-title {
+        font-size: @fw-h5-font-size;
+      }
+    }
+    .bbp-topic-title {
+      .bbp-topic-permalink {
+        font-size: @fw-h5-font-size;
+      }
+    }
+    .bbp-header .forum-titles{
+      color: @fw-h4-color;
+    }
+    li.bbp-header {
+      .bbp-reply-author,
+      .bbp-reply-content {
+        color: @fw-h4-color;
+      }
+    }
+  }
+}
+
+//-------------------------------------//
+//        bbPress Widget Style         //
+//-------------------------------------//
+
+@import "bbpress-widget/bbpress-widget.less";
+@import "bbpress-search.less";
+@import "bbpress-reply-form.less";
+@import "bbpress-user-edit.less";
+
+
+//-------------------------------------//
+//     Include bbPres Style css        //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/bbpress/bbpress.css";
+@import (inline) "../../../styles-css/fw-theme/bbpress/bbpress-breadcrumbs.css";

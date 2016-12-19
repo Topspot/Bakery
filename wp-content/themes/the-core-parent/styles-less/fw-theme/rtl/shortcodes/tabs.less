@@ -1,0 +1,26 @@
+/* Tabs RTl*/
+/* -------------------------------------------------- */
+
+// tabs left
+@media (min-width: 768px) {
+  .rtl .fw-tabs-left {
+    // Tabs right in Minimal tabs
+    &.fw-tabs-minimal {
+      .nav-tabs {
+        > li.active {
+          > a,
+          > a:hover,
+          > a:focus {
+            border-left: 2px*3 solid @accent-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../../styles-css/fw-theme/rtl/shortcodes/tabs.css";

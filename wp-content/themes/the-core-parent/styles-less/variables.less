@@ -1,0 +1,495 @@
+//
+// Variables */
+//
+
+// Theme Variables */
+// --------------------------------------------------
+
+// main theme colors
+@theme-color-1:         #d12a5c; // main color, subtitles
+@theme-color-2:         #49ca9f; // secondary color
+@theme-color-3:         #1f1f1f;
+@theme-color-4:         #808080;
+@theme-color-5:         #ebebeb;
+
+// Theme Defaults
+@accent-color:            @theme-color-1;
+@secondary-color:         @theme-color-2;
+
+//== Scaffolding
+// ## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+@body-bg:               #ebebeb;
+@container-bg:          #ffffff; // bg color when site style is Boxed
+@body-bg-image : 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
+@body-bg-repeat : 'no-repeat';
+
+//** Global text color on `<body>`.
+@text-color:            #a8a8a8;
+
+//** Global textual link color.
+@link-color:              @secondary-color;
+//** Link hover color set via `darken()` function.
+@link-hover-color:        darken(@secondary-color, 10%);
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+@font-family-1:            "Montserrat";
+@font-family-base:         "Quattrocento Sans", serif;
+
+//** Font Family Title, Subtitle, Buttons & Menu
+@font-family-2:                    @font-family-base;
+@font-weight-base:                 normal;
+@font-style-base:                  normal;
+@font-letter-spacing-base:         0;
+
+@subtitles-family:                 "Merriweather";
+@subtitles-weight:                 300;
+@subtitles-style:                  normal;
+@subtitles-size:                   22px;
+@subtitles-line-height:            39px;
+@subtitles-letter-spacing:         normal;
+@subtitles-color:                  @text-color;
+
+@fw-menu-font-family:              @font-family-1;
+@fw-menu-font-weight:              normal;
+@fw-menu-font-style:               normal;
+@fw-menu-letter-spacing:           0;
+
+@fw-logo-title-font-family:        @font-family-1;
+@fw-logo-title-font-weight:        normal;
+@fw-logo-title-font-style:         normal;
+
+@fw-logo-subtitle-font-family:     @font-family-2;
+@fw-logo-subtitle-font-weight:     normal;
+@fw-logo-subtitle-font-style:      italic;
+
+@fw-buttons-font-family:          @font-family-1;
+@fw-buttons-font-weight:          normal;
+@fw-buttons-font-style:           normal;
+@fw-buttons-font-size:            12px;
+@fw-buttons-line-height:          30px;
+@fw-buttons-letter-spacing:       normal;
+@fw-buttons-color:                #fff;
+@fw-buttons-hover-color:          #fff;
+
+
+@font-size-base:          16.5px;
+@font-size-large:         ceil((@font-size-base * 1.15));
+@font-size-small:         ceil((@font-size-base * 0.85));
+
+//Letter Spacing Base
+@letter-spacing-base: normal;
+
+// Typography
+@fw-h1-font-family: @font-family-1;
+@fw-h2-font-family: @font-family-1;
+@fw-h3-font-family: @font-family-1;
+@fw-h4-font-family: @font-family-1;
+@fw-h5-font-family: @font-family-1;
+@fw-h6-font-family: @font-family-1;
+
+@fw-h1-font-size: 55px;
+@fw-h2-font-size: 40px;
+@fw-h3-font-size: 32px;
+@fw-h4-font-size: 26px;
+@fw-h5-font-size: 19px;
+@fw-h6-font-size: 14px;
+
+@fw-h1-line-height: 65px;
+@fw-h2-line-height: 56px;
+@fw-h3-line-height: 38px;
+@fw-h4-line-height: 32px;
+@fw-h5-line-height: 28px;
+@fw-h6-line-height: 26px;
+
+@fw-h1-letter-spacing: -2px;
+@fw-h2-letter-spacing: -2px;
+@fw-h3-letter-spacing: -2px;
+@fw-h4-letter-spacing: -2px;
+@fw-h5-letter-spacing: -1px;
+@fw-h6-letter-spacing: -1px;
+
+@fw-h1-color: @theme-color-3;
+@fw-h2-color: @theme-color-3;
+@fw-h3-color: @theme-color-3;
+@fw-h4-color: @theme-color-3;
+@fw-h5-color: @theme-color-3;
+@fw-h6-color: @theme-color-3;
+
+@fw-h1-font-style: normal;
+@fw-h2-font-style: normal;
+@fw-h3-font-style: normal;
+@fw-h4-font-style: normal;
+@fw-h5-font-style: normal;
+@fw-h6-font-style: normal;
+
+@fw-h1-font-weight: normal;
+@fw-h2-font-weight: 700;
+@fw-h3-font-weight: 700;
+@fw-h4-font-weight: 700;
+@fw-h5-font-weight: 700;
+@fw-h6-font-weight: 700;
+
+// Buttons
+@fw-btn-color: @accent-color;
+@fw-btn-hover-color: @secondary-color;
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-small:         1.5em;
+@line-height-base:          1.7em;
+@line-height-large:         1.8em;
+
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    @font-size-base;
+
+//** Size theme (site full, site boxed, boxed)
+@fw-page-full:            100%;
+@fw-page-side-boxed:      1540px;
+
+//** Margin top & bottom for page
+@fw-site-margin-top:      0;
+@fw-site-margin-bottom:   0;
+
+//** Variable for space (padding or margin) in theme between element.
+@fw-space-between-elements-sm:     45px;
+@fw-space-between-elements-md:     100px;
+@fw-space-between-elements-lg:     150px;
+
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+@padding-base-vertical:     12px;
+@padding-base-horizontal:   25px;
+
+@padding-large-vertical:    17px;
+@padding-large-horizontal:  45px;
+
+@padding-small-vertical:    6px;
+@padding-small-horizontal:  15px;
+
+//== Forms
+//
+//##
+
+//** `<input>` background color
+@input-bg:                       #fff;
+//** `<input disabled>` background color
+@input-bg-disabled:              #f2f2f2;
+//** `<input>` border color
+@input-border:                   #ccc;
+//** `<input>` border radius
+@input-border-radius:            0;
+//** Border color for inputs on focus
+@input-border-focus:             lighten(desaturate(@secondary-color, 7.5),30);
+
+//** Placeholder text color
+@input-color-placeholder:        fade(@secondary-color, 70);
+
+//** Fonts variables for all inputs form themes
+@input-font-family:               @font-family-2;
+@input-font-style:                normal;
+@input-font-size:                 16.5px;
+@input-line-height:               28px;
+@input-font-weight:               700;
+@input-letter-spacing:            0;
+@input-color:                     @theme-color-3;
+
+//** Default `.form-control` height
+@input-height-base:              @input-padding-x*2;
+
+
+//** Fonts variables for all labels form themes
+@form-label-font-family:         @font-family-1;
+@form-label-font-size:           12px;
+@form-label-font-style:          normal;
+@form-label-font-weight:         400;
+@form-label-line-height:         30px;
+@form-label-letter-spacing:      0;
+@form-label-color:               #b2b2b2;
+@form-label-text-transform:      uppercase;
+
+// ** horizontal and vertical padding
+@input-padding-x:                 15px;
+@input-padding-y:                 12px;
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+@grid-columns:              12;
+//** Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width:         30px;
+
+//== Panel icon size
+@panel-icon-size:             17px;
+
+// Mobile menu
+@fw-icon-font-size-mobile-menu:          28px;
+@fw-icon-line-height-mobile-menu:        @fw-icon-font-size-mobile-menu - 7;
+
+// Menu item hover color (header & footer menu)
+@fw-top-menu-item-color-hover:                @secondary-color;
+@fw-footer-menu-item-color-hover:             @accent-color;
+
+//== Header Layout
+@fw-top-bar-bg:                         transparent;
+@fw-top-bar-bg-absolute:                transparent;
+@fw-top-bar-padding:                    10px;
+@fw-top-bar-height:                     35px;  // height for content inside it
+@fw-top-bar-text-color:                 #ffffff;
+@fw-header-social-color:                #ffffff;
+@fw-header-social-hover-color:          #cfebde;
+@fw-top-bar-font-size-text:             16px;
+@fw-top-bar-font-style:                 normal;
+@fw-top-bar-font-weight:                normal;
+@fw-top-bar-font-family:                "NTR";
+@fw-top-bar-letter-spacing:             0.3px;
+@fw-top-bar-font-size-social:           16px;
+
+@fw-top-menu-bg:                        transparent;
+@fw-header-padding-top:                 (@fw-content-density*4px);
+@fw-header-padding-bot:                 (@fw-content-density*4px);
+@fw-logo-wrap-height:                   160px;
+@fw-header-absolute-opacity:            90%;
+@fw-header-2-padding-logo:              50px; // logo's margin left & right
+@fw-header-info-text-color:             @text-color;
+
+@fw-logo-wrap-height-absolute:          60px;
+@fw-header-padding-top-absolute:        (@fw-content-density*1px);
+@fw-header-padding-bot-absolute:        (@fw-content-density*1px);
+
+// Top menu
+@fw-menu-item-font-size:                13px;
+@fw-menu-item-margin-left:              40px;
+@fw-menu-item-height:                   30px;
+@fw-top-menu-color:                     @theme-color-3;
+@fw-top-menu-line-color:                @fw-top-menu-color;
+@fw-menu-wrap-bg:                       transparent;
+@fw-dropdown-width:                     280px;
+@fw-dropdown-font-size:                 @fw-menu-item-font-size;
+@fw-dropdown-font-family:               @fw-menu-font-family;
+@fw-dropdown-bg-color:                  @theme-color-3;
+@fw-dropdown-bg-color-hover:            fade(darken(@fw-dropdown-bg-color, 3%), 94%);
+@fw-dropdown-text-color:                @secondary-color;
+@fw-dropdown-text-color-hover:          #fff;
+@fw-dropdown-icon-size:                 14px;
+@fw-menu-logo-max-width:                250;
+@fw-menu-logo-width:                    400;
+@fw-menu-logo-height:                   @fw-menu-logo-width/2;
+
+// Bottom menu
+@fw-bottom-menu-font-family:            @fw-menu-font-family;
+@fw-bottom-menu-font-weight:            @fw-menu-font-weight;
+@fw-bottom-menu-font-style:             @fw-menu-font-style;
+@fw-bottom-menu-letter-spacing:         1px;
+@fw-bottom-menu-font-size:              13px;
+@fw-bottom-menu-item-margin:            35px;
+@fw-bottom-menu-item-height:            84px;
+
+// Text logo
+@fw-logo-title-font-family:             @font-family-1;
+@fw-logo-title-font-weight:             normal;
+@fw-logo-title-font-style:              normal;
+@fw-logo-title-font-size:               20px;
+@fw-logo-title-letter-spacing:          1px;
+@fw-logo-title-line-height:             20px;
+@fw-logo-title-color:                   @theme-color-2;
+
+@fw-logo-subtitle-font-family:          @font-family-2;
+@fw-logo-subtitle-font-weight:          normal;
+@fw-logo-subtitle-font-style:           normal;
+@fw-logo-subtitle-font-size:            10px;
+@fw-logo-subtitle-letter-spacing:       4px;
+@fw-logo-subtitle-line-height:          10px;
+@fw-logo-subtitle-color:                #aeaab1;
+
+@fw-header-search-input-icon-color:         @secondary-color;
+@fw-header-search-input-icon-color-hover:   lighten(@fw-header-search-input-icon-color, 10);
+@fw-header-search-input-icon-bg-color:      transparent;
+@fw-header-search-input-icon-font-size:     16px;
+@fw-header-search-mini-width:               257px;
+@fw-header-search-mini-bg:                  darken(@fw-header-search-input-bg-color, 10);
+@fw-header-search-width:                    204px;
+@fw-header-search-mini-padding:             15px;
+
+@fw-form-search-full-font-color:            @fw-header-search-input-color;
+@fw-form-search-full-placeholder-font-color: @fw-form-search-full-font-color;
+@fw-form-search-full-loop-color:            @fw-form-search-full-font-color;
+@fw-form-search-full-close-color:           @fw-form-search-full-font-color;
+@fw-form-search-full-input-font-size:       40px;
+@fw-form-search-full-bg:                    @accent-color;
+@fw-form-search-full-input-bg:              @fw-header-search-input-bg-color;
+
+@fw-header-search-input-font-family:    @font-family-2;
+@fw-header-search-input-font-weight:    normal;
+@fw-header-search-input-font-style:     normal;
+@fw-header-search-input-font-size:      14px;
+@fw-header-search-input-letter-spacing: normal;
+@fw-header-search-input-color:          #fff;
+@fw-header-search-input-height:         33px;
+@fw-header-search-input-bg-color:       transparent;
+@fw-header-search-input-border-size:    0px;
+@fw-header-search-input-border-color:   transparent;
+
+// Section Overlay
+@fw-content-overlay-sm:                 40px;
+@fw-content-overlay-md:                 80px;
+@fw-content-overlay-lg:                 120px;
+
+// Section Height
+@fw-section-height-sm:                  240px;
+@fw-section-height-md:                  300px;
+@fw-section-height-lg:                  440px;
+
+// Custom Section Background Option
+@fw--bg:           #2a2e31;  // section's bg color
+
+//== Footer Layout
+// Widget area styles
+@fw-footer-widgets-bg:           #d1d3d5;  // footer section's bg color
+@fw-footer-widget-bg-image:      'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';       // section's bg image
+@fw-footer-widget-bg-repeat:     no-repeat;// section's bg repeat
+@fw-footer-widget-bg-position:   top right;// section's bg position
+@fw-footer-widget-bg-size:       auto;     // section's bg size
+@fw-footer-widgets-text-color:   @theme-color-3;  // text color for widgets
+@fw-footer-widgets-title:        #fff;     // text color for Widgets Titles
+@fw-footer-widgets-title-size:   23px;
+@fw-footer-widgets-padding:      (@fw-content-density * 14px);     // top & bottom padding of widget container
+@fw-footer-widgets-link-color:   @fw-footer-widgets-text-color;
+
+// Footer menu with logo styles
+@fw-footer-middle-bg:            transparent;
+@fw-menu-bar-bg-image:           'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';          // menu bar bg
+@fw-menu-bar-bg-repeat:          no-repeat;   // menu bar bg repeat
+@fw-menu-bar-bg-position:        top right;   // menu bar bg position
+@fw-menu-current-line-height:    6px;
+@fw-footer-middle-bg-size:       auto;        // menu bar bg size
+@fw-footer-middle-text:          #fff;        // menu color
+@fw-footer-middle-text-hover:    @secondary-color;     // menu color on hover
+@fw-footer-middle-padding-top:   18px;
+@fw-footer-middle-padding-bot:   18px;
+@fw-footer-widgets-padding-top:  @fw-space-between-elements-md;
+@fw-footer-widgets-padding-bot:  @fw-space-between-elements-md;
+
+// copyright with socials
+@fw-footer-bar-bg:               transparent;
+@fw-footer-bar-text:             @fw-footer-social-color;
+@fw-footer-social-color:         @theme-color-3;
+@fw-footer-social-hover-color:   @accent-color;
+@fw-footer-bar-padding-top:      20px;
+@fw-footer-bar-padding-bot:      @fw-footer-bar-padding-top;
+@fw-footer-bar-link:             #fff;
+@fw-footer-bar-link-hover:       #fff;
+
+@fw-footer-social-size:          16px;     // footer social icons size
+@fw-copyright-font-size:         15px;     // font size of copyright text
+@fw-copyright-font-style:        normal;
+@fw-copyright-font-weight:       normal;
+@fw-copyright-font-family:       @font-family-base;
+@fw-copyright-text-color:        #686869;
+@fw-copyright-letter-spacing:    normal;
+@fw-copyright-line-height:       45px;
+
+// Footer Logo
+@fw-footer-logo-width:           100px;
+@fw-footer-logo-height:          65px;
+@fw-footer-logo-max-height:      100px;
+
+//== Sections padding
+// Padding top & bottom in all sections
+@fw-section-padding:            @fw-space-between-elements-md;
+
+@fw-section-padding-sm:         @fw-section-padding*0.6;
+@fw-section-padding-md:         @fw-section-padding;
+@fw-section-padding-lg:         @fw-section-padding*1.4;
+
+// spacing between elements: sections, shortcodes and others.
+@fw-content-density-sm:         5;
+@fw-content-density-md:         10; // default value
+@fw-content-density-lg:         15;
+@fw-content-density:            @fw-content-density-md;
+
+//== Core Shortcodes
+// buttons font-family & font-weight
+@fw-btn-font-family:            @fw-buttons-font-family;
+@fw-btn-font-weight:            @fw-buttons-font-weight;
+@fw-btn-font-style:             @fw-buttons-font-style;
+@fw-btn-font-size:              @fw-buttons-font-size;
+@fw-btn-line-height:            @fw-buttons-line-height;
+@fw-btn-letter-spacing:         @fw-buttons-letter-spacing;
+
+// button 1
+@fw-btn-border-color:           transparent;
+@fw-btn-border-width:           0;
+@fw-btn-radius:                 0;
+@fw-btn-shadow:                 none;
+@fw-btn-shadow-inset:           none;
+@fw-btn-text-color:             @fw-buttons-color;
+@fw-btn-text-color-hover:       @fw-buttons-hover-color;
+@fw-btn-text-shadow:            none;
+@fw-btn-bg-color:               @fw-btn-color; // main btn color
+@fw-btn-bg-color-hover:         @fw-btn-hover-color; // main btn color on hover
+
+// button 2
+@fw-btn-border-color2:          @fw-btn-bg-color2;
+@fw-btn-border-width2:          2px;
+@fw-btn-radius2:                0;
+@fw-btn-shadow2:                none;
+@fw-btn-shadow-inset2:          none;
+@fw-btn-text-color2:            @fw-buttons-color;
+@fw-btn-text-color-hover2:      @fw-buttons-hover-color;
+@fw-btn-text-shadow2:           none;
+@fw-btn-bg-color2:              @fw-btn-color; // main btn color
+@fw-btn-bg-color-hover2:        @fw-btn-hover-color; // main btn color on hover
+
+// button 3
+@fw-btn-border-color3:          @fw-btn-text-color3;
+@fw-btn-border-width3:          2px;
+@fw-btn-radius3:                0px;
+@fw-btn-shadow3:                darken(@fw-btn-text-color3,10);
+@fw-btn-shadow-inset3:          none;
+@fw-btn-text-color3:            @fw-buttons-color;
+@fw-btn-text-color-hover3:      @fw-buttons-hover-color;
+@fw-btn-text-shadow3:           none;
+@fw-btn-bg-color3:              @fw-btn-color; // use for solid color
+@fw-btn-bg-color-hover3:        @fw-btn-hover-color;     // use for solid color
+
+// button 4
+@fw-btn-text-color4:            @fw-buttons-color;
+@fw-btn-text-color-hover4:      @fw-buttons-hover-color;
+
+// Dividers
+@fw-divider-space-sm:           30px;  // height of small divider
+@fw-divider-space-md:           60px;  // height of medium divider
+@fw-divider-space-lg:           100px; // height of large divider
+
+// Single Image & Image Block
+@fw-block-image-frame-color:           #edf1f2;
+@fw-block-image-frame-size:            9px;
+
+//== Sidebar Widgets
+//==>Widget Title
+@fw-widget-title-font-size:           15px;
+@fw-widget-title-line-height:         40px;
+@fw-widget-title-color:               #b6b8b9;
+@fw-widget-font-size:                 @font-size-base - 1;
+@fw-widget-line-height:               @line-height-base - 2;
+@fw-widget-margin-bot:                55px;
+//==> Widget Inner Title
+@fw-widget-inner-title-font-family:   @font-family-2;
+@fw-widget-inner-title-font-size:     15px;
+@fw-widget-inner-title-font-style:    normal;
+@fw-widget-inner-title-font-weight:   700;
+@fw-widget-inner-title-line-height:   26px;
+@fw-widget-inner-title-letter-spacing:1px;
+@fw-widget-inner-title-color:         #353535;
+@fw-widget-inner-title-hover-color:   @accent-color;
+@fw-widget-input-bg:                  #000;
+
+// Scroll To Top Button
+@fw-scroll-to-top-color:              @theme-color-1;

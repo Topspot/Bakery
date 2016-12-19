@@ -1,0 +1,43 @@
+/* Reload Slider */
+/* -------------------------------------------------- */
+
+.fw-reload-slider{
+  ul{
+    li{
+      .fw-reload-slider-content{
+        .fw-reload-slider-subtitle{
+          font-family: @subtitles-family;
+          font-weight: @subtitles-weight;
+          font-style: @subtitles-style;
+          font-size: @subtitles-size;
+          line-height: @subtitles-line-height;
+          color: @subtitles-line-height;
+          letter-spacing: @subtitles-letter-spacing;
+        }
+      }
+    }
+  }
+  /* Reload Slider Control */
+  .fw-reload-slider-controls{
+    a{
+      width: 12px;
+      height: 12px;
+      background-color: @text-color;
+      opacity: 0.1;
+
+      &.selected,
+      &:hover{
+        width: 12px;
+        height: 12px;
+        background-color: @text-color;
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/sliders/reload-slider.css";

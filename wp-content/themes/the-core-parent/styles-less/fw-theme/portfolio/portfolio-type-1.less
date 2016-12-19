@@ -1,0 +1,32 @@
+/* Portfolio Type 1 */
+.fw-portfolio-1 {
+  .fw-portfolio-list {
+    li {
+      .box-shadow(0 9px 40px fade(#ece8df, 68%));
+    }
+  }
+  .fw-portfolio-image {
+    .fw-overlay-title{
+      font-size: ceil(@font-size-base*1.32);
+      line-height: ceil(@font-size-base*1.32) + 2;
+    }
+  }
+  // 2 columns
+  &.fw-portfolio-cols-2 .fw-portfolio-wrapper {
+    .fw-portfolio-title {
+      font-size: @font-size-base*1.32;
+    }
+  }
+  // 4 columns
+  &.fw-portfolio-cols-4 .fw-portfolio-wrapper {
+    .fw-portfolio-title {
+      font-size: ceil(@font-size-base*1.32) * 0.8;
+    }
+  }
+}
+
+//-------------------------------------//
+//      Include Style css              //
+//-------------------------------------//
+
+@import (inline) "../../../styles-css/fw-theme/portfolio/portfolio-type-1.css";
